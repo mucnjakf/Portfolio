@@ -3,7 +3,11 @@ body {
     font-family: Inter, sans-serif;
 }
 
-.card {
-    border: none;
-    box-shadow: .1rem .1rem 1rem rgba(0, 0, 0, .3);
+.nav-link {
+    color: #dee2e6 !important;
+}
+
+.active {
+    background-color: #293036 !important;
+    color: #dee2e6 !important;
 }

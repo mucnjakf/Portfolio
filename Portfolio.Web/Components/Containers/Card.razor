@@ -1,4 +1,4 @@
-﻿<div class="card rounded-4 @Margin @Padding @Height">
+﻿<div class="card rounded-4 @Margin @Padding @Height" style="border: none; box-shadow: .1rem .1rem 1rem rgba(0, 0, 0, .3);">
     <div class="card-body">
         @if (Title is not null)
         {
@@ -15,13 +15,14 @@
 
     [Parameter]
     public RenderFragment Content { get; set; } = default!;
-    
+
     [Parameter]
     public string? Margin { get; set; }
-    
+
     [Parameter]
     public string? Padding { get; set; }
 
     [Parameter]
     public string? Height { get; set; }
+
 }

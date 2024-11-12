@@ -1,6 +1,6 @@
 ﻿{
   "ProfileImage": "img/7.jpg",
-  "Name": "Filip Mucnjak",
+  "Name": "Filip Mučnjak",
   "Description": "I am a full stack .NET developer and software engineering student with a passion for crafting digital solutions",
   "Professional": ".NET Engineer at Infinum",
   "Education": "Bachelor in Software Engineering at Algebra",
@@ -9,5 +9,5 @@
   "Location": "Zagreb, Croatia",
   "Email": "filip.mucnjak@outlook.com",
   "GitHub": "mucnjakf",
-  "MyStory": "<div style=\"text-align: justify;\"><p style=\"line-height: 1.7rem;\">I am a dedicated <span class=\"fw-bold\">full stack .NET developer</span> and <span class=\"fw-bold\">software engineering student</span> with a passion for crafting digital solutions using <span class=\"fw-bold\">.NET technologies</span>, particularly excelling in backend development.</p><p style=\"line-height: 1.7rem;\">Currently, I am enrolled in a Master’s program at <span class=\"fw-bold\">Algebra University</span>, pursuing a<span class=\"fw-bold\">Master’s Degree in Computer Engineering</span>. With over <span class=\"fw-bold\">five years</span> of hands-on experience in software engineering, I have gained valuable expertise that allows me to contribute effectively to various projects. I am currently employed at the design and development agency <span class=\"fw-bold\">Infinum</span> located in Zagreb. In this role, I serve as a <span class=\"fw-bold\">.NET engineer</span>.</p></div>"
+  "MyStory": "<div style=\"text-align: justify;\"><p style=\"line-height: 2rem;\">I am a dedicated <span class=\"fw-bold\">full stack .NET developer</span> and <span class=\"fw-bold\">software engineering student</span> with a passion for crafting digital solutions using <span class=\"fw-bold\">.NET technologies</span>, particularly excelling in backend development.</p><p style=\"line-height: 2rem;\">Currently, I am enrolled in a Master’s program at <span class=\"fw-bold\">Algebra University</span>, pursuing a <span class=\"fw-bold\">Master’s Degree in Computer Engineering</span>. With over <span class=\"fw-bold\">five years</span> of hands-on experience in software engineering, I have gained valuable expertise that allows me to contribute effectively to various projects. I am currently employed at the design and development agency <span class=\"fw-bold\">Infinum</span> located in Zagreb. In this role, I serve as a <span class=\"fw-bold\">.NET engineer</span>.</p></div>"
 }
