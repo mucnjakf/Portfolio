@@ -1,0 +1,19 @@
+﻿<li class="nav-item text-center" style="width: 12rem;">
+    <NavLink Match="NavLinkMatch.All" href="@Href" class="nav-link rounded-4">
+        <i class="bi @Icon me-2"></i>
+        @Text
+    </NavLink>
+</li>
+
+@code {
+
+    [Parameter]
+    public string Href { get; set; } = default!;
+
+    [Parameter]
+    public string Icon { get; set; } = default!;
+
+    [Parameter]
+    public string Text { get; set; } = default!;
+
+}

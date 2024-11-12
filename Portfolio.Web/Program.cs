@@ -1,10 +1,13 @@
 using Portfolio.Web.Components;
+using Portfolio.Web.Services;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.Services
     .AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddScoped<IDataService, DataService>();
 
 WebApplication app = builder.Build();
 

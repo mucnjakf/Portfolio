@@ -1,0 +1,27 @@
+﻿<div class="card rounded-4 @Margin @Padding @Height">
+    <div class="card-body">
+        @if (Title is not null)
+        {
+            <h3 class="mb-3">@Title</h3>
+        }
+        @Content
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public string? Title { get; set; }
+
+    [Parameter]
+    public RenderFragment Content { get; set; } = default!;
+    
+    [Parameter]
+    public string? Margin { get; set; }
+    
+    [Parameter]
+    public string? Padding { get; set; }
+
+    [Parameter]
+    public string? Height { get; set; }
+}
