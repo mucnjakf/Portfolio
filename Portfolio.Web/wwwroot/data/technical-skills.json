@@ -1,0 +1,93 @@
+﻿{
+  "Skills": [
+    {
+      "Src": "img/skills/dotnet.svg",
+      "Alt": ".NET logo",
+      "Text": ".NET"
+    },
+    {
+      "Src": "img/skills/blazor.svg",
+      "Alt": "Blazor logo",
+      "Text": "Blazor"
+    },
+    {
+      "Src": "img/skills/azure.svg",
+      "Alt": "Azure logo",
+      "Text": "Azure"
+    },
+    {
+      "Src": "img/skills/identity.svg",
+      "Alt": "Identity logo",
+      "Text": "Identity"
+    },
+    {
+      "Src": "img/skills/html.svg",
+      "Alt": "HTML logo",
+      "Text": "HTML"
+    },
+    {
+      "Src": "img/skills/css.svg",
+      "Alt": "CSS logo",
+      "Text": "CSS"
+    },
+    {
+      "Src": "img/skills/javascript.svg",
+      "Alt": "JavaScript logo",
+      "Text": "JavaScript"
+    },
+    {
+      "Src": "img/skills/bootstrap.svg",
+      "Alt": "Bootstrap logo",
+      "Text": "Bootstrap"
+    },
+    {
+      "Src": "img/skills/docker.svg",
+      "Alt": "Docker logo",
+      "Text": "Docker"
+    },
+    {
+      "Src": "img/skills/kubernetes.svg",
+      "Alt": "Kubernetes logo",
+      "Text": "Kubernetes"
+    },
+    {
+      "Src": "img/skills/git.svg",
+      "Alt": "Git logo",
+      "Text": "Git"
+    },
+    {
+      "Src": "img/skills/github.svg",
+      "Alt": "GitHub logo",
+      "Text": "GitHub"
+    }
+  ],
+  "Architecture": [
+    "Layered architecture",
+    "Vertical slice architecture",
+    "Clean architecture",
+    "Domain driven design",
+    "Test driven development"
+  ],
+  "Pattern": [
+    "Dependency injection",
+    "CQRS & Mediator",
+    "Repository",
+    "Unit of work",
+    "Factory",
+    "Singleton"
+  ],
+  "Methodology": [
+    "SOLID principles",
+    "Clean code",
+    "Agile",
+    "Scrum",
+    "Kanban"
+  ],
+  "Other": [
+    "Windows",
+    "Linux",
+    "Word",
+    "Excel",
+    "PowerPoint"
+  ]
+}
