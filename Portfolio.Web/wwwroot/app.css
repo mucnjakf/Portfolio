@@ -1,4 +1,4 @@
-body {
+﻿body {
     background-color: #293036;
     font-family: Inter, sans-serif;
 }
@@ -10,4 +10,8 @@ body {
 .active {
     background-color: #293036 !important;
     color: #dee2e6 !important;
+}
+
+.text-bg-primary {
+    background-color: #293036 !important;
 }
