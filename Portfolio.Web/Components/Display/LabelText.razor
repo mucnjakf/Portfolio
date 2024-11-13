@@ -1,0 +1,21 @@
+﻿<span class="text-muted small me-2">
+    <i class="bi @Icon me-1"></i>
+    @Label
+</span>
+
+<span class="fs-5">
+    @Text
+</span>
+
+@code {
+
+    [Parameter]
+    public string Icon { get; set; } = default!;
+
+    [Parameter]
+    public string Label { get; set; } = default!;
+
+    [Parameter]
+    public string Text { get; set; } = default!;
+
+}

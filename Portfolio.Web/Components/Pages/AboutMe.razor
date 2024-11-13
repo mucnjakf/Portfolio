@@ -25,92 +25,66 @@
             <Content>
                 <div class="row my-3">
                     <div class="col">
-                        <span class="text-muted small me-2">
-                            <i class="bi bi-hammer me-1"></i>
-                            Professional
-                        </span>
-
-                        <span class="fs-5">
-                            @_dto.Professional
-                        </span>
+                        <LabelText
+                            Icon="bi-hammer"
+                            Label="Professional"
+                            Text="@_dto.Professional"/>
                     </div>
                 </div>
 
                 <div class="row mb-3">
                     <div class="col">
-                        <span class="text-muted small me-2">
-                            <i class="bi bi-book me-1"></i>
-                            Education
-                        </span>
-
-                        <span class="fs-5">
-                            @_dto.Education
-                        </span>
+                        <LabelText
+                            Icon="bi-book"
+                            Label="Education"
+                            Text="@_dto.Education"/>
                     </div>
                 </div>
 
                 <div class="row mb-3">
                     <div class="col">
-                        <span class="text-muted small me-2">
-                            <i class="bi bi-gender-ambiguous me-1"></i>
-                            Gender
-                        </span>
-
-                        <span class="fs-5">
-                            @_dto.Gender
-                        </span>
+                        <LabelText
+                            Icon="bi-gender-ambiguous"
+                            Label="Gender"
+                            Text="@_dto.Gender"/>
                     </div>
                 </div>
 
                 <div class="row mb-3">
                     <div class="col">
-                        <span class="text-muted small me-2">
-                            <i class="bi bi-cake2 me-1"></i>
-                            Date of birth
-                        </span>
-                        <span class="fs-5">
-                            @_dto.DateOfBirth
-                        </span>
+                        <LabelText
+                            Icon="bi-cake2"
+                            Label="Date of birth"
+                            Text="@_dto.DateOfBirth"/>
                     </div>
                 </div>
 
                 <div class="row mb-3">
                     <div class="col">
-                        <span class="text-muted small me-2">
-                            <i class="bi bi-geo me-1"></i>
-                            Location
-                        </span>
-                        <span class="fs-5">
-                            @_dto.Location
-                        </span>
+                        <LabelText
+                            Icon="bi-geo"
+                            Label="Location"
+                            Text="@_dto.Location"/>
                     </div>
                 </div>
 
                 <div class="row mb-3">
                     <div class="col">
-                        <span class="text-muted small me-2">
-                            <i class="bi bi-envelope me-1"></i>
-                            E-Mail
-                        </span>
-                        <span class="fs-5">
-                            <a href="mailto:@_dto.Email" class="text-decoration-none text-reset">
-                                @_dto.Email
-                            </a>
-                        </span>
+                        <LabelLink
+                            Icon="bi-envelope"
+                            Label="E-Mail"
+                            Mailto="@_dto.Email"
+                            Text="@_dto.Email"/>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
-                        <span class="text-muted small me-2">
-                            <i class="bi bi-github me-1"></i>
-                            GitHub
-                        </span>
-                        <span class="fs-5">
-                            <a href="https://www.github.com/@_dto.GitHub" target="_blank" class="text-decoration-none text-reset">
-                                @_dto.GitHub
-                            </a>
-                        </span>
+                        <LabelLink
+                            Icon="bi-github"
+                            Label="GitHub"
+                            Link="https://www.github.com"
+                            Text="@_dto.GitHub"/>
                     </div>
                 </div>
             </Content>

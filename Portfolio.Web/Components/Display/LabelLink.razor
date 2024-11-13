@@ -1,0 +1,32 @@
+﻿<span class="text-muted small me-2">
+    <i class="bi @Icon me-1"></i>
+    @Label
+</span>
+<span class="fs-5">
+    <a
+        href="@(Mailto is not null ? $"mailto:{Mailto}" : Link is not null ? $"{Link}/{Text}" : string.Empty)"
+        class="text-decoration-none text-reset"
+        target="@(Link is not null ? "_blank" : string.Empty)">
+
+        @Text
+    </a>
+</span>
+
+@code {
+
+    [Parameter]
+    public string Icon { get; set; } = default!;
+
+    [Parameter]
+    public string Label { get; set; } = default!;
+
+    [Parameter]
+    public string Text { get; set; } = default!;
+
+    [Parameter]
+    public string? Mailto { get; set; }
+
+    [Parameter]
+    public string? Link { get; set; }
+
+}
