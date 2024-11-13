@@ -7,7 +7,7 @@
         <Card Padding="p-3" Title="Soft skills">
             <Content>
                 <ul class="list-group list-group-flush">
-                    @foreach (string skill in _softSkills)
+                    @foreach (string skill in _dto.SoftSkills)
                     {
                         <li class="list-group-item border-0 ps-0">
                             <i class="bi bi-dot"></i>
@@ -25,10 +25,10 @@
         <Card Padding="p-3" Title="Language skills">
             <Content>
                 <h5 class="my-4">
-                    <span class="text-muted small">Mother tongue:</span> <span class="fw-bold">@_languageSkills.MotherTongue</span>
+                    <span class="text-muted small">Mother tongue:</span> <span class="fw-bold">@_dto.MotherTongue</span>
                 </h5>
 
-                @foreach (LanguageDto language in _languageSkills.Languages)
+                @foreach (LanguageDto language in _dto.Languages)
                 {
                     <h5 class="fw-bold">@language.Name</h5>
                     <table class="table border text-center">
@@ -80,13 +80,11 @@
     [Inject]
     IDataService DataService { get; set; } = default!;
 
-    IEnumerable<string> _softSkills = [];
-    LanguageSkillsDto _languageSkills = new();
+    OtherSkillsDto _dto = new();
 
     protected override async Task OnInitializedAsync()
     {
-        _softSkills = await DataService.ParseJsonAsync<IEnumerable<string>>("soft-skills");
-        _languageSkills = await DataService.ParseJsonAsync<LanguageSkillsDto>("language-skills");
+        _dto = await DataService.ParseJsonAsync<Dtos.OtherSkillsDto>("other-skills");
     }
 
 }

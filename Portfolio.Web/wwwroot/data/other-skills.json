@@ -1,0 +1,24 @@
+﻿{
+  "SoftSkills": [
+    "<span class=\"fw-bold\">Effective communication</span>: articulate communicator fostering collaboration and understanding",
+    "<span class=\"fw-bold\">Self-awareness</span>: insightful and growth-oriented individual",
+    "<span class=\"fw-bold\">Patience</span>: calm and tolerant in challenging situations",
+    "<span class=\"fw-bold\">Open-mindedness</span>: embraces new ideas and perspectives",
+    "<span class=\"fw-bold\">Problem solving and critical thinking</span>: analytical thinker adept at finding solutions",
+    "<span class=\"fw-bold\">Time management</span>: efficient organizer and deadline-oriented",
+    "<span class=\"fw-bold\">Collaboration and teamwork</span>: engages well in group settings to achieve common goals",
+    "<span class=\"fw-bold\">Accountability</span>: takes ownership and delivers with reliability",
+    "<span class=\"fw-bold\">Commitment to lifelong learning</span>: eager for continuous growth and skill development"
+  ],
+  "MotherTongue": "Croatian",
+  "Languages": [
+    {
+      "Name": "English",
+      "Listening": "C2",
+      "Reading": "C2",
+      "SpokenProduction": "C1",
+      "SpokenInteraction": "B2",
+      "Writing": "C1"
+    }
+  ]
+}
