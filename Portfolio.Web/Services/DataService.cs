@@ -7,10 +7,10 @@ public sealed class DataService : IDataService
 {
     private const string Path = "wwwroot/data";
 
-    public async Task<AboutMeDto> GetAboutMeAsync()
+    public async Task<T> ParseJsonAsync<T>(string page)
     {
-        string json = await File.ReadAllTextAsync($"{Path}/aboutMe.json");
-
-        return JsonSerializer.Deserialize<AboutMeDto>(json)!;
+        string json = await File.ReadAllTextAsync($"{Path}/{page}.json");
+        
+        return JsonSerializer.Deserialize<T>(json)!;
     }
 }

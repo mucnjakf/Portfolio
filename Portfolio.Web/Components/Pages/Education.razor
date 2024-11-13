@@ -2,100 +2,62 @@
 
 <PageTitle>Eduction - Portfolio</PageTitle>
 
-<div class="row mb-4">
-    <div class="col">
-        <Card Padding="p-3" Title="Professional Master in Computer Engineering">
-            <Content>
-                <div class="mb-3">
-                    <span>SEPTEMBER 2022.</span> <i class="bi bi-arrow-right-short"></i> <span>CURRENT</span>
-                </div>
+@foreach (SchoolDto school in _dto.Schools)
+{
+    <div class="row mb-4">
+        <div class="col">
+            <Card Padding="p-3" Title="@school.Title">
+                <Content>
+                    <div class="mb-3">
+                        <span>@((MarkupString)school.Date)</span>
+                    </div>
 
-                <div class="mb-3">
-                    <span class="d-block">Algebra University</span>
-                    <span class="small text-muted">Gradiščanska ulica 24, 10 000 Zagreb, Croatia</span>
-                </div>
+                    <div class="mb-3">
+                        <span class="d-block">@school.SchoolName</span>
+                        <span class="small text-muted">@school.Location</span>
+                    </div>
 
-                <div class="lh-lg">
-                    <span class="d-block"><i class="bi bi-dot"></i> High expertise in C#, Java, Python and JavaScript</span>
-                    <span class="d-block"><i class="bi bi-dot"></i> Analysis and design of software solutions</span>
-                    <span class="d-block"><i class="bi bi-dot"></i> Advanced data analysis models</span>
-                    <span class="d-block"><i class="bi bi-dot"></i> Analysis and critical thinking</span>
-                </div>
-            </Content>
-        </Card>
+                    <div class="lh-lg">
+                        @foreach (string subject in school.Subjects)
+                        {
+                            <span class="d-block">
+                                <i class="bi bi-dot"></i> @subject
+                            </span>
+                        }
+                    </div>
+                </Content>
+            </Card>
+        </div>
     </div>
-</div>
-
-<div class="row mb-4">
-    <div class="col">
-        <Card Padding="p-3" Title="Bachelor in Software Engineering">
-            <Content>
-                <div class="mb-3">
-                    <span>OCTOBER 2017.</span> <i class="bi bi-arrow-right-short"></i> <span>MARCH 2022.</span>
-                </div>
-
-                <div class="mb-3">
-                    <span class="d-block">Algebra University</span>
-                    <span class="small text-muted">Gradiščanska ulica 24, 10 000 Zagreb, Croatia</span>
-                </div>
-
-                <div class="lh-lg">
-                    <span class="d-block"><i class="bi bi-dot"></i> Object-oriented programming</span>
-                    <span class="d-block"><i class="bi bi-dot"></i> Web technologies</span>
-                    <span class="d-block"><i class="bi bi-dot"></i> Mobile programming</span>
-                    <span class="d-block"><i class="bi bi-dot"></i> Computer networks</span>
-                    <span class="d-block"><i class="bi bi-dot"></i> Organization and management</span>
-                </div>
-            </Content>
-        </Card>
-    </div>
-</div>
-
-<div class="row mb-4">
-    <div class="col">
-        <Card Padding="p-3" Title="Technician for mechatronics">
-            <Content>
-                <div class="mb-3">
-                    <span>SEPTEMBER 2012.</span> <i class="bi bi-arrow-right-short"></i> <span>MAY 2016.</span>
-                </div>
-
-                <div class="mb-3">
-                    <span class="d-block">Fran Bošnjaković Mechanical Engineering School</span>
-                    <span class="small text-muted">Konavoska 2, 10 000 Zagreb, Croatia</span>
-                </div>
-
-
-                <div class="lh-lg">
-                    <span class="d-block"><i class="bi bi-dot"></i> Programming in C</span>
-                    <span class="d-block"><i class="bi bi-dot"></i> Microcontrollers</span>
-                    <span class="d-block"><i class="bi bi-dot"></i> AutoCAD</span>
-                </div>
-            </Content>
-        </Card>
-    </div>
-</div>
+}
 
 <div class="row mb-4">
     <div class="col">
         <Card Padding="p-3" Title="Certifications">
             <Content>
                 <div class="lh-lg">
-                    <span class="d-block fs-6">
-                        <i class="bi bi-dot"></i> <span class="text-muted">Microsoft Technology Associate:</span> Software Development 2019
-                    </span>
-                    <span class="d-block fs-6">
-                        <i class="bi bi-dot"></i> <span class="text-muted">Microsoft Technology Associate:</span> Database Fundamentals 2019
-                    </span>
-                    <span class="d-block fs-6">
-                        <i class="bi bi-dot"></i> <span class="text-muted">Microsoft Technology Associate:</span> Introduction to Programming Using HTML and CSS 2019
-                    </span>
+                    @foreach (string certificate in _dto.Certifications)
+                    {
+                        <span class="d-block fs-6">
+                            <i class="bi bi-dot"></i> @((MarkupString)certificate)
+                        </span>
+                    }
                 </div>
             </Content>
         </Card>
     </div>
 </div>
 
-
 @code {
+
+    [Inject]
+    IDataService DataService { get; set; } = default!;
+
+    EducationDto _dto = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _dto = await DataService.ParseJsonAsync<EducationDto>("education");
+    }
 
 }

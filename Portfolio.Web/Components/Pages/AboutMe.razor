@@ -109,7 +109,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        _dto = await DataService.GetAboutMeAsync();
+        _dto = await DataService.ParseJsonAsync<AboutMeDto>("aboutMe");
     }
 
 }

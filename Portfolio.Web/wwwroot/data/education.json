@@ -1,0 +1,45 @@
+﻿{
+  "Schools": [
+    {
+      "Title": "Professional Master in Computer Engineering",
+      "Date": "SEPTEMBER 2022. <i class=\"bi bi-arrow-right-short\"></i> CURRENT",
+      "SchoolName": "Algebra University",
+      "Location": "Gradiščanska ulica 24, 10 000 Zagreb, Croatia",
+      "Subjects": [
+        "High expertise in C#, Java, Python and JavaScript",
+        "Analysis and design of software solutions",
+        "Advanced data analysis models",
+        "Analysis and critical thinking"
+      ]
+    },
+    {
+      "Title": "Bachelor in Software Engineering",
+      "Date": "OCTOBER 2017. <i class=\"bi bi-arrow-right-short\"></i> MARCH 2022.",
+      "SchoolName": "Algebra University",
+      "Location": "Gradiščanska ulica 24, 10 000 Zagreb, Croatia",
+      "Subjects": [
+        "Object-oriented programming",
+        "Web technologies",
+        "Mobile programming",
+        "Computer networks",
+        "Organization and management"
+      ]
+    },
+    {
+      "Title": "Technician for mechatronics",
+      "Date": "SEPTEMBER 2012. <i class=\"bi bi-arrow-right-short\"></i> MAY 2016.",
+      "SchoolName": "Fran Bošnjaković Mechanical Engineering School",
+      "Location": "Konavoska 2, 10 000 Zagreb, Croatia",
+      "Subjects": [
+        "Programming in C",
+        "Microcontrollers",
+        "AutoCAD"
+      ]
+    }
+  ],
+  "Certifications": [
+    "<span class=\"text-muted\">Microsoft Technology Associate:</span> Software Development 2019",
+    "<span class=\"text-muted\">Microsoft Technology Associate:</span> Database Fundamentals 2019",
+    "<span class=\"text-muted\">Microsoft Technology Associate:</span> Introduction to Programming Using HTML and CSS 2019"
+  ]
+}
