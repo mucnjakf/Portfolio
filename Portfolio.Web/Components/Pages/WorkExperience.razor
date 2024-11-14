@@ -14,10 +14,8 @@
                         <div>
                             @for (int i = 0; i < workExperience.Technologies.Count; i++)
                             {
-                                string technology = workExperience.Technologies[i];
-
                                 <span class="badge text-bg-primary @(i < workExperience.Technologies.Count - 1 ? "me-2" : string.Empty)">
-                                    @technology
+                                    @workExperience.Technologies[i]
                                 </span>
                             }
                         </div>
@@ -42,9 +40,9 @@
                         ProjectDto project = workExperience.Projects[i];
                         bool isNotLastProject = i < workExperience.Projects.Count - 1;
 
-                        <div class="@(isNotLastProject ? "mb-4" : string.Empty)" style="width: 50rem;">
+                        <div class="@(isNotLastProject ? "mb-4" : string.Empty)" style="width: 50rem; text-align: justify;">
                             <span class="text-decoration-underline d-block">@project.Name</span>
-                            <p class="mt-2 mb-2">
+                            <p class="mt-2 mb-2 lh-lg">
                                 @((MarkupString)project.Description)
                             </p>
 
