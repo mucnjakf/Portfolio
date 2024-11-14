@@ -1,0 +1,55 @@
+﻿<div class="modal fade" id="modalWorkExperience-@Id" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">
+                    @Title
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <ul class="list-group list-group-flush mb-4" style="text-align: justify">
+                    <li class="list-group-item border-0 ps-0 lh-lg">
+                        @((MarkupString)Description)
+                    </li>
+
+                    @foreach (string work in MyWork)
+                    {
+                        <li class="list-group-item border-0 ps-0 lh-lg">
+                            @((MarkupString)work)
+                        </li>
+                    }
+                </ul>
+
+                <hr/>
+
+                <div>
+                    @foreach (string tech in TechStack)
+                    {
+                        <span class="badge text-bg-primary fs-6 me-2 mb-3">@tech</span>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public Guid Id { get; set; }
+
+    [Parameter]
+    public string Title { get; set; } = default!;
+
+    [Parameter]
+    public string Description { get; set; } = default!;
+
+    [Parameter]
+    public IEnumerable<string> MyWork { get; set; } = default!;
+
+    [Parameter]
+    public IEnumerable<string> TechStack { get; set; } = default!;
+
+}

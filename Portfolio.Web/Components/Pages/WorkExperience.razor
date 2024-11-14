@@ -2,6 +2,93 @@
 
 <PageTitle>Work experience - Portfolio</PageTitle>
 
+@foreach (WorkExperienceDto workExperience in _dto)
+{
+    <div class="row mb-4">
+        <div class="col">
+            <Card Padding="p-3">
+                <Content>
+                    <div class="d-flex justify-content-between">
+                        <h3>@workExperience.Position</h3>
+
+                        <div>
+                            @for (int i = 0; i < workExperience.Technologies.Count; i++)
+                            {
+                                string technology = workExperience.Technologies[i];
+
+                                <span class="badge text-bg-primary @(i < workExperience.Technologies.Count - 1 ? "me-2" : string.Empty)">
+                                    @technology
+                                </span>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <span>@((MarkupString)workExperience.Date)</span>
+                    </div>
+
+                    <div class="mb-4">
+                        <span class="d-block">@workExperience.Company</span>
+                        <span class="small text-muted">@workExperience.CompanyLocation</span>
+                    </div>
+
+                    @if (!string.IsNullOrWhiteSpace(workExperience.Projects.Select(x => x.Name).First()))
+                    {
+                        <hr/>
+                    }
+
+                    @for (int i = 0; i < workExperience.Projects.Count; i++)
+                    {
+                        ProjectDto project = workExperience.Projects[i];
+                        bool isNotLastProject = i < workExperience.Projects.Count - 1;
+
+                        <div class="@(isNotLastProject ? "mb-4" : string.Empty)" style="width: 50rem;">
+                            <span class="text-decoration-underline d-block">@project.Name</span>
+                            <p class="mt-2 mb-2">
+                                @((MarkupString)project.Description)
+                            </p>
+
+                            @if (!string.IsNullOrWhiteSpace(project.Name))
+                            {
+                                <button
+                                    type="button"
+                                    class="btn btn-link p-0 text-decoration-none"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#modalWorkExperience-@project.Id">
+
+                                    <span class="text-muted small">See more</span>
+                                </button>
+
+                                <WorkExperienceModal
+                                    Id="@project.Id"
+                                    Title="@project.Name"
+                                    Description="@project.Description"
+                                    MyWork="@project.MyWork"
+                                    TechStack="@project.TechStack"/>
+                            }
+                        </div>
+
+                        if (isNotLastProject)
+                        {
+                            <hr/>
+                        }
+                    }
+                </Content>
+            </Card>
+        </div>
+    </div>
+}
+
 @code {
-    
+
+    [Inject]
+    IDataService DataService { get; set; } = default!;
+
+    IEnumerable<WorkExperienceDto> _dto = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        _dto = await DataService.ParseJsonAsync<IEnumerable<WorkExperienceDto>>("work-experience");
+    }
+
 }

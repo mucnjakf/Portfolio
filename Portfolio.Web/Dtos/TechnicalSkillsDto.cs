@@ -12,3 +12,12 @@ public sealed class TechnicalSkillsDto
     
     public IEnumerable<string> Other { get; set; } = [];
 }
+
+public sealed class SkillDto
+{
+    public string Src { get; set; } = default!;
+
+    public string Alt { get; set; } = default!;
+
+    public string Text { get; set; } = default!;
+}
