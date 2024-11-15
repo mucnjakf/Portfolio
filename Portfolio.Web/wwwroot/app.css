@@ -3,6 +3,11 @@
     font-family: Inter, sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
 .nav-link {
     color: #dee2e6 !important;
 }
