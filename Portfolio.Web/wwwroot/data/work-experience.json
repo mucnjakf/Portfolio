@@ -3,25 +3,11 @@
     "Position": ".NET Engineer",
     "Date": "MAY 2022. <i class=\"bi bi-arrow-right-short\"></i> CURRENT",
     "Company": "Infinum",
-    "CompanyLocation": "Strojarska cesta 22, 10 000 Zagreb, Croatia",
-    "Technologies": [
-      "ASP.NET Core",
-      "Web API",
-      "MVC",
-      "EF Core",
-      "Identity",
-      "Azure AD B2C",
-      "Azure",
-      "PostgreSQL"
-    ],
+    "CompanyLocation": "Strojarska cesta 22, Zagreb, Croatia",
     "Projects": [
       {
         "Name": "Creator-fan social media platform",
         "Description": "<i class=\"bi bi-dot\"></i> Contributed to the design, development, and testing of a social media platform aimed at transforming the dynamics between content creators and their fan base by implementing exclusive content timelines and chat features.",
-        "MyWork": [
-          "<i class=\"bi bi-dot\"></i> Implemented two dashboards using ASP.NET Core MVC, one for administrators to manage users, content and payments, and another for agents responsible for managing content creators.",
-          "<i class=\"bi bi-dot\"></i> Implemented REST Web API with ASP.NET Core used by mobile-first web app, enabling content creators to create engaging content and interact with their fans."
-        ],
         "TechStack": [
           "ASP.NET Core",
           "Web API",
@@ -40,9 +26,6 @@
       {
         "Name": "Sport events platform",
         "Description": "<i class=\"bi bi-dot\"></i> Contributed to the design, development, and testing of a sports event platform by enabling users to create sports events, join ongoing events, and track their progress.",
-        "MyWork": [
-          "<i class=\"bi bi-dot\"></i> Implemented REST Web API with ASP.NET Core used by mobile-first web app, enabling users to create sport events, join them and track the leaderboards."
-        ],
         "TechStack": [
           "ASP.NET Core",
           "Web API",
@@ -57,10 +40,6 @@
       {
         "Name": "Blood donation platform",
         "Description": "<i class=\"bi bi-dot\"></i> Contributed to the design, development, and testing of a blood donation platform focused on accessibility and efficiency in blood donation processes where users can track their donations, schedule donations and locate nearby donation centers.",
-        "MyWork": [
-          "<i class=\"bi bi-dot\"></i> Implemented admin dashboard using ASP.NET Core Blazor WebAssembly for administrators managing users, tracking donations and approving blood donation requests.",
-          "<i class=\"bi bi-dot\"></i> Implemented REST Web API with ASP.NET Core used by admin dashboard and mobile app for users to monitor their donations, arrange donation appointments and locate nearby donation centers."
-        ],
         "TechStack": [
           "ASP.NET Core",
           "Web API",
@@ -78,10 +57,6 @@
       {
         "Name": "Installation management platform",
         "Description": "<i class=\"bi bi-dot\"></i> Contributed to the design, development, and testing of a comprehensive platform aimed at facilitating connections between manufacturers and retailers with a wide variety of installation resources (i.e. retail store displays).",
-        "MyWork": [
-          "<i class=\"bi bi-dot\"></i> Implemented admin dashboard using ASP.NET Core MVC for administrators to manage projects, track work orders and create installer forms.",
-          "<i class=\"bi bi-dot\"></i> Implemented REST Web API with ASP.NET Core utilized by mobile app for installers, enhancing communication and coordination during work order execution."
-        ],
         "TechStack": [
           "ASP.NET Core",
           "Web API",
@@ -102,25 +77,11 @@
     "Position": "Full Stack Developer",
     "Date": "FEBRUARY 2021. <i class=\"bi bi-arrow-right-short\"></i> MAY 2022.",
     "Company": "Enterwell",
-    "CompanyLocation": "Koranska ulica 2, 10 000 Zagreb, Croatia",
-    "Technologies": [
-      "ASP.NET Framework",
-      "Web API",
-      "MVC",
-      "WPF",
-      "EF",
-      "Identity",
-      "MS SQL Server",
-      "React.js"
-    ],
+    "CompanyLocation": "Koranska ulica 2, Zagreb, Croatia",
     "Projects": [
       {
         "Name": "Technical security platform",
         "Description": "<i class=\"bi bi-dot\"></i> Contributed to the design, development, and testing of a technical security platform integrating various IoT devices like cameras, fire alarms and access control.",
-        "MyWork": [
-          "<i class=\"bi bi-dot\"></i> Implemented web dashboard using ASP.NET Framework 4.8 Web API and React.js for managing different devices and controlling the security platform.",
-          "<i class=\"bi bi-dot\"></i> Implemented desktop dashboard using ASP.NET Framework 4.8 WPF for managing cameras and real-time video streaming."
-        ],
         "TechStack": [
           "ASP.NET Framework 4.8",
           "Web API",
@@ -138,9 +99,6 @@
       {
         "Name": "Conference device management platform",
         "Description": "<i class=\"bi bi-dot\"></i> Contributed to the design, development, and testing of a conference device management platform focusing on managing conferencing devices such as microphones and speakers.",
-        "MyWork": [
-          "<i class=\"bi bi-dot\"></i> Implemented desktop application for device monitoring and connecting to the web app using ASP.NET Core WPF."
-        ],
         "TechStack": [
           "ASP.NET Core",
           "WPF",
@@ -155,10 +113,10 @@
     "Position": "QA Associate",
     "Date": "FEBRUARY 2020. <i class=\"bi bi-arrow-right-short\"></i> DECEMBER 2020.",
     "Company": "Nanobit",
-    "CompanyLocation": "Radnička cesta 37b, 10 000 Zagreb, Croatia",
+    "CompanyLocation": "Radnička cesta 37b, Zagreb, Croatia",
     "Projects": [
       {
-        "Name": "",
+        "Name": null,
         "Description": "<i class=\"bi bi-dot\"></i> As a QA Associate at Nanobit, I was responsible for conducting feature software testing, meticulously searching for bugs, and accurately reproducing reported issues. I excelled in writing detailed bug reports, providing comprehensive information to aid in the resolution process. Additionally, I played a crucial role in giving feedback on software functionalities, contributing to the overall improvement of product quality."
       }
     ]
@@ -167,10 +125,10 @@
     "Position": "QA Associate",
     "Date": "MAY 2019. <i class=\"bi bi-arrow-right-short\"></i> SEPTEMBER 2019.",
     "Company": "UniqCast",
-    "CompanyLocation": "Ulica Florijana Andrašeca 18a, 10 000 Zagreb, Croatia",
+    "CompanyLocation": "Ulica Florijana Andrašeca 18a, Zagreb, Croatia",
     "Projects": [
       {
-        "Name": "",
+        "Name": null,
         "Description": "<i class=\"bi bi-dot\"></i> As a QA Associate at UniqCast, I conducted black box testing, both manual and automatic, ensuring the quality and functionality of software products. Additionally, I provided customer support, addressing queries and issues to enhance user experience. I also engaged in some QML programming, contributing directly to software development. Furthermore, I played a role in writing technical documentation, providing valuable resources for users and internal teams."
       }
     ]

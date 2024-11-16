@@ -6,24 +6,29 @@
 {
     <div class="row mb-4">
         <div class="col">
-            <Card Padding="p-3" Title="@school.Title">
+            <Card Padding="p-3">
                 <Content>
-                    <div class="mb-3">
-                        <span>@((MarkupString)school.Date)</span>
-                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h3>@school.Title</h3>
 
-                    <div class="mb-3">
-                        <span class="d-block">@school.SchoolName</span>
-                        <span class="small text-muted">@school.Location</span>
-                    </div>
+                            <div class="mb-3">
+                                <span>@((MarkupString)school.Date)</span>
+                            </div>
 
-                    <div class="lh-lg">
-                        @foreach (string subject in school.Subjects)
-                        {
-                            <span class="d-block">
-                                <i class="bi bi-dot"></i> @subject
-                            </span>
-                        }
+                            <span class="d-block">@school.SchoolName</span>
+                            <span class="small text-muted">@school.Location</span>
+                        </div>
+
+                        <div class="col lh-lg">
+                            <span class="fw-bold">Main courses:</span>
+                            @foreach (string subject in school.Subjects)
+                            {
+                                <span class="d-block">
+                                    <i class="bi bi-dot"></i> @subject
+                                </span>
+                            }
+                        </div>
                     </div>
                 </Content>
             </Card>

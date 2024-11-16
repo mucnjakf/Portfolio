@@ -3,8 +3,8 @@
 <PageTitle>Other skills - Portfolio</PageTitle>
 
 <div class="row mb-4">
-    <div class="col">
-        <Card Padding="p-3" Title="Soft skills">
+    <div class="col-8">
+        <Card Padding="p-3" Title="Soft skills" Height="h-100">
             <Content>
                 <ul class="list-group list-group-flush">
                     @foreach (string skill in _dto.SoftSkills)
@@ -18,59 +18,53 @@
             </Content>
         </Card>
     </div>
-</div>
 
-<div class="row">
-    <div class="col">
-        <Card Padding="p-3" Title="Language skills">
+    <div class="col-4">
+        <Card Padding="p-3" Title="Language skills" Height="h-100">
             <Content>
-                <h5 class="my-4">
+                <h5 class="mt-4">
                     <span class="text-muted small">Mother tongue:</span> <span class="fw-bold">@_dto.MotherTongue</span>
                 </h5>
 
+                <hr/>
+
                 @foreach (LanguageDto language in _dto.Languages)
                 {
-                    <h5 class="fw-bold">@language.Name</h5>
-                    <hr class="mb-0" />
-                    <table class="table text-center">
-                        <caption class="small text-muted">
-                            Levels: A1 and A2 - Basic user; B1 and B2 – Independent user; C1 and C2 – Proficient user
-                        </caption>
-                        <thead>
-                            <tr>
-                                <th class="small text-muted">
-                                    <i class="bi bi-ear me-1"></i>
-                                    Listening
-                                </th>
-                                <th class="small text-muted">
-                                    <i class="bi bi-book me-1"></i>
-                                    Reading
-                                </th>
-                                <th class="small text-muted">
-                                    <i class="bi bi-megaphone me-1"></i>
-                                    Spoken production
-                                </th>
-                                <th class="small text-muted">
-                                    <i class="bi bi-people me-1"></i>
-                                    Spoken interaction
-                                </th>
-                                <th class="small text-muted">
-                                    <i class="bi bi-pencil-square me-1"></i>
-                                    Writing
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="fw-bold">@language.Listening</td>
-                                <td class="fw-bold">@language.Reading</td>
-                                <td class="fw-bold">@language.SpokenProduction</td>
-                                <td class="fw-bold">@language.SpokenInteraction</td>
-                                <td class="fw-bold">@language.Writing</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <h5 class="fw-bold mb-3">@language.Name</h5>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <LabelText Icon="bi-ear" Label="Listening" Text="@language.Listening"/>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <LabelText Icon="bi-book" Label="Reading" Text="@language.Reading"/>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <LabelText Icon="bi-megaphone" Label="Spoken production" Text="@language.SpokenProduction"/>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <LabelText Icon="bi-people" Label="Spoken interaction" Text="@language.SpokenInteraction"/>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <LabelText Icon="bi-pencil-square" Label="Writing" Text="@language.Writing"/>
+                        </div>
+                    </div>
                 }
+
+                <div class="small text-muted">
+                    <p class="mb-0">Levels:</p>
+                    <p class="mb-0">A1 & A2 - Basic</p>
+                    <p class="mb-0">B1 & B2 - Independent</p>
+                    <p class="mb-0">C1 & C2 - Proficient</p>
+                </div>
             </Content>
         </Card>
     </div>

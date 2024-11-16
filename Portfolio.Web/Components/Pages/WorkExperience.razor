@@ -6,67 +6,42 @@
 {
     <div class="row mb-4">
         <div class="col">
-            <Card Padding="p-3">
+            <Card Padding="p-3" Title="@workExperience.Position">
                 <Content>
-                    <div class="d-flex justify-content-between">
-                        <h3>@workExperience.Position</h3>
-
-                        <div>
-                            @for (int i = 0; i < workExperience.Technologies.Count; i++)
-                            {
-                                <span class="badge text-bg-primary @(i < workExperience.Technologies.Count - 1 ? "me-2" : string.Empty)">
-                                    @workExperience.Technologies[i]
-                                </span>
-                            }
-                        </div>
-                    </div>
-
                     <div class="mb-3">
                         <span>@((MarkupString)workExperience.Date)</span>
                     </div>
 
-                    <div class="mb-4">
-                        <span class="d-block">@workExperience.Company</span>
-                        <span class="small text-muted">@workExperience.CompanyLocation</span>
-                    </div>
+                    <span class="d-block">@workExperience.Company</span>
+                    <span class="small text-muted">@workExperience.CompanyLocation</span>
 
-                    @if (!string.IsNullOrWhiteSpace(workExperience.Projects.Select(x => x.Name).First()))
-                    {
-                        <hr/>
-                    }
+                    <hr/>
 
                     @for (int i = 0; i < workExperience.Projects.Count; i++)
                     {
                         ProjectDto project = workExperience.Projects[i];
-                        bool isNotLastProject = i < workExperience.Projects.Count - 1;
 
-                        <div class="@(isNotLastProject ? "mb-4" : string.Empty)" style="width: 50rem; text-align: justify;">
-                            <span class="text-decoration-underline d-block">@project.Name</span>
-                            <p class="mt-2 mb-2 lh-lg">
-                                @((MarkupString)project.Description)
-                            </p>
+                        <div class="row" style="text-align: justify">
+                            <div class="col">
+                                <span class="fw-bold d-block">@project.Name</span>
 
-                            @if (!string.IsNullOrWhiteSpace(project.Name))
+                                <p class="mb-0 lh-lg">
+                                    @((MarkupString)project.Description)
+                                </p>
+                            </div>
+
+                            @if (!string.IsNullOrWhiteSpace(workExperience.Projects.Select(x => x.Name).First()))
                             {
-                                <button
-                                    type="button"
-                                    class="btn btn-link p-0 text-decoration-none"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#modalWorkExperience-@project.Id">
-
-                                    <span class="text-muted small">See more</span>
-                                </button>
-
-                                <WorkExperienceModal
-                                    Id="@project.Id"
-                                    Title="@project.Name"
-                                    Description="@project.Description"
-                                    MyWork="@project.MyWork"
-                                    TechStack="@project.TechStack"/>
+                                <div class="col">
+                                    @foreach (string tech in project.TechStack)
+                                    {
+                                        <span class="badge text-bg-primary fs-6 me-2 mb-3">@tech</span>
+                                    }
+                                </div>
                             }
                         </div>
 
-                        if (isNotLastProject)
+                        if (i < workExperience.Projects.Count - 1)
                         {
                             <hr/>
                         }

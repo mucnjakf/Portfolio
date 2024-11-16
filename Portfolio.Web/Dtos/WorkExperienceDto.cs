@@ -10,8 +10,6 @@ public sealed class WorkExperienceDto
 
     public string CompanyLocation { get; set; } = default!;
 
-    public IList<string> Technologies { get; set; } = [];
-
     public IList<ProjectDto> Projects { get; set; } = [];
 }
 
@@ -22,8 +20,6 @@ public sealed class ProjectDto
     public string Name { get; set; } = default!;
 
     public string Description { get; set; } = default!;
-
-    public IEnumerable<string> MyWork { get; set; } = [];
 
     public IEnumerable<string> TechStack { get; set; } = [];
 }

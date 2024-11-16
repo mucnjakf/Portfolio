@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <_ContentIncludedByDefault Remove="Components\Layout\MainLayout.razor" />
+      <_ContentIncludedByDefault Remove="Components\Modals\WorkExperienceModal.razor" />
     </ItemGroup>
 
 </Project>
