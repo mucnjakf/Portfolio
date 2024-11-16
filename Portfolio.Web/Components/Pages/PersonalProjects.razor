@@ -2,10 +2,66 @@
 
 <PageTitle>Personal projects - Portfolio</PageTitle>
 
+@for (int i = 0; i < _dto.Count; i += 3)
+{
+    <div class="row mb-4">
+        @for (int j = i; j < i + 3 && j < _dto.Count; j++)
+        {
+            PersonalProjectsDto project = _dto[j];
 
+            <div class="col">
+                <Card Padding="p-3" Height="h-100">
+                    <Content>
+                        <div class="d-flex flex-column justify-content-between h-100">
+                            <div>
+                                <div class="mb-3 d-flex align-items-center justify-content-between">
+                                    <h3 class="mb-0">@project.Name</h3>
+                                    <img src="@project.Image" alt="@project.Name logo" style="width: 2rem; height: 2rem;"/>
+                                </div>
 
+                                <hr/>
 
+                                <p class="lh-lg m-0" style="text-align: justify">
+                                    @project.Description
+                                </p>
+                            </div>
+
+                            <div>
+                                <hr/>
+
+                                <div>
+                                    @foreach (string tech in project.TechStack)
+                                    {
+                                        <span class="badge text-bg-primary me-2 my-2">@tech</span>
+                                    }
+                                </div>
+
+                                <hr/>
+
+                                <a class="text-decoration-none text-muted d-flex justify-content-between" href="@project.Link"
+                                   target="_blank">
+                                    View on GitHub
+                                    <img src="img/skills/github.svg" alt="GitHub logo" style="width: 1.5rem; height: 1.5rem;"/>
+                                </a>
+                            </div>
+                        </div>
+                    </Content>
+                </Card>
+            </div>
+        }
+    </div>
+}
 
 @code {
+
+    [Inject]
+    IDataService DataService { get; set; } = default!;
+
+    IList<PersonalProjectsDto> _dto = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        _dto = await DataService.ParseJsonAsync<IList<PersonalProjectsDto>>("personal-projects");
+    }
 
 }
