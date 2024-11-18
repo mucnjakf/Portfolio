@@ -259,7 +259,6 @@
     "Description": "NASA is a mobile app that allows users to log experiences with stunning space imagery provided by the National Aeronautics and Space Administration for an inspiring experience.",
     "TechStack": [
       "Kotlin",
-      "AndroidX",
       "Retrofit 2",
       "Gson",
       "Picasso",
