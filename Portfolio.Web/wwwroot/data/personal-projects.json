@@ -1,10 +1,12 @@
 ﻿[
   {
     "Name": "Portfolio",
-    "Image": "",
-    "Description": "",
+    "Image": "img/personal-projects/portfolio.svg",
+    "Description": "Portfolio is a personal website designed to present my professional journey, offering a detailed view of my work experience, educational achievements, technical skills, and personal projects.",
     "TechStack": [
-      ""
+      ".NET 8",
+      "Blazor Server",
+      "Bootstrap"
     ],
     "Link": "https://github.com/mucnjakf/Portfolio"
   },

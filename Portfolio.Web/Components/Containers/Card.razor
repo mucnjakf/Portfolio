@@ -2,8 +2,12 @@
     <div class="card-body">
         @if (Title is not null)
         {
-            <h3>@Title</h3>
+            <h3 class="d-flex justify-content-between">
+                @Title
+                <i class="bi bi-@TitleIcon me-1"></i>
+            </h3>
         }
+
         @Content
     </div>
 </div>
@@ -12,6 +16,9 @@
 
     [Parameter]
     public string? Title { get; set; }
+
+    [Parameter]
+    public string? TitleIcon { get; set; }
 
     [Parameter]
     public RenderFragment Content { get; set; } = default!;

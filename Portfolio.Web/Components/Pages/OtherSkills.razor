@@ -4,8 +4,10 @@
 
 <div class="row mb-4">
     <div class="col-8">
-        <Card Padding="p-3" Title="Soft skills" Height="h-100">
+        <Card Padding="p-3" Title="Soft skills" TitleIcon="person-hearts" Height="h-100">
             <Content>
+                <hr/>
+
                 <ul class="list-group list-group-flush">
                     @foreach (string skill in _dto.SoftSkills)
                     {
@@ -20,13 +22,13 @@
     </div>
 
     <div class="col-4">
-        <Card Padding="p-3" Title="Language skills" Height="h-100">
+        <Card Padding="p-3" Title="Language skills" TitleIcon="translate" Height="h-100">
             <Content>
-                <h5 class="mt-4">
+                <hr/>
+
+                <h5 class="mb-5">
                     <span class="text-muted small">Mother tongue:</span> <span class="fw-bold">@_dto.MotherTongue</span>
                 </h5>
-
-                <hr/>
 
                 @foreach (LanguageDto language in _dto.Languages)
                 {
@@ -59,11 +61,13 @@
                     </div>
                 }
 
+                <hr/>
+
                 <div class="small text-muted">
                     <p class="mb-0">Levels:</p>
-                    <p class="mb-0">A1 & A2 - Basic</p>
-                    <p class="mb-0">B1 & B2 - Independent</p>
-                    <p class="mb-0">C1 & C2 - Proficient</p>
+                    <p class="mb-0"><i class="bi bi-dot"></i> A1 & A2 - Basic</p>
+                    <p class="mb-0"><i class="bi bi-dot"></i> B1 & B2 - Independent</p>
+                    <p class="mb-0"><i class="bi bi-dot"></i> C1 & C2 - Proficient</p>
                 </div>
             </Content>
         </Card>

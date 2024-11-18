@@ -16,6 +16,8 @@ public sealed class SchoolDto
     public string SchoolName { get; set; } = default!;
 
     public string Location { get; set; } = default!;
+    
+    public string Logo { get; set; } = default!;
 
     public List<string> Subjects { get; set; } = [];
 }

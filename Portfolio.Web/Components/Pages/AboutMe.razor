@@ -6,7 +6,7 @@
     <Content>
         <div class="row">
             <div class="col-2 ms-5 me-4">
-                <img src="@_dto.ProfileImage" alt="Profile image" class="img-fluid rounded-circle"
+                <img src="@_dto.ProfileImage" alt="Profile image" class="img-fluid rounded-circle border"
                      style="box-shadow: .1rem .1rem 1rem rgba(0, 0, 0, .3)"/>
             </div>
 
@@ -21,8 +21,10 @@
 
 <div class="row">
     <div class="col">
-        <Card Title="Personal information" Padding="p-3" Height="h-100">
+        <Card Title="Personal information" TitleIcon="info-circle" Padding="p-3" Height="h-100">
             <Content>
+                <hr/>
+
                 <div class="row my-3">
                     <div class="col">
                         <LabelText
@@ -92,8 +94,10 @@
     </div>
 
     <div class="col">
-        <Card Title="My story" Padding="p-3" Height="h-100">
+        <Card Title="My story" TitleIcon="file-earmark-person" Padding="p-3" Height="h-100">
             <Content>
+                <hr/>
+
                 @((MarkupString)_dto.MyStory)
             </Content>
         </Card>

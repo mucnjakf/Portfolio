@@ -10,12 +10,24 @@
                 <Content>
                     <div class="row">
                         <div class="col">
-                            <h3>@school.Title</h3>
+                            <div class="row">
+                                <div class="col">
+                                    <h3 class="m-0">@school.Title</h3>
+                                    <span>@((MarkupString)school.Date)</span>
+                                </div>
 
-                            <div class="mb-3">
-                                <span>@((MarkupString)school.Date)</span>
+                                <div class="col text-end">
+                                    <img src="img/companies/@school.Logo" alt="@school.SchoolName logo"
+                                         style="width: @(school.SchoolName is "Algebra University" ? "3.8" : "6.2")rem;"/>
+                                </div>
                             </div>
+                        </div>
+                    </div>
 
+                    <hr/>
+
+                    <div class="row">
+                        <div class="col">
                             <span class="d-block">@school.SchoolName</span>
                             <span class="small text-muted">@school.Location</span>
                         </div>

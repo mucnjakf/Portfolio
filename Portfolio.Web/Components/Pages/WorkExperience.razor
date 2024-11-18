@@ -6,8 +6,15 @@
 {
     <div class="row mb-4">
         <div class="col">
-            <Card Padding="p-3" Title="@workExperience.Position">
+            <Card Padding="p-3">
                 <Content>
+                    <div class="d-flex justify-content-between">
+                        <h3>@workExperience.Position</h3>
+
+                        <img src="img/companies/@workExperience.Logo" alt="@workExperience.Company logo"
+                             style="@(workExperience.Company is "Infinum" ? "width: 3rem; height: 1.5rem;" : "width: 2.6rem;")"/>
+                    </div>
+
                     <div class="mb-3">
                         <span>@((MarkupString)workExperience.Date)</span>
                     </div>

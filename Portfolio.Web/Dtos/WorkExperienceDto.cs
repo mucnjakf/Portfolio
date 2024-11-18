@@ -10,6 +10,8 @@ public sealed class WorkExperienceDto
 
     public string CompanyLocation { get; set; } = default!;
 
+    public string Logo { get; set; } = default!;
+
     public IList<ProjectDto> Projects { get; set; } = [];
 }
 

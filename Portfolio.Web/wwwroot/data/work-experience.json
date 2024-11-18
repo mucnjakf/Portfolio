@@ -4,6 +4,7 @@
     "Date": "MAY 2022. <i class=\"bi bi-arrow-right-short\"></i> CURRENT",
     "Company": "Infinum",
     "CompanyLocation": "Strojarska cesta 22, Zagreb, Croatia",
+    "Logo": "infinum.png",
     "Projects": [
       {
         "Name": "Creator-fan social media platform",
@@ -78,6 +79,7 @@
     "Date": "FEBRUARY 2021. <i class=\"bi bi-arrow-right-short\"></i> MAY 2022.",
     "Company": "Enterwell",
     "CompanyLocation": "Koranska ulica 2, Zagreb, Croatia",
+    "Logo": "enterwell.png",
     "Projects": [
       {
         "Name": "Technical security platform",
@@ -114,6 +116,7 @@
     "Date": "FEBRUARY 2020. <i class=\"bi bi-arrow-right-short\"></i> DECEMBER 2020.",
     "Company": "Nanobit",
     "CompanyLocation": "Radnička cesta 37b, Zagreb, Croatia",
+    "Logo": "nanobit.png",
     "Projects": [
       {
         "Name": null,
@@ -126,6 +129,7 @@
     "Date": "MAY 2019. <i class=\"bi bi-arrow-right-short\"></i> SEPTEMBER 2019.",
     "Company": "UniqCast",
     "CompanyLocation": "Ulica Florijana Andrašeca 18a, Zagreb, Croatia",
+    "Logo": "uniqcast.png",
     "Projects": [
       {
         "Name": null,
