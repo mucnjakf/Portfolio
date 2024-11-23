@@ -9,27 +9,22 @@
             <Card Padding="p-3">
                 <Content>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-7">
                             <h3>@school.Title</h3>
                             <span>@((MarkupString)school.Date)</span>
+
+                            <div class="d-flex mt-4 align-items-center">
+                                <img src="img/companies/@school.Logo" alt="@school.SchoolName logo" class="me-3"
+                                     style="width: @(school.SchoolName is "Algebra University" ? "2" : "3.2")rem;"/>
+
+                                <div>
+                                    <span class="d-block">@school.SchoolName</span>
+                                    <span class="small text-muted">@school.Location</span>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="col text-end">
-                            <img src="img/companies/@school.Logo" alt="@school.SchoolName logo"
-                                 style="width: @(school.SchoolName is "Algebra University" ? "3.3" : "5.3")rem;"/>
-                        </div>
-                    </div>
-
-                    <hr/>
-
-                    <div class="row">
-                        <div class="col">
-                            <span class="d-block">@school.SchoolName</span>
-                            <span class="small text-muted">@school.Location</span>
-                        </div>
-
-                        <div class="col lh-lg">
-                            <span class="fw-bold">Main courses:</span>
+                        <div class="col-5 lh-lg">
                             @foreach (string subject in school.Subjects)
                             {
                                 <span class="d-block">
