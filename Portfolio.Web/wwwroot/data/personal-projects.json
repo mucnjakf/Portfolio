@@ -21,6 +21,7 @@
       "Web API",
       "MediatR",
       "EF Core",
+      "xUnit",
       "PostgreSQL"
     ],
     "Link": "https://github.com/mucnjakf/CashFlow"
