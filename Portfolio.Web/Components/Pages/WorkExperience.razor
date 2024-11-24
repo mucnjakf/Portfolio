@@ -8,16 +8,20 @@
         <div class="col">
             <Card Padding="p-3">
                 <Content>
-                    <h3>@workExperience.Position</h3>
-                    <span>@((MarkupString)workExperience.Date)</span>
+                    <div class="row">
+                        <div class="col">
+                            <h3>@workExperience.Position</h3>
+                            <span>@((MarkupString)workExperience.Date)</span>
+                        </div>
 
-                    <div class="d-flex mt-4 align-items-center">
-                        <img src="img/companies/@workExperience.Logo" alt="@workExperience.Company logo" class="me-3"
-                             style="@(workExperience.Company is "Infinum" ? "width: 2rem; height: 1rem;" : "width: 2rem;")"/>
+                        <div class="col d-flex align-items-center">
+                            <img src="img/companies/@workExperience.Logo" alt="@workExperience.Company logo" class="me-3"
+                                 style="@(workExperience.Company is "Infinum" ? "width: 3rem; height: 1.5rem;" : "width: 2.5rem;")"/>
 
-                        <div>
-                            <span class="d-block">@workExperience.Company</span>
-                            <span class="small text-muted">@workExperience.CompanyLocation</span>
+                            <div>
+                                <span class="d-block fs-5">@workExperience.Company</span>
+                                <span class="small text-muted">@workExperience.CompanyLocation</span>
+                            </div>
                         </div>
                     </div>
 

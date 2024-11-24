@@ -5,7 +5,8 @@
       "Date": "SEPTEMBER 2022. <i class=\"bi bi-arrow-right-short\"></i> CURRENT",
       "SchoolName": "Algebra University",
       "Location": "Gradiščanska ulica 24, Zagreb, Croatia",
-      "Logo": "algebra.png",
+      "Logo": "algebra.png",      
+      "Description": "<i class=\"bi bi-dot\"></i> I am currently pursuing a Professional Master’s degree in Computer Engineering at Algebra University in Zagreb. The program focuses on advanced programming expertise in C#, Java, Python, and JavaScript, alongside software design, DevOps, and data analysis. It also hones critical thinking skills, preparing me to tackle complex challenges in computer engineering.",
       "Subjects": [
         "High expertise in C#, Java, Python and JavaScript",
         "Analysis and design of software solutions",
@@ -20,6 +21,7 @@
       "SchoolName": "Algebra University",
       "Location": "Gradiščanska ulica 24, Zagreb, Croatia",
       "Logo": "algebra.png",
+      "Description": "<i class=\"bi bi-dot\"></i> I earned my Bachelor’s degree in Software Engineering from Algebra University in Zagreb in March 2022. The program covered key areas such as object-oriented programming, web and mobile application development, computer networking, and project management, equipping me with both technical expertise and organizational skills for the software industry.",
       "Subjects": [
         "Object-oriented programming",
         "Web technologies",
@@ -34,6 +36,7 @@
       "SchoolName": "Fran Bošnjaković Mechanical Engineering School",
       "Location": "Konavoska 2, Zagreb, Croatia",
       "Logo": "stsfb.png",
+      "Description": "<i class=\"bi bi-dot\"></i> Graduated in May 2016 as a Technician for mechatronics from Fran Bošnjaković Mechanical Engineering School in Zagreb. The program emphasized programming in C, microcontroller systems, and AutoCAD design, providing a strong technical foundation and hands-on experience in engineering concepts.",
       "Subjects": [
         "Programming in C",
         "Microcontrollers",

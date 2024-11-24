@@ -9,22 +9,30 @@
             <Card Padding="p-3">
                 <Content>
                     <div class="row">
-                        <div class="col-7">
+                        <div class="col">
                             <h3>@school.Title</h3>
                             <span>@((MarkupString)school.Date)</span>
-
-                            <div class="d-flex mt-4 align-items-center">
-                                <img src="img/companies/@school.Logo" alt="@school.SchoolName logo" class="me-3"
-                                     style="width: @(school.SchoolName is "Algebra University" ? "2" : "3.2")rem;"/>
-
-                                <div>
-                                    <span class="d-block">@school.SchoolName</span>
-                                    <span class="small text-muted">@school.Location</span>
-                                </div>
-                            </div>
                         </div>
 
-                        <div class="col-5 lh-lg">
+                        <div class="col d-flex align-items-center">
+                            <img src="img/companies/@school.Logo" alt="@school.SchoolName logo" class="me-3"
+                                 style="width: @(school.SchoolName is "Algebra University" ? "2.8" : "3.8")rem;"/>
+
+                            <div>
+                                <span class="d-block fs-5">@school.SchoolName</span>
+                                <span class="small text-muted">@school.Location</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr/>
+
+                    <div class="row">
+                        <div class="col lh-lg" style="text-align: justify;">
+                            @((MarkupString)school.Description)
+                        </div>
+
+                        <div class="col lh-lg">
                             @foreach (string subject in school.Subjects)
                             {
                                 <span class="d-block">
