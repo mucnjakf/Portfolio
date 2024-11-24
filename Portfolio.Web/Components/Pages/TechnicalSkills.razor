@@ -9,11 +9,11 @@
             <div class="row mb-5">
                 @for (int j = i; j < i + 4 && j < _dto.Skills.Count; j++)
                 {
-                    <div class="col">
-                        <ImageText
-                            Src="@_dto.Skills[j].Src"
-                            Alt="@_dto.Skills[j].Alt"
-                            Text="@_dto.Skills[j].Text"/>
+                    <div class="col text-center">
+                        <span class="badge text-bg-primary fs-4 p-4 rounded-4 border"
+                              style="box-shadow: .1rem .1rem 1rem rgba(0, 0, 0, .3);">
+                            @((MarkupString)_dto.Skills[j])
+                        </span>
                     </div>
                 }
             </div>
@@ -23,53 +23,11 @@
 
 <Card Padding="p-3" Margin="mb-4">
     <Content>
-        <div class="mb-4">
-            <span class="text-muted small me-3">
-                <i class="bi bi-buildings me-1"></i>
-                Architecture
-            </span>
-
-            @foreach (string architecture in _dto.Architecture)
-            {
-                <span class="badge text-bg-primary p-3 rounded-4 fs-6 me-3">@architecture</span>
-            }
-        </div>
-
-        <div class="mb-4">
-            <span class="text-muted small me-3">
-                <i class="bi bi-flower2 me-1"></i>
-                Pattern
-            </span>
-
-            @foreach (string pattern in _dto.Pattern)
-            {
-                <span class="badge text-bg-primary p-3 rounded-4 fs-6 me-3">@pattern</span>
-            }
-        </div>
-
-        <div class="mb-4">
-            <span class="text-muted small me-3">
-                <i class="bi bi-list-ol me-1"></i>
-                Methodology
-            </span>
-
-            @foreach (string methodology in _dto.Methodology)
-            {
-                <span class="badge text-bg-primary p-3 rounded-4 fs-6 me-3">@methodology</span>
-            }
-        </div>
-
-        <div>
-            <span class="text-muted small me-3">
-                <i class="bi bi-box2 me-1"></i>
-                Other
-            </span>
-
-            @foreach (string other in _dto.Other)
-            {
-                <span class="badge text-bg-primary p-3 rounded-4 fs-6 me-3">@other</span>
-            }
-        </div>
+        <SkillList Label="Language" Icon="bi-code-square" Skills="@_dto.ProgrammingLanguages" Margin="mb-5"/>
+        <SkillList Label="Architecture" Icon="bi-buildings" Skills="@_dto.Architecture" Margin="mb-5"/>
+        <SkillList Label="Pattern" Icon="bi-flower2" Skills="@_dto.Pattern" Margin="mb-5"/>
+        <SkillList Label="Methodology" Icon="bi-list-ol" Skills="@_dto.Methodology" Margin="mb-5"/>
+        <SkillList Label="Other" Icon="bi-box2" Skills="@_dto.Other"/>
     </Content>
 </Card>
 
