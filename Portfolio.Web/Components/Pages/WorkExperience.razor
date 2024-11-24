@@ -33,11 +33,11 @@
 
                         <div class="row" style="text-align: justify">
                             <div class="col">
-                                <span class="fw-bold d-block">@project.Name</span>
+                                <span class="fw-bold d-block mb-2">@project.Name</span>
 
-                                <p class="mb-0 lh-lg">
+                                <div>
                                     @((MarkupString)project.Description)
-                                </p>
+                                </div>
                             </div>
 
                             @if (!string.IsNullOrWhiteSpace(workExperience.Projects.Select(x => x.Name).First()))

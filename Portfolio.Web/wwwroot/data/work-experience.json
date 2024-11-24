@@ -8,7 +8,7 @@
     "Projects": [
       {
         "Name": "Creator-fan social media platform",
-        "Description": "<i class=\"bi bi-dot\"></i> Played a key role in designing, developing, and testing a social platform that redefined interactions between content creators and their fans by introducing features like exclusive content feeds and direct messaging.",
+        "Description": "<div class=\"lh-lg mb-2\"><i class=\"bi bi-dot\"></i> Played a key role in designing, developing, and testing a social platform that transformed interactions between content creators and their fans, introducing features like exclusive content feeds and direct messaging.</div> <div class=\"lh-lg\"><i class=\"bi bi-dot\"></i> I implemented two dashboards: one for platform admins overseeing the entire system and another for agents managing their creators.</div>",
         "TechStack": [
           ".NET 8",
           "MVC",
@@ -28,7 +28,7 @@
       },
       {
         "Name": "Sport events management system",
-        "Description": "<i class=\"bi bi-dot\"></i> Participated in the design, development, and testing of a platform dedicated to sports events, enabling users to host their own events, join ongoing activities, and monitor their performance seamlessly.",
+        "Description": "<div class=\"lh-lg mb-2\"><i class=\"bi bi-dot\"></i> Participated in the design, development, and testing of a platform dedicated to sports events, enabling users to host their own events, join ongoing activities, and monitor their performance seamlessly.</div> <div class=\"lh-lg\"><i class=\"bi bi-dot\"></i> I implemented a REST API that provided backend support for a mobile app.</div>",
         "TechStack": [
           ".NET 8",
           "Web API",
@@ -42,7 +42,7 @@
       },
       {
         "Name": "Blood donation coordination hub",
-        "Description": "<i class=\"bi bi-dot\"></i> Assisted in the design, development, and testing of a platform simplifying the blood donation process, allowing users to schedule donations, view donation history, and find nearby donation centers effortlessly.",
+        "Description": "<div class=\"lh-lg mb-2\"><i class=\"bi bi-dot\"></i> Assisted in the design, development, and testing of a platform that simplifies the blood donation process, allowing users to schedule donations, view donation history, and find nearby donation centers effortlessly.</div> <div class=\"lh-lg\"><i class=\"bi bi-dot\"></i> I implemented an admin dashboard for managing users, tracking donations, and approving donation requests. I also implemented a REST API used by both the admin dashboard and a mobile app providing backend support.</div>",
         "TechStack": [
           ".NET 7",
           "Blazor WASM",
@@ -60,7 +60,7 @@
       },
       {
         "Name": "Installation management network",
-        "Description": "<i class=\"bi bi-dot\"></i> Contributed to the design, development, and testing of a comprehensive platform aimed at facilitating connections between manufacturers and retailers with a wide variety of installation resources (i.e. retail store displays).",
+        "Description": "<div class=\"lh-lg mb-2\"><i class=\"bi bi-dot\"></i> Contributed to the design, development, and testing of a comprehensive platform aimed at facilitating connections between manufacturers and retailers, offering a variety of installation resources such as retail store displays.</div> <div class=\"lh-lg\"><i class=\"bi bi-dot\"></i> I implemented an admin dashboard for managing projects, tracking work orders, and creating installer forms. I also implemented a REST API that provided backend support for the mobile app.</div>",
         "TechStack": [
           ".NET 7",
           "MVC",
@@ -89,7 +89,7 @@
     "Projects": [
       {
         "Name": "Technical security solution",
-        "Description": "<i class=\"bi bi-dot\"></i> Worked on the design, development, and testing of a security platform integrating IoT devices like surveillance cameras, fire detection systems, and access control units for enhanced security management.",
+        "Description": "<div class=\"lh-lg mb-2\"><i class=\"bi bi-dot\"></i> Worked on the design, development, and testing of a security platform integrating IoT devices such as surveillance cameras, fire detection systems, and access control units for enhanced security management.</div> <div class=\"lh-lg\"><i class=\"bi bi-dot\"></i> I implemented a web dashboard for managing devices and controlling the security platform. I also implemented a desktop dashboard for managing cameras and real-time video streaming.</div>",
         "TechStack": [
           ".NET Framework 4.8",
           "MVC",
@@ -108,7 +108,7 @@
       },
       {
         "Name": "Conference device management tool",
-        "Description": "<i class=\"bi bi-dot\"></i> Helped design, develop, and test a platform tailored for managing conference equipment such as microphones and speakers, ensuring streamlined device coordination during events.",
+        "Description": "<div class=\"lh-lg mb-2\"><i class=\"bi bi-dot\"></i>  Helped design, develop, and test a platform tailored for managing conference equipment such as microphones and speakers, ensuring streamlined device coordination during events.</div> <div class=\"lh-lg\"><i class=\"bi bi-dot\"></i> I implemented a desktop application for device monitoring and connecting it to the main web dashboard.</div>",
         "TechStack": [
           ".NET 5",
           "WPF",

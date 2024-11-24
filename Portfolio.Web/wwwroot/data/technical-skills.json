@@ -1,11 +1,11 @@
 ﻿{
   "Skills": [
-    "ASP.NET Core <br/> Web API",
-    "ASP.NET Core <br/> MVC",
-    "ASP.NET Core <br/> Blazor",
+    "<div class=\"mb-2\">ASP.NET Core</div> Web API",
+    "<div class=\"mb-2\">ASP.NET Core</div> MVC",
+    "<div class=\"mb-2\">ASP.NET Core</div> Blazor",
     "WPF .NET",
-    "ASP.NET Core <br/> Identity",
-    "Entity Framework <br/> Core",
+    "<div class=\"mb-2\">ASP.NET Core</div> Identity",
+    "<div class=\"mb-2\">Entity Framework</div> Core",
     "Azure Storage",
     "Azure",
     "xUnit",
