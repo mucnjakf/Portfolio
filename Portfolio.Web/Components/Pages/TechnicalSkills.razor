@@ -2,34 +2,137 @@
 
 <PageTitle>Technical skills - Portfolio</PageTitle>
 
-<Card Padding="pt-5" Margin="mb-4">
-    <Content>
-        @for (int i = 0; i < _dto.Skills.Count; i += 4)
-        {
-            <div class="row mb-5 align-items-center">
-                @for (int j = i; j < i + 4 && j < _dto.Skills.Count; j++)
-                {
-                    <div class="col text-center">
-                        <span class="badge text-bg-primary fs-4 p-4 rounded-4 border"
-                              style="box-shadow: .1rem .1rem 1rem rgba(0, 0, 0, .3);">
-                            @((MarkupString)_dto.Skills[j])
-                        </span>
-                    </div>
-                }
-            </div>
-        }
-    </Content>
-</Card>
+<div class="row mb-4">
+    <div class="col-8">
+        <Card Padding="p-3" Height="h-100">
+            <Content>
+                <SkillList Label="Languages" Icon="bi-code-square" Skills="@_dto.Languages"/>
+            </Content>
+        </Card>
+    </div>
 
-<Card Padding="p-3" Margin="mb-4">
-    <Content>
-        <SkillList Label="Language" Icon="bi-code-square" Skills="@_dto.ProgrammingLanguages" Margin="mb-5"/>
-        <SkillList Label="Architecture" Icon="bi-buildings" Skills="@_dto.Architecture" Margin="mb-5"/>
-        <SkillList Label="Pattern" Icon="bi-flower2" Skills="@_dto.Pattern" Margin="mb-5"/>
-        <SkillList Label="Methodology" Icon="bi-list-ol" Skills="@_dto.Methodology" Margin="mb-5"/>
-        <SkillList Label="Other" Icon="bi-box2" Skills="@_dto.Other"/>
-    </Content>
-</Card>
+    <div class="col-4">
+        <Card Padding="p-3" Height="h-100">
+            <Content>
+                <SkillList Label="Operating systems" Icon="bi-display" Skills="@_dto.OperatingSystems"/>
+            </Content>
+        </Card>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-5">
+        <Card Padding="p-3" Height="h-100">
+            <Content>
+                <SkillList Label="Frontend" Icon="bi-columns" Skills="@_dto.Frontend"/>
+            </Content>
+        </Card>
+    </div>
+
+    <div class="col-7">
+        <Card Padding="p-3" Height="h-100">
+            <Content>
+                <SkillList Label="Backend" Icon="bi-hdd-rack" Skills="@_dto.Backend"/>
+            </Content>
+        </Card>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col">
+        <Card Padding="p-3" Height="h-100">
+            <Content>
+                <SkillList Label="Testing" Icon="bi-eyedropper" Skills="@_dto.Testing"/>
+            </Content>
+        </Card>
+    </div>
+
+    <div class="col">
+        <Card Padding="p-3" Height="h-100">
+            <Content>
+                <SkillList Label="Database" Icon="bi-database" Skills="@_dto.Database"/>
+            </Content>
+        </Card>
+    </div>
+
+    <div class="col">
+        <Card Padding="p-3" Height="h-100">
+            <Content>
+                <SkillList Label="Version control" Icon="bi-file-diff" Skills="@_dto.VersionControl"/>
+            </Content>
+        </Card>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-4">
+        <Card Padding="p-3" Height="h-100">
+            <Content>
+                <SkillList Label="Architecture" Icon="bi-buildings" Skills="@_dto.Architecture"/>
+            </Content>
+        </Card>
+    </div>
+
+    <div class="col-5">
+        <Card Padding="p-3" Height="h-100">
+            <Content>
+                <SkillList Label="Design patterns" Icon="bi-flower2" Skills="@_dto.DesignPatterns"/>
+            </Content>
+        </Card>
+    </div>
+
+    <div class="col-3">
+        <Card Padding="p-3" Height="h-100">
+            <Content>
+                <SkillList Label="Design principles" Icon="bi-pencil-square" Skills="@_dto.DesignPrinciples"/>
+            </Content>
+        </Card>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col">
+        <Card Padding="p-3" Height="h-100">
+            <Content>
+                <SkillList Label="CI/CD" Icon="bi-rocket-takeoff" Skills="@_dto.CICD"/>
+            </Content>
+        </Card>
+    </div>
+
+    <div class="col">
+        <Card Padding="p-3" Height="h-100">
+            <Content>
+                <SkillList Label="Methodologies" Icon="bi-list-ol" Skills="@_dto.Methodologies"/>
+            </Content>
+        </Card>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-5">
+        <Card Padding="p-3" Height="h-100">
+            <Content>
+                <SkillList Label="Development tools" Icon="bi-keyboard" Skills="@_dto.DevelopmentTools"/>
+            </Content>
+        </Card>
+    </div>
+
+    <div class="col-4">
+        <Card Padding="p-3" Height="h-100">
+            <Content>
+                <SkillList Label="Project management tools" Icon="bi-trello" Skills="@_dto.ProjectManagementTools"/>
+            </Content>
+        </Card>
+    </div>
+
+    <div class="col-3">
+        <Card Padding="p-3" Height="h-100">
+            <Content>
+                <SkillList Label="Productivity tools" Icon="bi-gear" Skills="@_dto.ProductivityTools"/>
+            </Content>
+        </Card>
+    </div>
+</div>
 
 @code {
 
