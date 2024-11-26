@@ -1,6 +1,6 @@
 ﻿namespace Portfolio.Web.Dtos;
 
-public sealed class WorkExperienceDto
+public sealed class ExperienceDto
 {
     public string Position { get; set; } = default!;
 

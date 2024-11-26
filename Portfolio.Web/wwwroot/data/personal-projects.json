@@ -1,7 +1,7 @@
 ﻿[
   {
     "Name": "Portfolio",
-    "Image": "img/personal-projects/portfolio.svg",
+    "Image": "img/projects/portfolio.svg",
     "Description": "Portfolio is a personal website designed to present my professional journey, offering a detailed view of my work experience, educational achievements, technical skills, and personal projects.",
     "TechStack": [
       ".NET 8",
@@ -12,7 +12,7 @@
   },
   {
     "Name": "CashFlow",
-    "Image": "img/personal-projects/cashflow.svg",
+    "Image": "img/projects/cashflow.svg",
     "Description": "CashFlow is a web application designed to simplify personal finance management by helping users record, monitor, and analyze income, expenses, account balances, and financial categories with ease.",
     "TechStack": [
       ".NET 8",
@@ -28,7 +28,7 @@
   },
   {
     "Name": "GymLog",
-    "Image": "img/personal-projects/gymlog.svg",
+    "Image": "img/projects/gymlog.svg",
     "Description": "GymLog is a fitness app tailored for planning, tracking, and analyzing workouts, allowing users to create detailed routines with exercises, sets, reps, and rest intervals.",
     "TechStack": [
       ".NET 8",
@@ -49,7 +49,7 @@
   },
   {
     "Name": "TaskMaster",
-    "Image": "img/personal-projects/taskmaster.svg",
+    "Image": "img/projects/taskmaster.svg",
     "Description": "TaskMaster is a task and project management system that uses a Kanban board to visually track task progress, prioritize work, and adapt to evolving project requirements.",
     "TechStack": [
       ".NET 7",
@@ -67,7 +67,7 @@
   },
   {
     "Name": "Poseidon",
-    "Image": "img/personal-projects/poseidon.svg",
+    "Image": "img/projects/poseidon.svg",
     "Description": "Poseidon is a maritime monitoring system leveraging machine learning to detect illegal activities like smuggling and illegal fishing, enhancing security and protecting marine ecosystems.",
     "TechStack": [
       ".NET 6",
@@ -87,7 +87,7 @@
   },
   {
     "Name": "Reupload",
-    "Image": "img/personal-projects/reupload.svg",
+    "Image": "img/projects/reupload.svg",
     "Description": "Reupload is an image-sharing social media platform where users can upload and share images, explore creative content, and connect with others in an inspiring online community.",
     "TechStack": [
       ".NET 6",
@@ -104,7 +104,7 @@
   },
   {
     "Name": "Warforce",
-    "Image": "img/personal-projects/warforce.svg",
+    "Image": "img/projects/warforce.svg",
     "Description": "Warforce is a desktop application built for military operations, empowering commanders to efficiently manage personnel, organize platoons, and streamline military workflows.",
     "TechStack": [
       "Java 11",
@@ -121,7 +121,7 @@
   },
   {
     "Name": "OneShop",
-    "Image": "img/personal-projects/oneshop.svg",
+    "Image": "img/projects/oneshop.svg",
     "Description": "OneShop is a web-based marketplace connecting users and merchants, enabling seamless product browsing, secure purchasing, and inventory management for sellers.",
     "TechStack": [
       "Java 11",
@@ -136,7 +136,7 @@
   },
   {
     "Name": "MotoRider",
-    "Image": "img/personal-projects/motorider.svg",
+    "Image": "img/projects/motorider.svg",
     "Description": "MotorRider is a web application for motorcycle inventory and rental management, designed for enthusiasts and businesses to simplify operations in one central platform.",
     "TechStack": [
       ".NET 5",
@@ -156,7 +156,7 @@
   },
   {
     "Name": "Football Manager",
-    "Image": "img/personal-projects/footballmanager.svg",
+    "Image": "img/projects/footballmanager.svg",
     "Description": "Football Manager is a desktop game where two players create, manage, and compete with their custom football teams in strategic and engaging matches.",
     "TechStack": [
       "Java 8",
@@ -170,7 +170,7 @@
   },
   {
     "Name": "AirCheap",
-    "Image": "img/personal-projects/aircheap.svg",
+    "Image": "img/projects/aircheap.svg",
     "Description": "AirCheap is a web application for budget-conscious travelers to find affordable airfare options by searching flights based on origin and destination IATA codes.",
     "TechStack": [
       ".NET 6",
@@ -186,7 +186,7 @@
   },
   {
     "Name": "VisualQuake",
-    "Image": "img/personal-projects/visualquake.svg",
+    "Image": "img/projects/visualquake.svg",
     "Description": "VisualQuake is a web app providing an interactive map interface to explore global earthquake data, allowing users to visualize seismic activity worldwide.",
     "TechStack": [
       ".NET 6",
@@ -200,7 +200,7 @@
   },
   {
     "Name": "Invoice Manager",
-    "Image": "img/personal-projects/invoicemanager.svg",
+    "Image": "img/projects/invoicemanager.svg",
     "Description": "Invoice Manager is an application designed to streamline invoice creation, tracking, and management, making billing processes efficient for businesses of all sizes.",
     "TechStack": [
       ".NET Core 3.1",
@@ -215,7 +215,7 @@
   },
   {
     "Name": "Vehicle Manager",
-    "Image": "img/personal-projects/vehiclemanager.svg",
+    "Image": "img/projects/vehiclemanager.svg",
     "Description": "Vehicle Manager is a comprehensive app for tracking and managing vehicle data such as mileage, maintenance, and inventory, suitable for fleets, dealerships, and individuals.",
     "TechStack": [
       ".NET Framework 4.7.2",
@@ -231,7 +231,7 @@
   },
   {
     "Name": "SisanjeHR",
-    "Image": "img/personal-projects/sisanjehr.svg",
+    "Image": "img/projects/sisanjehr.svg",
     "Description": "SisanjeHR offers a dual-application hair salon management system, with desktop tools for salon operations and a web app for customer booking and discovery.",
     "TechStack": [
       ".NET Framework 4.8",
@@ -245,7 +245,7 @@
   },
   {
     "Name": "Football Statistics WC 2018",
-    "Image": "img/personal-projects/footballstatisticswc2018.svg",
+    "Image": "img/projects/footballstatisticswc2018.svg",
     "Description": "Football Statistics World Cup 2018 is a dual-desktop application providing detailed team stats, player profiles, and match summaries from the 2018 tournament.",
     "TechStack": [
       ".NET Framework 4.6.1",
@@ -256,7 +256,7 @@
   },
   {
     "Name": "Password Encoder",
-    "Image": "img/personal-projects/passwordencoder.svg",
+    "Image": "img/projects/passwordencoder.svg",
     "Description": "Password Encoder is a desktop application for securely encrypting passwords using the SHA256 algorithm, generating robust, irreversible 256-bit hashes for enhanced security.",
     "TechStack": [
       ".NET Framework 4.7.2",
@@ -266,7 +266,7 @@
   },
   {
     "Name": "NASA",
-    "Image": "img/personal-projects/nasa.svg",
+    "Image": "img/projects/nasa.svg",
     "Description": "NASA is a mobile app that allows users to log experiences with stunning space imagery provided by the National Aeronautics and Space Administration for an inspiring experience.",
     "TechStack": [
       "Kotlin",

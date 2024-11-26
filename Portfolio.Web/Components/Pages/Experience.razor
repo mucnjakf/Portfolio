@@ -1,8 +1,8 @@
-﻿@page "/work-experience"
+﻿@page "/experience"
 
-<PageTitle>Work experience - Portfolio</PageTitle>
+<PageTitle>Experience - Portfolio</PageTitle>
 
-@foreach (WorkExperienceDto workExperience in _dto)
+@foreach (ExperienceDto experience in _dto)
 {
     <div class="row mb-4">
         <div class="col">
@@ -10,26 +10,26 @@
                 <Content>
                     <div class="row">
                         <div class="col">
-                            <h3>@workExperience.Position</h3>
-                            <span>@((MarkupString)workExperience.Date)</span>
+                            <h3>@experience.Position</h3>
+                            <span>@((MarkupString)experience.Date)</span>
                         </div>
 
                         <div class="col d-flex align-items-center">
-                            <img src="img/companies/@workExperience.Logo" alt="@workExperience.Company logo" class="me-3"
-                                 style="@(workExperience.Company is "Infinum" ? "width: 3rem; height: 1.5rem;" : "width: 2.5rem;")"/>
+                            <img src="img/companies/@experience.Logo" alt="@experience.Company logo" class="me-3"
+                                 style="@(experience.Company is "Infinum" ? "width: 3rem; height: 1.5rem;" : "width: 2.5rem;")"/>
 
                             <div>
-                                <span class="d-block fs-5">@workExperience.Company</span>
-                                <span class="small text-muted">@workExperience.CompanyLocation</span>
+                                <span class="d-block fs-5">@experience.Company</span>
+                                <span class="small text-muted">@experience.CompanyLocation</span>
                             </div>
                         </div>
                     </div>
 
                     <hr/>
 
-                    @for (int i = 0; i < workExperience.Projects.Count; i++)
+                    @for (int i = 0; i < experience.Projects.Count; i++)
                     {
-                        ProjectDto project = workExperience.Projects[i];
+                        ProjectDto project = experience.Projects[i];
 
                         <div class="row" style="text-align: justify">
                             <div class="col">
@@ -40,7 +40,7 @@
                                 </div>
                             </div>
 
-                            @if (!string.IsNullOrWhiteSpace(workExperience.Projects.Select(x => x.Name).First()))
+                            @if (!string.IsNullOrWhiteSpace(experience.Projects.Select(x => x.Name).First()))
                             {
                                 <div class="col">
                                     @foreach (string tech in project.TechStack)
@@ -51,7 +51,7 @@
                             }
                         </div>
 
-                        if (i < workExperience.Projects.Count - 1)
+                        if (i < experience.Projects.Count - 1)
                         {
                             <hr/>
                         }
@@ -67,11 +67,11 @@
     [Inject]
     IDataService DataService { get; set; } = default!;
 
-    IEnumerable<WorkExperienceDto> _dto = [];
+    IEnumerable<ExperienceDto> _dto = [];
 
     protected override async Task OnInitializedAsync()
     {
-        _dto = await DataService.ParseJsonAsync<IEnumerable<WorkExperienceDto>>("work-experience");
+        _dto = await DataService.ParseJsonAsync<IEnumerable<ExperienceDto>>("experience");
     }
 
 }

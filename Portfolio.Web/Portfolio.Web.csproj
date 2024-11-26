@@ -9,6 +9,19 @@
     <ItemGroup>
       <_ContentIncludedByDefault Remove="Components\Layout\MainLayout.razor" />
       <_ContentIncludedByDefault Remove="Components\Modals\WorkExperienceModal.razor" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\skills\azure.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\skills\blazor.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\skills\bootstrap.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\skills\css.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\skills\docker.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\skills\dotnet.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\skills\git.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\skills\github.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\skills\html.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\skills\identity.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\skills\javascript.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\skills\kubernetes.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\skills\postgresql.svg" />
     </ItemGroup>
 
 </Project>
