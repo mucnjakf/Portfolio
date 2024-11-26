@@ -61,7 +61,7 @@
     "YAGNI",
     "DRY"
   ],
-  "CICD": [
+  "Cicd": [
     "Docker",
     "GitHub Actions",
     "Azure"

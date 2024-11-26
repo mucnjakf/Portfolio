@@ -20,7 +20,7 @@ public sealed class SkillsDto
     
     public IEnumerable<string> DesignPrinciples { get; set; } = [];
 
-    public IEnumerable<string> CICD { get; set; } = [];
+    public IEnumerable<string> Cicd { get; set; } = [];
     
     public IEnumerable<string> Methodologies { get; set; } = [];
     

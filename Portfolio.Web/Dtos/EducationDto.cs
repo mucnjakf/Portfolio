@@ -13,7 +13,7 @@ public sealed class SchoolDto
 
     public string Date { get; set; } = default!;
 
-    public string SchoolName { get; set; } = default!;
+    public string Name { get; set; } = default!;
 
     public string Location { get; set; } = default!;
 

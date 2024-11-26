@@ -1,6 +1,6 @@
 ﻿namespace Portfolio.Web.Dtos;
 
-public sealed class AboutMeDto
+public sealed class ProfileDto
 {
     public string ProfileImage { get; init; } = default!;
 

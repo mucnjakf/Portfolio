@@ -12,14 +12,5 @@ public sealed class ExperienceDto
 
     public string Logo { get; set; } = default!;
 
-    public IList<WorkProjectDto> Projects { get; set; } = [];
-}
-
-public sealed class WorkProjectDto
-{
-    public string Name { get; set; } = default!;
-
-    public string Description { get; set; } = default!;
-
-    public IEnumerable<string> TechStack { get; set; } = [];
+    public IList<ProjectDto> Projects { get; set; } = [];
 }

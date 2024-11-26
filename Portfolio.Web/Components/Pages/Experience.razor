@@ -29,21 +29,21 @@
 
                     @for (int i = 0; i < experience.Projects.Count; i++)
                     {
-                        WorkProjectDto workProject = experience.Projects[i];
+                        ProjectDto project = experience.Projects[i];
 
                         <div class="row" style="text-align: justify">
                             <div class="col">
-                                <span class="fw-bold d-block mb-2">@workProject.Name</span>
+                                <span class="fw-bold d-block mb-2">@project.Name</span>
 
                                 <div>
-                                    @((MarkupString)workProject.Description)
+                                    @((MarkupString)project.Description)
                                 </div>
                             </div>
 
                             @if (!string.IsNullOrWhiteSpace(experience.Projects.Select(x => x.Name).First()))
                             {
                                 <div class="col">
-                                    @foreach (string tech in workProject.TechStack)
+                                    @foreach (string tech in project.TechStack)
                                     {
                                         <span class="badge text-bg-primary fs-6 me-2 mb-3 border rounded-4">@tech</span>
                                     }
