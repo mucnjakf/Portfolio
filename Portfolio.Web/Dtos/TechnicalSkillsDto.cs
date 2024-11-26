@@ -2,7 +2,7 @@
 
 public sealed class TechnicalSkillsDto
 {
-    public IEnumerable<string> Languages { get; set; } = [];
+    public IEnumerable<string> ProgrammingLanguages { get; set; } = [];
     
     public IEnumerable<string> Backend { get; set; } = [];
     
@@ -31,4 +31,8 @@ public sealed class TechnicalSkillsDto
     public IEnumerable<string> ProductivityTools { get; set; } = [];
     
     public IEnumerable<string> OperatingSystems { get; set; } = [];
+
+    public IEnumerable<string> SoftSkills { get; set; } = [];
+
+    public IEnumerable<string> LanguageSkills { get; set; } = [];
 }

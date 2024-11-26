@@ -1,5 +1,5 @@
 ﻿{
-  "Languages": [
+  "ProgrammingLanguages": [
     "C#",
     "JavaScript",
     "TypeScript",
@@ -93,5 +93,16 @@
   "OperatingSystems": [
     "Windows",
     "Linux"
+  ],
+  "SoftSkills": [
+    "Communication",
+    "Time management",
+    "Teamwork",
+    "Accountability",
+    "Problem solving"
+  ],
+  "LanguageSkills": [
+    "Croatian",
+    "English"
   ]
 }
