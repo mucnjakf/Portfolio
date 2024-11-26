@@ -1,6 +1,6 @@
 ﻿namespace Portfolio.Web.Dtos;
 
-public sealed class TechnicalSkillsDto
+public sealed class SkillsDto
 {
     public IEnumerable<string> ProgrammingLanguages { get; set; } = [];
     

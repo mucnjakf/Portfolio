@@ -1,6 +1,6 @@
-﻿@page "/technical-skills"
+﻿@page "/skills"
 
-<PageTitle>Technical skills - Portfolio</PageTitle>
+<PageTitle>Skills - Portfolio</PageTitle>
 
 <div class="row mb-4">
     <div class="col-8">
@@ -157,11 +157,11 @@
     [Inject]
     IDataService DataService { get; set; } = default!;
 
-    TechnicalSkillsDto _dto = new();
+    SkillsDto _dto = new();
 
     protected override async Task OnInitializedAsync()
     {
-        _dto = await DataService.ParseJsonAsync<TechnicalSkillsDto>("technical-skills");
+        _dto = await DataService.ParseJsonAsync<SkillsDto>("skills");
     }
 
 }
