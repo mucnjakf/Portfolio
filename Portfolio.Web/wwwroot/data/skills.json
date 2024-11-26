@@ -14,7 +14,7 @@
     "ASP.NET Core Identity",
     "EF Core",
     "Azure Storage",
-    "SignalR",
+    "MediatR",
     "Firebase",
     "SendGrid"
   ],
