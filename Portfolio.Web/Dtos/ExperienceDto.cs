@@ -12,13 +12,11 @@ public sealed class ExperienceDto
 
     public string Logo { get; set; } = default!;
 
-    public IList<ProjectDto> Projects { get; set; } = [];
+    public IList<WorkProjectDto> Projects { get; set; } = [];
 }
 
-public sealed class ProjectDto
+public sealed class WorkProjectDto
 {
-    public Guid Id { get; set; } = Guid.NewGuid();
-
     public string Name { get; set; } = default!;
 
     public string Description { get; set; } = default!;

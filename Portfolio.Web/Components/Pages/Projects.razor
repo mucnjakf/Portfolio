@@ -1,13 +1,13 @@
-﻿@page "/personal-projects"
+﻿@page "/projects"
 
-<PageTitle>Personal projects - Portfolio</PageTitle>
+<PageTitle>Projects - Portfolio</PageTitle>
 
 @for (int i = 0; i < _dto.Count; i += 3)
 {
     <div class="row mb-4">
         @for (int j = i; j < i + 3 && j < _dto.Count; j++)
         {
-            PersonalProjectsDto project = _dto[j];
+            ProjectDto project = _dto[j];
 
             <div class="col">
                 <Card Padding="p-3" Height="h-100">
@@ -58,11 +58,11 @@
     [Inject]
     IDataService DataService { get; set; } = default!;
 
-    IList<PersonalProjectsDto> _dto = [];
+    IList<ProjectDto> _dto = [];
 
     protected override async Task OnInitializedAsync()
     {
-        _dto = await DataService.ParseJsonAsync<IList<PersonalProjectsDto>>("personal-projects");
+        _dto = await DataService.ParseJsonAsync<IList<ProjectDto>>("projects");
     }
 
 }

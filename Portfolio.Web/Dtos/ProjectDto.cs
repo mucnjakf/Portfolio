@@ -1,6 +1,6 @@
 ﻿namespace Portfolio.Web.Dtos;
 
-public sealed class PersonalProjectsDto
+public sealed class ProjectDto
 {
     public string Name { get; set; } = default!;
 
