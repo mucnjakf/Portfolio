@@ -169,6 +169,19 @@
     "Link": "https://github.com/mucnjakf/FootballManager"
   },
   {
+    "Name": "HeistHub",
+    "Image": "img/projects/heisthub.svg",
+    "Description": "HeistHub is a heist planning and management app that helps recruit crew members, assign roles, execute heists, and analyze outcomes for success.",
+    "TechStack": [
+      ".NET 9",      
+      "Web API",
+      "MediatR",
+      "EF Core",
+      "PostgreSQL"
+    ],
+    "Link": "https://github.com/mucnjakf/HeistHub"
+  },
+  {
     "Name": "AirCheap",
     "Image": "img/projects/aircheap.svg",
     "Description": "AirCheap is a web application for budget-conscious travelers to find affordable airfare options by searching flights based on origin and destination IATA codes.",
