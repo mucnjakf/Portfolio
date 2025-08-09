@@ -14,14 +14,14 @@
                             <span>@((MarkupString)experience.Date)</span>
                         </div>
 
-                        <div class="col d-flex align-items-center">
-                            <img src="img/companies/@experience.Logo" alt="@experience.Company logo" class="me-3"
-                                 style="@(experience.Company is "Infinum" ? "width: 3rem; height: 1.5rem;" : "width: 2.5rem;")"/>
-
+                        <div class="col d-flex align-items-center justify-content-end">
                             <div>
-                                <span class="d-block fs-5">@experience.Company</span>
-                                <span class="small text-muted">@experience.CompanyLocation</span>
+                                <div class="fs-5 text-end">@experience.Company</div>
+                                <div class="small text-muted text-end">@experience.CompanyLocation</div>
                             </div>
+
+                            <img src="img/companies/@experience.Logo" alt="@experience.Company logo" class="ms-3"
+                                 style="@(experience.Company is "Infinum" ? "width: 3rem; height: 1.5rem;" : "width: 2.5rem;")"/>
                         </div>
                     </div>
 
@@ -32,7 +32,7 @@
                         ProjectDto project = experience.Projects[i];
 
                         <div class="row" style="text-align: justify">
-                            <div class="col">
+                            <div class="@(experience.Company is "Nanobit" or "UniqCast" ? "col-12" : "col-8")">
                                 <span class="fw-bold d-block mb-2">@project.Name</span>
 
                                 <div>
@@ -42,10 +42,13 @@
 
                             @if (!string.IsNullOrWhiteSpace(experience.Projects.Select(x => x.Name).First()))
                             {
-                                <div class="col">
+                                <div class="@(experience.Company is "Nanobit" or "UniqCast" ? "" : "col-4")">
+                                    <div class="small text-muted mb-3">Tech-stack</div>
+
                                     @foreach (string tech in project.TechStack)
                                     {
-                                        <span class="badge text-bg-primary fs-6 me-2 mb-3 border rounded-4">@tech</span>
+                                        <span class="badge text-bg-primary me-2 mb-3 border rounded-4"
+                                              style="font-size: .9rem;">@tech</span>
                                     }
                                 </div>
                             }
