@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: #293036;
+    background-color: #434c5e;
     font-family: Inter, sans-serif;
 }
 
@@ -13,10 +13,23 @@
 }
 
 .active {
-    background-color: #293036 !important;
+    background-color: #434c5e !important;
     color: #dee2e6 !important;
 }
 
 .text-bg-primary {
-    background-color: #293036 !important;
+    background-color: #2e3440 !important;
+}
+
+.card {
+    background-color: #2e3440 !important;
+}
+
+.nav {
+    background-color: #2e3440 !important;
+}
+
+.btn-download {
+    background-color: #2e3440 !important;
+    color: #dee2e6 !important;
 }
