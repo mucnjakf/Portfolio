@@ -1,7 +1,44 @@
 ﻿[
   {
-    "Position": ".NET Engineer",
-    "Date": "MAY 2022. <i class=\"bi bi-arrow-right-short\"></i> CURRENT",
+    "Position": "Full Stack Developer",
+    "Date": "FEBRUARY 2025. <i class=\"bi bi-arrow-right-short\"></i> PRESENT",
+    "Company": "King ICT",
+    "CompanyLocation": "Buzinski prilaz 10, Buzin, Croatia",
+    "Logo": "kingict.png",
+    "Projects": [
+      {
+        "Name": "User management system",
+        "Description": "<div class=\"lh-lg mb-2\"><i class=\"bi bi-dot\"></i> Contributed to the design, development, and testing of a web application used for managing users across a large-scale microservice-based system in the technical protection domain.</div><div class=\"lh-lg\"><i class=\"bi bi-dot\"></i>I implemented a user management system, including features for role-based access control, user lifecycle management, and integration with other services within the ecosystem.</div>",
+        "TechStack": [
+          ".NET 8",
+          "Blazor",
+          "Syncfusion",
+          "Fluxor",
+          "Strawberry Shake GraphQL",
+          "bUnit",
+          "xUnit",
+          "Moq"
+        ]
+      },
+      {
+        "Name": "Visitor announcement system",
+        "Description": "<div class=\"lh-lg mb-2\"><i class=\"bi bi-dot\"></i> Worked on design, development, and testing of a web application used for managing visitor announcements within a large technical security platform.</div><div class=\"lh-lg\"><i class=\"bi bi-dot\"></i> I implemented a REST Web API which integrates with a third-party SDK to enable communication between web interface and core security platform. I also implemented web application for managing visitor announcements.</div>",
+        "TechStack": [
+          ".NET Framework 4.8",
+          ".NET 9",
+          "Web API",
+          "Dapper",
+          "Device SDK",
+          "Blazor",
+          "MudBlazor",
+          "MS SQL Server"
+        ]
+      }
+    ]
+  },
+  {
+    "Position": "Full Stack Developer",
+    "Date": "MAY 2022. <i class=\"bi bi-arrow-right-short\"></i> FEBRUARY 2025.",
     "Company": "Infinum",
     "CompanyLocation": "Strojarska cesta 22, Zagreb, Croatia",
     "Logo": "infinum.png",
@@ -103,7 +140,8 @@
           "SignalR",
           "xUnit",
           "Moq",
-          "MS SQL Server"
+          "MS SQL Server",
+          "Device SDK"
         ]
       },
       {
@@ -114,7 +152,7 @@
           "WPF",
           "SignalR",
           "MS SQL Server",
-          "External device SDK"
+          "Device SDK"
         ]
       }
     ]
