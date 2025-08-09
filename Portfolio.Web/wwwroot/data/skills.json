@@ -5,13 +5,14 @@
     "TypeScript",
     "HTML",
     "CSS",
-    "SCSS",
     "SQL"
   ],
   "Backend": [
-    "ASP.NET Core Web API",
+    ".NET",
+    "ASP.NET Core",
+    "Web API",
     "Azure Functions",
-    "ASP.NET Core Identity",
+    "Identity",
     "EF Core",
     "Azure Storage",
     "MediatR",
@@ -19,12 +20,14 @@
     "SendGrid"
   ],
   "Frontend": [
-    "ASP.NET Core MVC",
-    "ASP.NET Core Blazor",
+    ".NET",
+    "ASP.NET Core",
+    "MVC",
+    "Blazor",
     "WPF",
     "React.js",
-    "Bootstrap",
-    "jQuery"
+    "MudBlazor",
+    "Bootstrap"
   ],
   "Testing": [
     "xUnit",
@@ -44,8 +47,8 @@
     "Layered",
     "Clean",
     "DDD",
-    "TDD",
-    "Vertical slice"
+    "REST",
+    "GraphQL"
   ],
   "DesignPatterns": [
     "Dependency injection",
@@ -64,7 +67,8 @@
   "Cicd": [
     "Docker",
     "GitHub Actions",
-    "Azure"
+    "Azure",
+    "SonarQube"
   ],
   "Methodologies": [
     "Agile",
@@ -74,7 +78,7 @@
   "DevelopmentTools": [
     "Rider",
     "Visual Studio",
-    "VS Code",
+    "Visual Studio Code",
     "WebStorm",
     "DataGrip",
     "Postman"
@@ -82,7 +86,7 @@
   "ProjectManagementTools": [
     "Productive",
     "Azure DevOps",
-    "Atlassian Jira"
+    "Atlassian Jira"    
   ],
   "ProductivityTools": [
     "Figma",
@@ -91,15 +95,16 @@
     "PowerPoint"
   ],
   "OperatingSystems": [
-    "Windows",
-    "Linux"
+    "Linux",
+    "Windows"    
   ],
   "SoftSkills": [
     "Communication",
-    "Time management",
+    "Organization",
     "Teamwork",
     "Accountability",
-    "Problem solving"
+    "Analysis",
+    "Learning"
   ],
   "LanguageSkills": [
     "Croatian",
