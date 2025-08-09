@@ -11,6 +11,15 @@
     "Link": "https://github.com/mucnjakf/Portfolio"
   },
   {
+    "Name": "Herculean",
+    "Image": "img/projects/herculean.svg",
+    "Description": "Herculean is an all-in-one fitness and nutrition app that helps users track workouts, log meals, manage calories and macros, set goals, and monitor progress with ease.",
+    "TechStack": [    
+      "TODO"
+    ],
+    "Link": "https://github.com/mucnjakf/Herculean"
+  },
+  {
     "Name": "CashFlow",
     "Image": "img/projects/cashflow.svg",
     "Description": "CashFlow is a web application designed to simplify personal finance management by helping users record, monitor, and analyze income, expenses, account balances, and financial categories with ease.",
@@ -25,6 +34,26 @@
       "PostgreSQL"
     ],
     "Link": "https://github.com/mucnjakf/CashFlow"
+  },
+  {
+    "Name": "BillTracker",
+    "Image": "img/projects/billtracker.svg",
+    "Description": "BillTracker is a customer and billing management web app that lets businesses easily manage customer details, handle bills, track payments, and access insightful analytics.",
+    "TechStack": [
+      "React",
+      "React Router",
+      "React Bootstrap",
+      "Axios",
+      "JWT Decode",
+      "Recharts",
+      "Vite",
+      ".NET 9",
+      "Web API",
+      "Fast Endpoints",
+      "EF Core",      
+      "PostgreSQL"
+    ],
+    "Link": "https://github.com/mucnjakf/BillTracker"
   },
   {
     "Name": "GymLog",
