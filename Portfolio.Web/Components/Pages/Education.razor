@@ -14,25 +14,26 @@
                             <span>@((MarkupString)school.Date)</span>
                         </div>
 
-                        <div class="col d-flex align-items-center">
-                            <img src="img/companies/@school.Logo" alt="@school.Name logo" class="me-3"
-                                 style="width: @(school.Name is "Algebra University" ? "2.8" : "3.8")rem;"/>
-
+                        <div class="col d-flex align-items-center justify-content-end">
                             <div>
-                                <span class="d-block fs-5">@school.Name</span>
-                                <span class="small text-muted">@school.Location</span>
+                                <div class="fs-5 text-end">@school.Name</div>
+                                <div class="small text-muted text-end">@school.Location</div>
                             </div>
+
+                            <img src="img/companies/@school.Logo" alt="@school.Name logo" class="ms-3"
+                                 style="width: @(school.Name is "Algebra University" ? "2.8" : "3.8")rem;"/>
                         </div>
                     </div>
 
                     <hr/>
 
                     <div class="row">
-                        <div class="col lh-lg" style="text-align: justify;">
+                        <div class="col-7 lh-lg" style="text-align: justify;">
                             @((MarkupString)school.Description)
                         </div>
 
-                        <div class="col lh-lg">
+                        <div class="col-5 lh-lg">
+                            <div class="small text-muted">Courses</div>
                             @foreach (string subject in school.Subjects)
                             {
                                 <span class="d-block">
