@@ -1,13 +1,14 @@
 ﻿{
   "ProfileImage": "img/profile-image.png",
   "Name": "Filip Mučnjak",
-  "Description": "I am a full stack .NET developer and software engineering student with a passion for crafting digital solutions",
-  "Professional": ".NET Engineer at Infinum",
+  "Description": "I am a software engineer with more than 5 years of experience and a passion for crafting high quality digital solutions.",
+  "Professional": "Full Stack Developer at King ICT",
   "Education": "Bachelor in Software Engineering",
   "Gender": "Male",
   "DateOfBirth": "04. May. 1997.",
   "Location": "Zagreb, Croatia",
-  "Email": "filip.mucnjak@outlook.com",
+  "Email": "crtofilix@gmail.com",
   "GitHub": "mucnjakf",
-  "MyStory": "<div style=\"text-align: justify;\"><p class=\"lh-lg\">I am a dedicated <span class=\"fw-bold\">full stack .NET developer</span> and <span class=\"fw-bold\">software engineering student</span> with a passion for crafting digital solutions using <span class=\"fw-bold\">.NET technologies</span>, particularly excelling in backend development.</p><p class=\"lh-lg m-0\">Currently, I am enrolled in a Master’s program at <span class=\"fw-bold\">Algebra University</span>, pursuing a <span class=\"fw-bold\">Master’s Degree in Computer Engineering</span>. With over <span class=\"fw-bold\">five years</span> of hands-on experience in software engineering, I have gained valuable expertise that allows me to contribute effectively to various projects. I am currently employed at the design and development agency <span class=\"fw-bold\">Infinum</span> located in Zagreb. In this role, I serve as a <span class=\"fw-bold\">.NET engineer</span>.</p></div>"
+  "LinkedIn": "mucnjakf",
+  "MyStory": "<div style=\"text-align: justify;\"><p class=\"lh-lg\"><span class=\"fw-bold\">Software engineer</span> and <span class=\"fw-bold\">software engineering student</span> with a passion for crafting digital solutions using <span class=\"fw-bold\">.NET technologies</span>. Skilled at <span class=\"fw-bold\">writing clean, maintainable and well-tested code</span> with focus on web applications and backend systems.<p class=\"lh-lg\">Enrolled in a Master’s program at <span class=\"fw-bold\">Algebra Bernays University</span>, pursuing a <span class=\"fw-bold\">Master’s Degree in Computer Engineering</span>. Employed at <span class=\"fw-bold\">King ICT</span>, an information and communications technology company located in Zagreb. In this role, I serve as a <span class=\"fw-bold\">full stack developer</span> where I contribute to building and maintaining a set of applications and services used in the fields of technical protection and traffic management.</p></div>"
 }
