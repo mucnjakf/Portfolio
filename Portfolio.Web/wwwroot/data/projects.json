@@ -11,29 +11,49 @@
     "Link": "https://github.com/mucnjakf/Portfolio"
   },
   {
+    "Name": "OrderPoint",
+    "Image": "img/projects/orderpoint.svg",
+    "Description": "OrderPoint is an end-to-end restaurant ordering platform that lets customers scan QR codes to browse menus and place live table orders, while empowering staff to manage incoming requests and admins to control restaurant data.",
+    "TechStack": [
+      "TODO"
+    ],
+    "Link": "https://github.com/mucnjakf/OrderPoint"
+  },
+  {
+    "Name": "Codex",
+    "Image": "img/projects/codex.svg",
+    "Description": "Codex is a developer-focused blogging platform that helps software engineers publish technical articles, share code snippets, discover industry insights, and connect with the programming community.",
+    "TechStack": [
+      "TODO"
+    ],
+    "Link": "https://github.com/mucnjakf/Codex"
+  },
+  {
     "Name": "Herculean",
     "Image": "img/projects/herculean.svg",
     "Description": "Herculean is an all-in-one fitness and nutrition app that helps users track workouts, log meals, manage calories and macros, set goals, and monitor progress with ease.",
-    "TechStack": [    
+    "TechStack": [
       "TODO"
     ],
     "Link": "https://github.com/mucnjakf/Herculean"
   },
   {
-    "Name": "CashFlow",
-    "Image": "img/projects/cashflow.svg",
-    "Description": "CashFlow is a web application designed to simplify personal finance management by helping users record, monitor, and analyze income, expenses, account balances, and financial categories with ease.",
+    "Name": "DevHabit",
+    "Image": "img/projects/devhabit.svg",
+    "Description": "DevHabit is a habit-tracking app designed to help developers build and maintain productive routines, track progress, and achieve personal and professional goals.",
     "TechStack": [
-      ".NET 8",
-      "Blazor WASM",
-      "Bootstrap",
-      "Web API",
-      "MediatR",
-      "EF Core",
-      "xUnit",
-      "PostgreSQL"
+      "TODO"
     ],
-    "Link": "https://github.com/mucnjakf/CashFlow"
+    "Link": "https://github.com/mucnjakf/DevHabit"
+  },
+  {
+    "Name": "Bookify",
+    "Image": "img/projects/bookify.svg",
+    "Description": "Bookify is a comprehensive accommodation booking web app that helps users discover places to stay, compare prices and manage reservations.",
+    "TechStack": [
+      "TODO"
+    ],
+    "Link": "https://github.com/mucnjakf/Bookify"
   },
   {
     "Name": "BillTracker",
@@ -50,7 +70,7 @@
       ".NET 9",
       "Web API",
       "Fast Endpoints",
-      "EF Core",      
+      "EF Core",
       "PostgreSQL"
     ],
     "Link": "https://github.com/mucnjakf/BillTracker"
@@ -202,7 +222,7 @@
     "Image": "img/projects/heisthub.svg",
     "Description": "HeistHub is a heist planning and management app that helps recruit crew members, assign roles, execute heists, and analyze outcomes for success.",
     "TechStack": [
-      ".NET 9",      
+      ".NET 9",
       "Web API",
       "MediatR",
       "EF Core",
@@ -318,5 +338,14 @@
       "MySql"
     ],
     "Link": "https://github.com/mucnjakf/NASA"
+  },
+  {
+    "Name": "365DaysOfUs",
+    "Image": "img/projects/365DaysOfUs.svg",
+    "Description": "A romantic, interactive anniversary web app celebrating love story.",
+    "TechStack": [
+      "TODO"
+    ],
+    "Link": "https://github.com/mucnjakf/365DaysOfUs"
   }
 ]

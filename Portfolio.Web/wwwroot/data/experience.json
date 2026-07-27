@@ -1,14 +1,44 @@
 ﻿[
   {
     "Position": "Full Stack Developer",
-    "Date": "FEBRUARY 2025. <i class=\"bi bi-arrow-right-short\"></i> PRESENT",
+    "Date": "OCTOBER 2025. <i class=\"bi bi-arrow-right-short\"></i> MAY 2026.",
+    "Company": "Factory X",
+    "CompanyLocation": "Ulica Nikole Tesle 28, Pribislavec, Croatia",
+    "Logo": "factoryx.png",
+    "Projects": [
+      {
+        "Name": "Construction workforce management platform",
+        "Description": "<div class=\"lh-lg mb-2\"><i class=\"bi bi-dot\"></i> Contributed to the design, development, and testing of a specialized platform used for managing the workforce across the construction sector.</div><div class=\"lh-lg\"><i class=\"bi bi-dot\"></i> I implemented a custom software solution tailored for construction companies, including features for coordinating employers and workers on-site, tracking resources, and digitizing core business processes to optimize field operations.</div>",
+        "TechStack": [
+          ".NET 8",
+          "Web API",
+          "SignalR",
+          "Identity",
+          "EF Core",
+          "Quartz.NET",
+          "Azure AI",
+          "Azure ServiceBus",
+          "Azure Storage",
+          "TypeScript",
+          "Vue",
+          "Quasar",
+          "Capacitor",
+          "MS SQL Server",
+          "Aspire"
+        ]
+      }
+    ]
+  },
+  {
+    "Position": "Full Stack Developer",
+    "Date": "FEBRUARY 2025. <i class=\"bi bi-arrow-right-short\"></i> AUGUST 2025.",
     "Company": "King ICT",
     "CompanyLocation": "Buzinski prilaz 10, Buzin, Croatia",
     "Logo": "kingict.png",
     "Projects": [
       {
         "Name": "User management system",
-        "Description": "<div class=\"lh-lg mb-2\"><i class=\"bi bi-dot\"></i> Contributed to the design, development, and testing of a web application used for managing users across a large-scale microservice-based system in the technical protection domain.</div><div class=\"lh-lg\"><i class=\"bi bi-dot\"></i>I implemented a user management system, including features for role-based access control, user lifecycle management, and integration with other services within the ecosystem.</div>",
+        "Description": "<div class=\"lh-lg mb-2\"><i class=\"bi bi-dot\"></i> Contributed to the design, development, and testing of a web application used for managing users across a large-scale microservice-based system in the technical protection domain.</div><div class=\"lh-lg\"><i class=\"bi bi-dot\"></i> I implemented a user management system, including features for role-based access control, user lifecycle management, and integration with other services within the ecosystem.</div>",
         "TechStack": [
           ".NET 8",
           "Blazor",

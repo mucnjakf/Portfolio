@@ -2,13 +2,13 @@
   "ProfileImage": "img/profile-image.png",
   "Name": "Filip Mučnjak",
   "Description": "I am a software engineer with more than 5 years of experience and a passion for crafting high quality digital solutions.",
-  "Professional": "Full Stack Developer at King ICT",
+  "Professional": "Software Engineer",
   "Education": "Bachelor in Software Engineering",
   "Gender": "Male",
   "DateOfBirth": "04. May. 1997.",
   "Location": "Zagreb, Croatia",
-  "Email": "crtofilix@gmail.com",
+  "Email": "crofilix@gmail.com",
   "GitHub": "mucnjakf",
   "LinkedIn": "mucnjakf",
-  "MyStory": "<div style=\"text-align: justify;\"><p class=\"lh-lg\"><span class=\"fw-bold\">Software engineer</span> and <span class=\"fw-bold\">software engineering student</span> with a passion for crafting digital solutions using <span class=\"fw-bold\">.NET technologies</span>. Skilled at <span class=\"fw-bold\">writing clean, maintainable and well-tested code</span> with focus on web applications and backend systems.<p class=\"lh-lg\">Enrolled in a Master’s program at <span class=\"fw-bold\">Algebra Bernays University</span>, pursuing a <span class=\"fw-bold\">Master’s Degree in Computer Engineering</span>. Employed at <span class=\"fw-bold\">King ICT</span>, an information and communications technology company located in Zagreb. In this role, I serve as a <span class=\"fw-bold\">full stack developer</span> where I contribute to building and maintaining a set of applications and services used in the fields of technical protection and traffic management.</p></div>"
+  "MyStory": "<div style=\"text-align: justify;\"><p class=\"lh-lg\"><span class=\"fw-bold\">Software engineer</span> and <span class=\"fw-bold\">software engineering student</span> with a passion for crafting digital solutions using <span class=\"fw-bold\">.NET technologies</span>. Skilled at <span class=\"fw-bold\">writing clean, maintainable and well-tested code</span> with focus on web applications and backend systems.<p class=\"lh-lg\">Enrolled in a Master’s program at <span class=\"fw-bold\">Algebra Bernays University</span>, pursuing a <span class=\"fw-bold\">Master’s Degree in Computer Engineering</span>. Operating independently, I work as a <span class=\"fw-bold\">freelance full stack developer</span> and <span class=\"fw-bold\">B2B IT consultant</span>, partnering directly with businesses and agencies to architect, build, and maintain robust custom software solutions."
 }

@@ -45,8 +45,8 @@
     }
   ],
   "Certifications": [
-    "<span class=\"text-muted\">Microsoft Technology Associate:</span> Software Development 2019",
-    "<span class=\"text-muted\">Microsoft Technology Associate:</span> Database Fundamentals 2019",
-    "<span class=\"text-muted\">Microsoft Technology Associate:</span> Introduction to Programming Using HTML and CSS 2019"
+    "<a class=\"text-decoration-none\" href=\"https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=129&cvid=xklTypFE/k652xN3C3yK6Q==\"><span class=\"text-muted\">Microsoft Technology Associate:</span> <span class=\"text-white\">Software Development Fundamentals 2019</span></a>",
+    "<a class=\"text-decoration-none\" href=\"https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=132&cvid=WzTM+1rXiwtivpR3bjTSgA==\"><span class=\"text-muted\">Microsoft Technology Associate:</span> <span class=\"text-white\">Database Administration Fundamentals 2019</span></a>",
+    "<a class=\"text-decoration-none\" href=\"https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=397&cvid=oORHMizNFrwvf4NPQte7jg==\"><span class=\"text-muted\">Microsoft Technology Associate:</span> <span class=\"text-white\">Introduction to Programming Using HTML and CSS 2019</span></a>"
   ]
 }
