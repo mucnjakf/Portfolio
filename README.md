@@ -13,7 +13,7 @@ Personal Website - 2024.
 #
 
 ### **⚙️ Tech Stack**
-- .NET 8 - ASP.NET Core Blazor Server
+- .NET 10 - ASP.NET Core Blazor WebAssembly
 - Bootstrap 5
 
 #
