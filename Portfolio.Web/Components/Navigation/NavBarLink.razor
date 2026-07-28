@@ -1,5 +1,5 @@
 ﻿<li class="nav-item text-center" style="width: 10rem;">
-    <NavLink Match="NavLinkMatch.All" Href="@Href" class="nav-link rounded-4">
+    <NavLink Match="NavLinkMatch.All" class="nav-link rounded-4" @onclick="() => NavigationManager.NavigateTo(Href)">
         <i class="bi @Icon me-2"></i>
         @Text
     </NavLink>
@@ -15,5 +15,8 @@
 
     [Parameter]
     public string Text { get; set; } = default!;
+
+    [Inject]
+    private NavigationManager NavigationManager { get; set; } = default!;
 
 }
