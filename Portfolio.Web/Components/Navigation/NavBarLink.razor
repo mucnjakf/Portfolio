@@ -1,8 +1,8 @@
 ﻿<li class="nav-item text-center" style="width: 10rem;">
-    <NavLink @onclick="() => NavigationManager.NavigateTo(Href)" style="cursor: pointer;">
+    <button class="btn cursor-pointer" @onclick="() => NavigationManager.NavigateTo(Href)">
         <i class="bi @Icon me-2"></i>
         @Text
-    </NavLink>
+    </button>
 </li>
 
 @code {
