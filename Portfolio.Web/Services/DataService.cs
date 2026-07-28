@@ -1,15 +1,10 @@
-﻿using System.Text.Json;
+﻿using System.Net.Http.Json;
 
 namespace Portfolio.Web.Services;
 
-public sealed class DataService : IDataService
+public sealed class DataService(HttpClient httpClient) : IDataService
 {
-    private const string Path = "wwwroot/data";
-
     public async Task<T> ParseJsonAsync<T>(string page)
-    {
-        string json = await File.ReadAllTextAsync($"{Path}/{page}.json");
-        
-        return JsonSerializer.Deserialize<T>(json)!;
-    }
+        => await httpClient.GetFromJsonAsync<T>($"data/{page}.json") ??
+           throw new InvalidOperationException($"Failed to load {page}.json");
 }

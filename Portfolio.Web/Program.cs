@@ -1,30 +1,15 @@
-using Portfolio.Web.Components;
+using Microsoft.AspNetCore.Components.Web;
 using Portfolio.Web.Services;
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Portfolio.Web.Components;
 
-WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+var builder = WebAssemblyHostBuilder.CreateDefault(args);
 
-builder.Services
-    .AddRazorComponents()
-    .AddInteractiveServerComponents();
+builder.RootComponents.Add<App>("#app");
+builder.RootComponents.Add<HeadOutlet>("head::after");
+
+builder.Services.AddScoped(_ => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
 builder.Services.AddScoped<IDataService, DataService>();
 
-WebApplication app = builder.Build();
-
-if (!app.Environment.IsDevelopment())
-{
-    app.UseHsts();
-}
-
-app.UseStatusCodePagesWithRedirects("/not-found");
-
-app.UseHttpsRedirection();
-
-app.UseStaticFiles();
-app.UseAntiforgery();
-
-app
-    .MapRazorComponents<App>()
-    .AddInteractiveServerRenderMode();
-
-app.Run();
+await builder.Build().RunAsync();
