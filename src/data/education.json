@@ -1,0 +1,23 @@
+[
+  {
+    "degree": "Professional Master in Computer Engineering",
+    "institution": "Algebra Bernays University · Zagreb, Croatia",
+    "dateRange": "2022 - Present",
+    "description": "Advanced C#, Java, Python & JavaScript · Software Design · DevOps · Data Analysis · Critical Thinking",
+    "icon": "LuGraduationCap"
+  },
+  {
+    "degree": "Bachelor in Software Engineering",
+    "institution": "Algebra University College · Zagreb, Croatia",
+    "dateRange": "2017 - 2022",
+    "description": "Object-Oriented Programming · Web Technologies · Mobile Development · Computer Networks · Project Management",
+    "icon": "LuBookOpen"
+  },
+  {
+    "degree": "Technician for Mechatronics",
+    "institution": "Fran Bošnjaković Mechanical Engineering School · Zagreb, Croatia",
+    "dateRange": "2012 - 2016",
+    "description": "Programming in C · Microcontrollers · AutoCAD Design",
+    "icon": "LuSchool"
+  }
+]

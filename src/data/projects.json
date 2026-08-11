@@ -1,0 +1,149 @@
+[
+  {
+    "name": "OrderPoint",
+    "brow": "Restaurant platform",
+    "status": "completed",
+    "description": "End-to-end restaurant ordering platform - customers scan QR codes to browse menus and place live table orders, while staff manage incoming requests and admins control restaurant data in real time.",
+    "techStack": [
+      {
+        "name": ".NET Blazor",
+        "highlight": true
+      },
+      {
+        "name": ".NET Minimal API",
+        "highlight": true
+      },
+      {
+        "name": "Aspire",
+        "highlight": true
+      },
+      {
+        "name": "PostgreSQL",
+        "highlight": true
+      },
+      {
+        "name": "MudBlazor",
+        "highlight": false
+      },
+      {
+        "name": "MediatR",
+        "highlight": false
+      },
+      {
+        "name": "EF Core",
+        "highlight": false
+      },
+      {
+        "name": "FluentValidation",
+        "highlight": false
+      },
+      {
+        "name": "Scalar",
+        "highlight": false
+      },
+      {
+        "name": "OpenTelemetry",
+        "highlight": false
+      }
+    ],
+    "image": "OrderPoint Admin Web"
+  },
+  {
+    "name": "Poseidon",
+    "brow": "Maritime security platform",
+    "status": "completed",
+    "description": "A machine learning-powered maritime security platform that provides real-time analysis of ocean data to detect suspicious behavior, enabling authorities to combat illegal fishing, smuggling, and other illicit activities.",
+    "techStack": [
+      {
+        "name": ".NET Blazor",
+        "highlight": true
+      },
+      {
+        "name": ".NET Web API",
+        "highlight": true
+      },
+      {
+        "name": "MS SQL Server",
+        "highlight": true
+      },
+      {
+        "name": "Radzen",
+        "highlight": false
+      },
+      {
+        "name": "Leaflet.js",
+        "highlight": false
+      },
+      {
+        "name": "Bootstrap",
+        "highlight": false
+      },
+      {
+        "name": "ML.NET",
+        "highlight": false
+      },
+      {
+        "name": "Identity",
+        "highlight": false
+      },
+      {
+        "name": "EF Core",
+        "highlight": false
+      },
+      {
+        "name": "SignalR",
+        "highlight": false
+      },
+      {
+        "name": "Hangfire",
+        "highlight": false
+      }
+    ],
+    "image": "Poseidon Map"
+  },
+  {
+    "name": "BillTracker",
+    "brow": "Billing management",
+    "status": "in-development",
+    "description": "An intuitive business platform that streamlines customer management and billing, alongside a detailed product inventory system featuring complete categories and subcategories.",
+    "techStack": [
+      {
+        "name": "React.js",
+        "highlight": true
+      },
+      {
+        "name": ".NET Minimal API",
+        "highlight": true
+      },
+      {
+        "name": "PostgreSQL",
+        "highlight": true
+      },
+      {
+        "name": "React Router",
+        "highlight": false
+      },
+      {
+        "name": "Axios",
+        "highlight": false
+      },
+      {
+        "name": "Recharts",
+        "highlight": false
+      },
+      {
+        "name": "Bootstrap",
+        "highlight": false
+      },
+      {
+        "name": "FastEndpoints",
+        "highlight": false
+      },
+      {
+        "name": "EF Core",
+        "highlight": false
+      }
+    ],
+    "image": "BillTracker Dashboard"
+  }
+]

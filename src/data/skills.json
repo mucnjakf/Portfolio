@@ -1,0 +1,197 @@
+[
+  {
+    "category": "Frontend",
+    "icon": "LuMonitor",
+    "sections": [
+      {
+        "title": "Programming languages",
+        "skills": [
+          { "name": "C#", "highlight": true },
+          { "name": "JavaScript", "highlight": true },
+          { "name": "TypeScript", "highlight": true },
+          { "name": "HTML", "highlight": false },
+          { "name": "CSS", "highlight": false }
+        ]
+      },
+      {
+        "title": "Frameworks",
+        "skills": [
+          { "name": "React.js", "highlight": true },
+          { "name": "Vue.js", "highlight": true },
+          { "name": ".NET MVC", "highlight": true },
+          { "name": ".NET Razor Pages", "highlight": false },
+          { "name": ".NET Blazor", "highlight": false }
+        ]
+      },
+      {
+        "title": "Libraries",
+        "skills": [
+          { "name": "MudBlazor", "highlight": true },
+          { "name": "Material UI", "highlight": true },
+          { "name": "Tailwind CSS", "highlight": false },
+          { "name": "Bootstrap", "highlight": false }
+        ]
+      },
+      {
+        "title": "Testing",
+        "skills": [
+          { "name": "xUnit", "highlight": true },
+          { "name": "NSubstitute", "highlight": true },
+          { "name": "Selenium", "highlight": false }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Backend",
+    "icon": "LuServer",
+    "sections": [
+      {
+        "title": "Programming languages",
+        "skills": [{ "name": "C#", "highlight": true }]
+      },
+      {
+        "title": "Frameworks",
+        "skills": [
+          { "name": ".NET Web API", "highlight": true },
+          { "name": ".NET Minimal API", "highlight": false }
+        ]
+      },
+      {
+        "title": "Libraries",
+        "skills": [
+          { "name": "SignalR", "highlight": true },
+          { "name": "EF Core", "highlight": true },
+          { "name": "Identity", "highlight": false },
+          { "name": "Azure Storage", "highlight": false },
+          { "name": "MediatR", "highlight": false },
+          { "name": "Firebase", "highlight": false }
+        ]
+      },
+      {
+        "title": "Testing",
+        "skills": [
+          { "name": "xUnit", "highlight": true },
+          { "name": "NSubstitute", "highlight": true },
+          { "name": "Moq", "highlight": false }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Architecture",
+    "icon": "LuLayers",
+    "sections": [
+      {
+        "title": "System",
+        "skills": [
+          { "name": "Modular monolith", "highlight": true },
+          { "name": "Microservices", "highlight": false },
+          { "name": "Event-driven", "highlight": false }
+        ]
+      },
+      {
+        "title": "Software",
+        "skills": [
+          { "name": "Clean arch.", "highlight": true },
+          { "name": "Domain driven design", "highlight": true },
+          { "name": "Layered arch.", "highlight": false },
+          { "name": "REST", "highlight": false }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Infrastructure",
+    "icon": "LuCloud",
+    "sections": [
+      {
+        "title": "DevOps",
+        "skills": [
+          { "name": "GitHub", "highlight": true },
+          { "name": "GitLab", "highlight": true },
+          { "name": "Aspire", "highlight": false },
+          { "name": "Docker", "highlight": false },
+          { "name": "Azure", "highlight": false },
+          { "name": "SonarQube", "highlight": false }
+        ]
+      },
+      {
+        "title": "Database",
+        "skills": [
+          { "name": "SQL", "highlight": true },
+          { "name": "PostgreSQL", "highlight": true },
+          { "name": "MS SQL Server", "highlight": false }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Paradigms",
+    "icon": "LuGitFork",
+    "sections": [
+      {
+        "title": "Design patterns",
+        "skills": [
+          { "name": "DI", "highlight": true },
+          { "name": "CQRS", "highlight": true },
+          { "name": "Mediator", "highlight": false },
+          { "name": "Repository", "highlight": false },
+          { "name": "Unit-of-work", "highlight": false },
+          { "name": "Factory", "highlight": false },
+          { "name": "Singleton", "highlight": false }
+        ]
+      },
+      {
+        "title": "Design principles",
+        "skills": [
+          { "name": "SOLID", "highlight": true },
+          { "name": "KISS", "highlight": true },
+          { "name": "YAGNI", "highlight": false },
+          { "name": "DRY", "highlight": false }
+        ]
+      },
+      {
+        "title": "Methodologies",
+        "skills": [
+          { "name": "Agile", "highlight": true },
+          { "name": "Scrum", "highlight": true },
+          { "name": "Kanban", "highlight": false }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Tools",
+    "icon": "LuWrench",
+    "sections": [
+      {
+        "title": "Development",
+        "skills": [
+          { "name": "Rider", "highlight": true },
+          { "name": "WebStorm", "highlight": true },
+          { "name": "DataGrip", "highlight": false },
+          { "name": "VS Code", "highlight": false },
+          { "name": "Postman", "highlight": false },
+          { "name": "Claude Code", "highlight": false }
+        ]
+      },
+      {
+        "title": "Productivity",
+        "skills": [
+          { "name": "Notion", "highlight": true },
+          { "name": "Google Workspace", "highlight": false },
+          { "name": "Figma", "highlight": false }
+        ]
+      },
+      {
+        "title": "Operating systems",
+        "skills": [
+          { "name": "MacOS", "highlight": true },
+          { "name": "Linux", "highlight": true },
+          { "name": "Windows", "highlight": false }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,427 @@
+[
+  {
+    "role": "Full Stack Developer",
+    "company": "Factory X",
+    "location": "Pribislavec, Croatia",
+    "projects": [
+      {
+        "name": "Construction Workforce Management Platform",
+        "dateRange": "Oct 2025 - May 2026",
+        "description": "Engineered a custom workforce management platform for the construction sector, delivering features for on-site coordination, resource tracking, and field operation digitization to optimise core business processes.",
+        "techStack": [
+          {
+            "name": "Vue.js",
+            "highlight": true
+          },
+          {
+            "name": ".NET Web API",
+            "highlight": true
+          },
+          {
+            "name": "Aspire",
+            "highlight": true
+          },
+          {
+            "name": "MS SQL Server",
+            "highlight": true
+          },
+          {
+            "name": "Quasar",
+            "highlight": false
+          },
+          {
+            "name": "SignalR",
+            "highlight": false
+          },
+          {
+            "name": "Identity",
+            "highlight": false
+          },
+          {
+            "name": "EF Core",
+            "highlight": false
+          },
+          {
+            "name": "Quartz.NET",
+            "highlight": false
+          },
+          {
+            "name": "Azure Storage",
+            "highlight": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "role": "Full Stack Developer",
+    "company": "King ICT",
+    "location": "Buzin, Croatia",
+    "projects": [
+      {
+        "name": "User Management System",
+        "dateRange": "May 2025 - Aug 2025",
+        "description": "Developed a comprehensive user management web application featuring role-based access control and lifecycle management to support a large-scale, microservice-based technical protection ecosystem.",
+        "techStack": [
+          {
+            "name": ".NET Blazor",
+            "highlight": true
+          },
+          {
+            "name": "Syncfusion",
+            "highlight": false
+          },
+          {
+            "name": "Strawberry Shake",
+            "highlight": false
+          },
+          {
+            "name": "bUnit",
+            "highlight": false
+          },
+          {
+            "name": "xUnit",
+            "highlight": false
+          },
+          {
+            "name": "Moq",
+            "highlight": false
+          }
+        ]
+      },
+      {
+        "name": "Visitor Announcement System",
+        "dateRange": "Feb 2025 - May 2025",
+        "description": "Designed and implemented a web application and REST API integrated with a third-party SDK to manage visitor announcements within a comprehensive technical security platform.",
+        "techStack": [
+          {
+            "name": ".NET Blazor",
+            "highlight": true
+          },
+          {
+            "name": ".NET Web API",
+            "highlight": true
+          },
+          {
+            "name": "MS SQL Server",
+            "highlight": true
+          },
+          {
+            "name": "Dapper",
+            "highlight": false
+          },
+          {
+            "name": "MudBlazor",
+            "highlight": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "role": "Full Stack Developer",
+    "company": "Infinum",
+    "location": "Zagreb, Croatia",
+    "projects": [
+      {
+        "name": "Creator - Fan Social Media Platform",
+        "dateRange": "Feb 2024 - Feb 2025",
+        "description": "Co-developed a creator-fan social media platform featuring exclusive content feeds and direct messaging, while implementing comprehensive admin and agent dashboards for seamless system and creator management. ",
+        "techStack": [
+          {
+            "name": ".NET MVC",
+            "highlight": true
+          },
+          {
+            "name": ".NET Web API",
+            "highlight": true
+          },
+          {
+            "name": "PostgreSQL",
+            "highlight": true
+          },
+          {
+            "name": "jQuery",
+            "highlight": false
+          },
+          {
+            "name": "Bootstrap",
+            "highlight": false
+          },
+          {
+            "name": "Azure AD B2C",
+            "highlight": false
+          },
+          {
+            "name": "Firebase",
+            "highlight": false
+          },
+          {
+            "name": "EF Core",
+            "highlight": false
+          },
+          {
+            "name": "SendBird",
+            "highlight": false
+          },
+          {
+            "name": "Azure Storage",
+            "highlight": false
+          },
+          {
+            "name": "xUnit",
+            "highlight": false
+          },
+          {
+            "name": "NSubstitute",
+            "highlight": false
+          }
+        ]
+      },
+      {
+        "name": "Sport Events Management System",
+        "dateRange": "Oct 2023 - Feb 2024",
+        "description": "Built a robust REST API providing backend support for a mobile sports event management platform that allows users to seamlessly host events, join activities, and track performance.",
+        "techStack": [
+          {
+            "name": ".NET Web API",
+            "highlight": true
+          },
+          {
+            "name": "PostgreSQL",
+            "highlight": true
+          },
+          {
+            "name": "Azure AD B2C",
+            "highlight": false
+          },
+          {
+            "name": "EF Core",
+            "highlight": false
+          },
+          {
+            "name": "xUnit",
+            "highlight": false
+          },
+          {
+            "name": "Moq",
+            "highlight": false
+          }
+        ]
+      },
+      {
+        "name": "Blood Donation Coordination Hub",
+        "dateRange": "Apr 2023 - Oct 2023",
+        "description": "Developed an admin dashboard and REST API for a blood donation platform that streamlines user scheduling, history tracking, and donation centre discovery.",
+        "techStack": [
+          {
+            "name": ".NET Blazor",
+            "highlight": true
+          },
+          {
+            "name": ".NET Web API",
+            "highlight": true
+          },
+          {
+            "name": "PostgreSQL",
+            "highlight": true
+          },
+          {
+            "name": "Bootstrap",
+            "highlight": false
+          },
+          {
+            "name": "Identity",
+            "highlight": false
+          },
+          {
+            "name": "EF Core",
+            "highlight": false
+          },
+          {
+            "name": "Firebase",
+            "highlight": false
+          },
+          {
+            "name": "SendGrid",
+            "highlight": false
+          },
+          {
+            "name": "xUnit",
+            "highlight": false
+          },
+          {
+            "name": "Moq",
+            "highlight": false
+          }
+        ]
+      },
+      {
+        "name": "Installation Management Network",
+        "dateRange": "May 2022 - Apr 2023",
+        "description": "Engineered an admin dashboard and REST API to manage projects, track work orders, and facilitate connections between manufacturers and retailers for retail installation resources.",
+        "techStack": [
+          {
+            "name": ".NET MVC",
+            "highlight": true
+          },
+          {
+            "name": ".NET Web API",
+            "highlight": true
+          },
+          {
+            "name": "PostgreSQL",
+            "highlight": true
+          },
+          {
+            "name": "jQuery",
+            "highlight": false
+          },
+          {
+            "name": "Bootstrap",
+            "highlight": false
+          },
+          {
+            "name": "Identity",
+            "highlight": false
+          },
+          {
+            "name": "EF Core",
+            "highlight": false
+          },
+          {
+            "name": "Firebase",
+            "highlight": false
+          },
+          {
+            "name": "SendGrid",
+            "highlight": false
+          },
+          {
+            "name": "Azure Storage",
+            "highlight": false
+          },
+          {
+            "name": "xUnit",
+            "highlight": false
+          },
+          {
+            "name": "Moq",
+            "highlight": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "role": "Full Stack Developer",
+    "company": "Enterwell",
+    "location": "Zagreb, Croatia",
+    "projects": [
+      {
+        "name": "Conference Device Management Tool",
+        "dateRange": "Mar 2022 - May 2022",
+        "description": "Developed a desktop application connected to a central web dashboard to ensure streamlined monitoring and coordination of conference equipment during events.",
+        "techStack": [
+          {
+            "name": ".NET WPF",
+            "highlight": true
+          },
+          {
+            "name": "MS SQL Server",
+            "highlight": true
+          },
+          {
+            "name": "SignalR",
+            "highlight": false
+          }
+        ]
+      },
+      {
+        "name": "Technical Security Solution",
+        "dateRange": "Feb 2021 - Mar 2022",
+        "description": "Integrated web and desktop dashboards to efficiently manage and monitor a comprehensive security platform featuring IoT devices, real-time video streaming, and access control units.",
+        "techStack": [
+          {
+            "name": "React.js",
+            "highlight": true
+          },
+          {
+            "name": ".NET MVC",
+            "highlight": true
+          },
+          {
+            "name": ".NET WPF",
+            "highlight": true
+          },
+          {
+            "name": ".NET Web API",
+            "highlight": true
+          },
+          {
+            "name": "MS SQL Server",
+            "highlight": true
+          },
+          {
+            "name": "Material UI",
+            "highlight": false
+          },
+          {
+            "name": "jQuery",
+            "highlight": false
+          },
+          {
+            "name": "Bootstrap",
+            "highlight": false
+          },
+          {
+            "name": "Identity",
+            "highlight": false
+          },
+          {
+            "name": "EF",
+            "highlight": false
+          },
+          {
+            "name": "SignalR",
+            "highlight": false
+          },
+          {
+            "name": "xUnit",
+            "highlight": false
+          },
+          {
+            "name": "Moq",
+            "highlight": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "role": "QA Associate",
+    "company": "Nanobit",
+    "location": "Zagreb, Croatia",
+    "projects": [
+      {
+        "name": "",
+        "dateRange": "Feb 2020 - Dec 2020",
+        "description": "Conducted rigorous feature testing, accurately reproduced reported issues, and provided actionable feedback via detailed bug reports to improve overall software quality.",
+        "techStack": []
+      }
+    ]
+  },
+  {
+    "role": "QA Associate",
+    "company": "UniqCast",
+    "location": "Zagreb, Croatia",
+    "projects": [
+      {
+        "name": "",
+        "dateRange": "May 2019 - Sep 2019",
+        "description": "Ensured software quality through manual and automated black box testing while contributing to development via QML programming, technical documentation, and customer support.",
+        "techStack": []
+      }
+    ]
+  }
+]

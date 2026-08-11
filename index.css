@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans: "Inter", system-ui, sans-serif;
+
+    --color-blue-50: #edf9ff;
+    --color-blue-100: #d6f0ff;
+    --color-blue-200: #b5e6ff;
+    --color-blue-300: #83d8ff;
+    --color-blue-400: #48c2ff;
+    --color-blue-500: #1ea4ff;
+    --color-blue-600: #068aff;
+    --color-blue-700: #007aff;
+    --color-blue-800: #085dc5;
+    --color-blue-900: #0d519b;
+    --color-blue-950: #0e315d;
+}
+
+/*TODO: remove*/
+
+:root {
+    /* ── Apple System Colors — Light ── */
+
+    /* Backgrounds (Apple grouped table view) */
+    --bg: #f2f2f7;
+    /* systemGroupedBackground          */
+    --surface: #ffffff;
+    /* secondarySystemGroupedBackground */
+    --surface-2: #f2f2f7;
+    /* tertiarySystemGroupedBackground  */
+    --surface-3: #e5e5ea;
+    /* systemFill                       */
+    --nav-bg: rgba(242, 242, 247, 0.85);
+
+    /* Labels (Apple Human Interface Guidelines) */
+    --t1: #1d1d1f;
+    /* label             */
+    --t2: #3a3a3c;
+    /* secondaryLabel    */
+    --t3: #6e6e73;
+    /* tertiaryLabel     */
+    --t4: #aeaeb2;
+    /* quaternaryLabel   */
+
+    /* Accent */
+    --accent: #007aff;
+    /* systemBlue        */
+    --accent-dk: #0062cc;
+    /* systemBlue active */
+    --accent-bg: rgba(0, 122, 255, 0.10);
+    --accent-t: #0066d6;
+
+    /* Semantic colors */
+    --green: #34c759;
+    /* systemGreen  */
+    --orange: #ff9500;
+    /* systemOrange */
+
+    /* Separators — iOS formula: rgba(60,60,67, opacity) */
+    --border: rgba(60, 60, 67, 0.12);
+    --border-2: rgba(60, 60, 67, 0.22);
+
+    /* Elevation shadows */
+    --sh1: 0 1px 4px rgba(0, 0, 0, 0.06);
+    --sh2: 0 4px 16px rgba(0, 0, 0, 0.09), 0 1px 4px rgba(0, 0, 0, 0.04);
+    --sh3: 0 16px 48px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);
+
+    /* Radii */
+    --r-s: 8px;
+    --r-m: 12px;
+    --r-l: 16px;
+    --r-xl: 20px;
+    --r-2xl: 24px;
+
+    --ease: cubic-bezier(.4, 0, .2, 1);
+    --tx: all .2s var(--ease);
+    --tx-s: all .15s var(--ease);
+}
+
+.proj-visuals {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Browser-frame mockup */
+.pscreen {
+    overflow: hidden;
+    transform: translateZ(0);
+}
+
+.pscreen-bar {
+    border-bottom: 1px solid var(--border);
+    padding: 9px 14px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.pscreen-dots {
+    display: flex;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+.pscreen-dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.pscreen-dots span:nth-child(1) {
+    background: #ff5f57;
+}
+
+.pscreen-dots span:nth-child(2) {
+    background: #ffbd2e;
+}
+
+.pscreen-dots span:nth-child(3) {
+    background: #28c840;
+}
+
+.pscreen-url {
+    flex: 1;
+    font-size: 11px;
+    border: 1px solid var(--border);
+    padding: 3px 10px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pscreen-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.pscreen-body.tall {
+    /*height: 260px;*/
+}
+
+.pscreen-body.short {
+    /*height: 130px;*/
+}
+
+.pscreen-icon {
+    position: relative;
+    z-index: 1;
+    color: rgba(255, 255, 255, .65);
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, .3));
+}
+
+.pscreen-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* CTA row */
+.projects-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 56px;
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
+}
+
+.pscreen-body img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    /* The Zoom Effect */
+    /*transform: scale(1.05);*/
+
+    /* Pin the zoom to the top center so the app's header remains visible */
+    transform-origin: top center;
+}
