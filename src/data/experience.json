@@ -1,6 +1,5 @@
 [
   {
-    "role": "Full Stack Developer",
     "company": "Factory X",
     "location": "Pribislavec, Croatia",
     "projects": [
@@ -54,7 +53,6 @@
     ]
   },
   {
-    "role": "Full Stack Developer",
     "company": "King ICT",
     "location": "Buzin, Croatia",
     "projects": [
@@ -119,7 +117,6 @@
     ]
   },
   {
-    "role": "Full Stack Developer",
     "company": "Infinum",
     "location": "Zagreb, Croatia",
     "projects": [
@@ -314,7 +311,6 @@
     ]
   },
   {
-    "role": "Full Stack Developer",
     "company": "Enterwell",
     "location": "Zagreb, Croatia",
     "projects": [
@@ -395,32 +391,6 @@
             "highlight": false
           }
         ]
-      }
-    ]
-  },
-  {
-    "role": "QA Associate",
-    "company": "Nanobit",
-    "location": "Zagreb, Croatia",
-    "projects": [
-      {
-        "name": "",
-        "dateRange": "Feb 2020 - Dec 2020",
-        "description": "Conducted rigorous feature testing, accurately reproduced reported issues, and provided actionable feedback via detailed bug reports to improve overall software quality.",
-        "techStack": []
-      }
-    ]
-  },
-  {
-    "role": "QA Associate",
-    "company": "UniqCast",
-    "location": "Zagreb, Croatia",
-    "projects": [
-      {
-        "name": "",
-        "dateRange": "May 2019 - Sep 2019",
-        "description": "Ensured software quality through manual and automated black box testing while contributing to development via QML programming, technical documentation, and customer support.",
-        "techStack": []
       }
     ]
   }

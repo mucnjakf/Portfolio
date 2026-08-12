@@ -2,7 +2,7 @@
   {
     "name": "OrderPoint",
     "brow": "Restaurant platform",
-    "status": "completed",
+    "status": "in-development",
     "description": "End-to-end restaurant ordering platform - customers scan QR codes to browse menus and place live table orders, while staff manage incoming requests and admins control restaurant data in real time.",
     "techStack": [
       {
@@ -104,7 +104,7 @@
   {
     "name": "BillTracker",
     "brow": "Billing management",
-    "status": "in-development",
+    "status": "completed",
     "description": "An intuitive business platform that streamlines customer management and billing, alongside a detailed product inventory system featuring complete categories and subcategories.",
     "techStack": [
       {

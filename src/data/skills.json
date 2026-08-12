@@ -6,9 +6,9 @@
       {
         "title": "Programming languages",
         "skills": [
-          { "name": "C#", "highlight": true },
           { "name": "JavaScript", "highlight": true },
           { "name": "TypeScript", "highlight": true },
+          { "name": "C#", "highlight": true },
           { "name": "HTML", "highlight": false },
           { "name": "CSS", "highlight": false }
         ]
@@ -17,18 +17,18 @@
         "title": "Frameworks",
         "skills": [
           { "name": "React.js", "highlight": true },
-          { "name": "Vue.js", "highlight": true },
-          { "name": ".NET MVC", "highlight": true },
-          { "name": ".NET Razor Pages", "highlight": false },
-          { "name": ".NET Blazor", "highlight": false }
+          { "name": ".NET Blazor", "highlight": true },
+          { "name": "Vue.js", "highlight": false },
+          { "name": ".NET MVC", "highlight": false },
+          { "name": ".NET Razor Pages", "highlight": false }
         ]
       },
       {
         "title": "Libraries",
         "skills": [
-          { "name": "MudBlazor", "highlight": true },
+          { "name": "Tailwind CSS", "highlight": true },
           { "name": "Material UI", "highlight": true },
-          { "name": "Tailwind CSS", "highlight": false },
+          { "name": "MudBlazor", "highlight": true },
           { "name": "Bootstrap", "highlight": false }
         ]
       },
@@ -53,18 +53,18 @@
       {
         "title": "Frameworks",
         "skills": [
-          { "name": ".NET Web API", "highlight": true },
-          { "name": ".NET Minimal API", "highlight": false }
+          { "name": ".NET Minimal API", "highlight": true },
+          { "name": ".NET Web API", "highlight": false }
         ]
       },
       {
         "title": "Libraries",
         "skills": [
-          { "name": "SignalR", "highlight": true },
           { "name": "EF Core", "highlight": true },
-          { "name": "Identity", "highlight": false },
+          { "name": "Identity", "highlight": true },
+          { "name": "MediatR", "highlight": true },
+          { "name": "SignalR", "highlight": false },
           { "name": "Azure Storage", "highlight": false },
-          { "name": "MediatR", "highlight": false },
           { "name": "Firebase", "highlight": false }
         ]
       },
@@ -95,8 +95,8 @@
         "skills": [
           { "name": "Clean arch.", "highlight": true },
           { "name": "Domain driven design", "highlight": true },
-          { "name": "Layered arch.", "highlight": false },
-          { "name": "REST", "highlight": false }
+          { "name": "REST", "highlight": true },
+          { "name": "Layered arch.", "highlight": false }
         ]
       }
     ]
@@ -110,8 +110,8 @@
         "skills": [
           { "name": "GitHub", "highlight": true },
           { "name": "GitLab", "highlight": true },
-          { "name": "Aspire", "highlight": false },
-          { "name": "Docker", "highlight": false },
+          { "name": "Aspire", "highlight": true },
+          { "name": "Docker", "highlight": true },
           { "name": "Azure", "highlight": false },
           { "name": "SonarQube", "highlight": false }
         ]
@@ -135,9 +135,9 @@
         "skills": [
           { "name": "DI", "highlight": true },
           { "name": "CQRS", "highlight": true },
-          { "name": "Mediator", "highlight": false },
-          { "name": "Repository", "highlight": false },
-          { "name": "Unit-of-work", "highlight": false },
+          { "name": "Mediator", "highlight": true },
+          { "name": "Repository", "highlight": true },
+          { "name": "Unit-of-work", "highlight": true },
           { "name": "Factory", "highlight": false },
           { "name": "Singleton", "highlight": false }
         ]
@@ -146,7 +146,7 @@
         "title": "Design principles",
         "skills": [
           { "name": "SOLID", "highlight": true },
-          { "name": "KISS", "highlight": true },
+          { "name": "KISS", "highlight": false },
           { "name": "YAGNI", "highlight": false },
           { "name": "DRY", "highlight": false }
         ]
@@ -155,8 +155,8 @@
         "title": "Methodologies",
         "skills": [
           { "name": "Agile", "highlight": true },
-          { "name": "Scrum", "highlight": true },
-          { "name": "Kanban", "highlight": false }
+          { "name": "Kanban", "highlight": false },
+          { "name": "Scrum", "highlight": true }
         ]
       }
     ]
@@ -170,7 +170,7 @@
         "skills": [
           { "name": "Rider", "highlight": true },
           { "name": "WebStorm", "highlight": true },
-          { "name": "DataGrip", "highlight": false },
+          { "name": "DataGrip", "highlight": true },
           { "name": "VS Code", "highlight": false },
           { "name": "Postman", "highlight": false },
           { "name": "Claude Code", "highlight": false }
@@ -180,7 +180,7 @@
         "title": "Productivity",
         "skills": [
           { "name": "Notion", "highlight": true },
-          { "name": "Google Workspace", "highlight": false },
+          { "name": "Google Workspace", "highlight": true },
           { "name": "Figma", "highlight": false }
         ]
       },

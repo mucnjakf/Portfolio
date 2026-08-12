@@ -1,21 +1,20 @@
 import Subtitle from "../typography/Subtitle.tsx";
 import Divider from "../display/Divider.tsx";
 import { DataService } from "../../services/dataService.tsx";
-import type { ElementType } from "react";
 import {
   LuBadgeCheck,
-  LuBookOpen,
   LuExternalLink,
-  LuGraduationCap,
-  LuSchool,
 } from "react-icons/lu";
 import ScrollReveal from "../animation/ScrollReveal.tsx";
 
-const IconMap: Record<string, ElementType> = {
-  LuGraduationCap: LuGraduationCap,
-  LuBookOpen: LuBookOpen,
-  LuSchool: LuSchool,
+import AlgebraLogo from "../../assets/education/algebra.jpg"
+import FbMesLogo from "../../assets/education/fbmes.jpg"
+
+const SchoolMap = {
+  "Algebra": AlgebraLogo,
+  "Fran": FbMesLogo,
 };
+
 
 function EducationSection() {
   const education = DataService.getEducation();
@@ -37,13 +36,25 @@ function EducationSection() {
         <div className="relative ml-6 flex flex-col gap-y-6 border-l border-zinc-400 dark:border-zinc-600">
           <div className="absolute top-0 -left-1.5 h-3 w-3 rounded-full bg-zinc-400 dark:bg-zinc-600" />
           {education.map((edu, index) => {
-            const Icon = IconMap[edu.icon] || LuGraduationCap;
+            const schoolKey = (
+              Object.keys(SchoolMap) as Array<keyof typeof SchoolMap>
+            ).find((key) => edu.institution.startsWith(key));
+
+            const schoolLogo = schoolKey ? SchoolMap[schoolKey] : null;
 
             return (
               <ScrollReveal key={index}>
                 <div className="relative pl-10">
-                  <div className="absolute top-0 -left-6 flex h-12 w-12 items-center justify-center rounded-xl border border-blue-700/30 bg-zinc-100 text-blue-700 dark:bg-zinc-800">
-                    <Icon size={18} className="text-blue-700" />
+                  <div className="absolute top-0 -left-6 flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl border border-blue-700/30 bg-zinc-100">
+                    {schoolLogo ? (
+                      <img
+                        src={schoolLogo}
+                        alt={`${edu.institution} logo`}
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      "X"
+                    )}
                   </div>
 
                   <div>
