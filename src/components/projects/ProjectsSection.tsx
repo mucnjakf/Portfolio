@@ -32,7 +32,7 @@ function ProjectsSection() {
                   status={project.status}
                   paragraph={project.description}
                   techStackBadges={project.techStack}
-                  image={project.image}
+                  image={project.name}
                   reverse={index % 2 === 1}
                 />
               </ScrollReveal>

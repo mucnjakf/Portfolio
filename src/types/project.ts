@@ -6,5 +6,4 @@ export type Project = {
   status: "completed" | "in-progress";
   description: string;
   techStack: ProjectTechStack[];
-  image: string;
 };

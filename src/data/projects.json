@@ -45,8 +45,7 @@
         "name": "OpenTelemetry",
         "highlight": false
       }
-    ],
-    "image": "OrderPoint Admin Web"
+    ]
   },
   {
     "name": "Poseidon",
@@ -98,8 +97,7 @@
         "name": "Hangfire",
         "highlight": false
       }
-    ],
-    "image": "Poseidon Map"
+    ]
   },
   {
     "name": "BillTracker",
@@ -143,7 +141,6 @@
         "name": "EF Core",
         "highlight": false
       }
-    ],
-    "image": "BillTracker Dashboard"
+    ]
   }
 ]
