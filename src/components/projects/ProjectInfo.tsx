@@ -42,21 +42,21 @@ function ProjectInfo({
 }: ProjectInfoProps) {
   const isCompleted = status === "completed";
 
-  const projectImagesAssetArray = ProjectMap[image as keyof typeof ProjectMap];
+  const projectImagesAssets = ProjectMap[image as keyof typeof ProjectMap];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = () => {
     setCurrentImageIndex(
-      (prevIndex) => (prevIndex + 1) % projectImagesAssetArray.length,
+      (prevIndex) => (prevIndex + 1) % projectImagesAssets.length,
     );
   };
 
   const prevImage = () => {
     setCurrentImageIndex(
       (prevIndex) =>
-        (prevIndex - 1 + projectImagesAssetArray.length) %
-        projectImagesAssetArray.length,
+        (prevIndex - 1 + projectImagesAssets.length) %
+        projectImagesAssets.length,
     );
   };
 
@@ -84,8 +84,6 @@ function ProjectInfo({
       prevImage();
     }
   };
-
-  const currentImageUrl = projectImagesAssetArray[currentImageIndex];
 
   return (
     <div className="grid grid-cols-1 gap-8 min-[650px]:grid-cols-2 min-[650px]:gap-6">
@@ -136,45 +134,40 @@ function ProjectInfo({
             </div>
           </div>
           <div
-            className="pscreen-body tall relative group overflow-hidden"
+            className="pscreen-body tall group relative overflow-hidden"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
-            {/* 
-              1. THE ANCHOR IMAGE (Invisible)
-              We always load the first image (your desktop dashboard) as an invisible block. 
-              This forces the browser window to ALWAYS be the exact perfect height of your desktop 
-              screenshots, regardless of what image is currently showing.
-            */}
             <img
-              src={projectImagesAssetArray[0]}
+              src={projectImagesAssets[0]}
               alt="layout anchor"
-              className="w-full h-auto block opacity-0 pointer-events-none"
+              className="pointer-events-none block h-auto w-full opacity-0"
             />
 
-            {/* 
-              2. THE ACTIVE CAROUSEL IMAGE
-              Because this is absolutely positioned over the anchor, desktop images will match 
-              the anchor perfectly. When a tall mobile image appears, it fills the width, but 
-              the excess height simply flows out the bottom and gets chopped off. Zero layout shift.
-            */}
-            <img
-              src={currentImageUrl}
-              alt={`${subtitle} visual`}
-              className="absolute top-0 left-0 w-full h-auto"
-            />
+            <div
+              className="absolute top-0 left-0 flex h-full w-full items-start transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
+            >
+              {projectImagesAssets.map((imgSrc, index) => (
+                <img
+                  key={index}
+                  src={imgSrc}
+                  alt={`${subtitle} visual ${index + 1}`}
+                  className="block h-auto w-full flex-shrink-0"
+                />
+              ))}
+            </div>
 
-            {/* User controls - Arrow buttons */}
             <button
               onClick={prevImage}
-              className="absolute left-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-white/70 text-zinc-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-white z-10"
+              className="absolute top-1/2 left-2 z-10 -translate-y-1/2 rounded-full bg-white/70 p-1.5 text-zinc-900 opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:bg-white"
             >
               <LuChevronLeft size={20} />
             </button>
             <button
               onClick={nextImage}
-              className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-white/70 text-zinc-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-white z-10"
+              className="absolute top-1/2 right-2 z-10 -translate-y-1/2 rounded-full bg-white/70 p-1.5 text-zinc-900 opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:bg-white"
             >
               <LuChevronRight size={20} />
             </button>
