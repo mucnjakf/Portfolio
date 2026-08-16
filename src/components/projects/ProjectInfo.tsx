@@ -86,9 +86,12 @@ function ProjectInfo({
   };
 
   return (
-    <div className="grid grid-cols-1 gap-8 min-[650px]:grid-cols-2 min-[650px]:gap-6">
+    <div className="grid grid-cols-1 items-center gap-8 min-[768px]:grid-cols-12 min-[768px]:gap-10">
+      {/* 
+        TEXT COLUMN: Takes up 5 out of 12 columns (roughly 40% width) 
+      */}
       <div
-        className={`order-1 flex flex-col justify-center gap-4 min-[650px]:gap-2 ${reverse ? "min-[650px]:order-2" : "min-[650px]:order-1"}`}
+        className={`order-1 flex flex-col justify-center gap-4 min-[768px]:col-span-5 min-[768px]:gap-2 ${reverse ? "min-[768px]:order-2" : "min-[768px]:order-1"}`}
       >
         <Subtitle text={subtitle} brow={brow} />
 
@@ -118,11 +121,13 @@ function ProjectInfo({
         </div>
       </div>
 
+      {/* 
+        BROWSER COLUMN: Takes up 7 out of 12 columns (roughly 60% width), making it much larger 
+      */}
       <div
-        className={`proj-visuals order-2 flex flex-col justify-center ${reverse ? "min-[650px]:order-1" : "min-[650px]:order-2"}`}
+        className={`proj-visuals order-2 flex flex-col justify-center min-[768px]:col-span-7 ${reverse ? "min-[768px]:order-1" : "min-[768px]:order-2"}`}
       >
-        <div className="pscreen overflow-hidden rounded-2xl bg-zinc-100 ring-1 ring-black/5 dark:bg-zinc-800 dark:ring-white/10">
-          {" "}
+        <div className="pscreen overflow-hidden rounded-2xl bg-zinc-100 ring-1 ring-black/5 dark:bg-zinc-800 dark:ring-white/10 shadow-lg">
           <div className="pscreen-bar bg-zinc-100 dark:bg-zinc-800">
             <div className="pscreen-dots">
               <span></span>
@@ -161,15 +166,15 @@ function ProjectInfo({
 
             <button
               onClick={prevImage}
-              className="absolute top-1/2 left-2 z-10 -translate-y-1/2 rounded-full bg-white/70 p-1.5 text-zinc-900 opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:bg-white"
+              className="absolute top-1/2 left-2 z-10 -translate-y-1/2 rounded-full bg-white/80 p-2 text-zinc-900 opacity-0 shadow-sm transition-opacity duration-300 group-hover:opacity-100 hover:bg-white"
             >
-              <LuChevronLeft size={20} />
+              <LuChevronLeft size={24} />
             </button>
             <button
               onClick={nextImage}
-              className="absolute top-1/2 right-2 z-10 -translate-y-1/2 rounded-full bg-white/70 p-1.5 text-zinc-900 opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:bg-white"
+              className="absolute top-1/2 right-2 z-10 -translate-y-1/2 rounded-full bg-white/80 p-2 text-zinc-900 opacity-0 shadow-sm transition-opacity duration-300 group-hover:opacity-100 hover:bg-white"
             >
-              <LuChevronRight size={20} />
+              <LuChevronRight size={24} />
             </button>
           </div>
         </div>
