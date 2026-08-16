@@ -136,26 +136,45 @@ function ProjectInfo({
             </div>
           </div>
           <div
-            className="pscreen-body tall group relative overflow-hidden"
+            className="pscreen-body tall relative group overflow-hidden"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
+            {/* 
+              1. THE ANCHOR IMAGE (Invisible)
+              We always load the first image (your desktop dashboard) as an invisible block. 
+              This forces the browser window to ALWAYS be the exact perfect height of your desktop 
+              screenshots, regardless of what image is currently showing.
+            */}
+            <img
+              src={projectImagesAssetArray[0]}
+              alt="layout anchor"
+              className="w-full h-auto block opacity-0 pointer-events-none"
+            />
+
+            {/* 
+              2. THE ACTIVE CAROUSEL IMAGE
+              Because this is absolutely positioned over the anchor, desktop images will match 
+              the anchor perfectly. When a tall mobile image appears, it fills the width, but 
+              the excess height simply flows out the bottom and gets chopped off. Zero layout shift.
+            */}
             <img
               src={currentImageUrl}
               alt={`${subtitle} visual`}
-              className="h-full w-full object-cover"
+              className="absolute top-0 left-0 w-full h-auto"
             />
 
+            {/* User controls - Arrow buttons */}
             <button
               onClick={prevImage}
-              className="absolute top-1/2 left-2 -translate-y-1/2 rounded-full bg-white/70 p-1.5 text-zinc-900 opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:bg-white"
+              className="absolute left-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-white/70 text-zinc-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-white z-10"
             >
               <LuChevronLeft size={20} />
             </button>
             <button
               onClick={nextImage}
-              className="absolute top-1/2 right-2 -translate-y-1/2 rounded-full bg-white/70 p-1.5 text-zinc-900 opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:bg-white"
+              className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-white/70 text-zinc-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-white z-10"
             >
               <LuChevronRight size={20} />
             </button>

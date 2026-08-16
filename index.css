@@ -20,8 +20,6 @@
     --color-blue-950: #0e315d;
 }
 
-/*TODO: remove*/
-
 :root {
     /* ── Apple System Colors — Light ── */
 
@@ -137,19 +135,24 @@
 }
 
 .pscreen-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
     overflow: hidden;
+    /* Removed flexbox and alignment rules, they are no longer needed */
 }
 
 .pscreen-body.tall {
-    /*height: 260px;*/
+    width: 100%;
+    /* Removed ALL heights, max-heights, and aspect-ratios! */
+}
+
+.pscreen-body img {
+    /* Removed width/height/display rules since Tailwind classes in React are handling it */
+    transform-origin: top center;
 }
 
 .pscreen-body.short {
-    /*height: 130px;*/
+    width: 100%;
+    max-height: 250px;
 }
 
 .pscreen-icon {
@@ -174,16 +177,4 @@
     padding-top: 56px;
     border-top: 1px solid var(--border);
     flex-wrap: wrap;
-}
-
-.pscreen-body img {
-    width: 100%;
-    height: auto;
-    display: block;
-
-    /* The Zoom Effect */
-    /*transform: scale(1.05);*/
-
-    /* Pin the zoom to the top center so the app's header remains visible */
-    transform-origin: top center;
 }
