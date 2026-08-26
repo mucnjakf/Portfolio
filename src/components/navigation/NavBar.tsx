@@ -66,7 +66,7 @@ function NavBar() {
   }, []);
 
   const handleDownload = () => {
-    const pdfUrl = `${import.meta.env.BASE_URL}Filip_Mucnjak_Resume.pdf`;    
+    const pdfUrl = `/Portfolio/Filip_Mucnjak_Resume.pdf`;
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "Filip_Mucnjak_Resume.pdf";
