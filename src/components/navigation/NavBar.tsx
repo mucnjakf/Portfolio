@@ -65,6 +65,16 @@ function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleDownload = () => {
+    const pdfUrl = `${import.meta.env.BASE_URL}Filip_Mucnjak_Resume.pdf`;    
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Filip_Mucnjak_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="fixed top-0 right-0 left-0 z-50 flex justify-center border-b border-b-zinc-200 bg-zinc-50/10 backdrop-blur-md dark:border-b-zinc-800 dark:bg-zinc-950/10">
       <ScrollReveal className="flex w-full justify-center">
@@ -106,6 +116,7 @@ function NavBar() {
                 text="Resume"
                 icon={LuDownload}
                 className="px-2.5 py-2 text-xs"
+                onClick={handleDownload}
               />
 
               <IconButtonSecondary
