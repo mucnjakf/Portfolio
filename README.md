@@ -1,4 +1,4 @@
-# <img src="portfolio.svg" width="35"/> Portfolio
+# <img src="portfolio.svg" width="50"/> Portfolio
 
 ### **👁️ Overview**
 Personal Portfolio Web Application - 2026. 
