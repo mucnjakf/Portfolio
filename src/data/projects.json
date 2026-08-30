@@ -48,6 +48,62 @@
     ]
   },
   {
+    "name": "Codex",
+    "brow": "Developer Publishing Platform",
+    "status": "in-development",
+    "description": "Codex is a paid publishing platform designed for developers to write, share, and publish articles.",
+    "techStack": [
+      {
+        "name": "React.js",
+        "highlight": true
+      },
+      {
+        "name": ".NET Minimal API",
+        "highlight": true
+      },
+      {
+        "name": "PostgreSQL",
+        "highlight": true
+      },
+      {
+        "name": "Aspire",
+        "highlight": true
+      },
+      {
+        "name": "TanStack Start",
+        "highlight": false
+      },
+      {
+        "name": "Axios",
+        "highlight": false
+      },
+      {
+        "name": "Shadcn UI",
+        "highlight": false
+      },
+      {
+        "name": "EF Core",
+        "highlight": false
+      },
+      {
+        "name": "MediatR",
+        "highlight": false
+      },
+      {
+        "name": "FluentValidation",
+        "highlight": false
+      },
+      {
+        "name": "OpenTelemetry",
+        "highlight": false
+      },
+      {
+        "name": "Scalar",
+        "highlight": false
+      }
+    ]
+  },
+  {
     "name": "Poseidon",
     "brow": "Maritime security platform",
     "status": "completed",
@@ -95,50 +151,6 @@
       },
       {
         "name": "Hangfire",
-        "highlight": false
-      }
-    ]
-  },
-  {
-    "name": "BillTracker",
-    "brow": "Billing management",
-    "status": "completed",
-    "description": "An intuitive business platform that streamlines customer management and billing, alongside a detailed product inventory system featuring complete categories and subcategories.",
-    "techStack": [
-      {
-        "name": "React.js",
-        "highlight": true
-      },
-      {
-        "name": ".NET Minimal API",
-        "highlight": true
-      },
-      {
-        "name": "PostgreSQL",
-        "highlight": true
-      },
-      {
-        "name": "React Router",
-        "highlight": false
-      },
-      {
-        "name": "Axios",
-        "highlight": false
-      },
-      {
-        "name": "Recharts",
-        "highlight": false
-      },
-      {
-        "name": "Bootstrap",
-        "highlight": false
-      },
-      {
-        "name": "FastEndpoints",
-        "highlight": false
-      },
-      {
-        "name": "EF Core",
         "highlight": false
       }
     ]

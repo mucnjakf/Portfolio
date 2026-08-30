@@ -16,19 +16,20 @@ import OPAdminWeb from "../../assets/projects/orderpoint/admin-web.png";
 import OPBartenderWeb from "../../assets/projects/orderpoint/bartender-web.png";
 import OPCustomerWeb from "../../assets/projects/orderpoint/customer-web.png";
 
+import CPosts from "../../assets/projects/codex/posts.png";
+import CPostDetails from "../../assets/projects/codex/post-details.png";
+import CDashboard from "../../assets/projects/codex/dashboard.png";
+
 import PDashboard from "../../assets/projects/poseidon/dashboard.png";
 import PEvents from "../../assets/projects/poseidon/events.png";
 import PMap from "../../assets/projects/poseidon/map.png";
 
-import BTDashboard from "../../assets/projects/billtracker/dashboard.png";
-import BTCustomers from "../../assets/projects/billtracker/customers.png";
-import BPCustomerDetails from "../../assets/projects/billtracker/customer-details.png";
 import { useEffect, useRef, useState } from "react";
 
 const ProjectMap = {
   OrderPoint: [OPAdminWeb, OPBartenderWeb, OPCustomerWeb],
+  Codex: [CPosts, CPostDetails, CDashboard],
   Poseidon: [PDashboard, PEvents, PMap],
-  BillTracker: [BTDashboard, BTCustomers, BPCustomerDetails],
 };
 
 function ProjectInfo({
@@ -87,9 +88,6 @@ function ProjectInfo({
 
   return (
     <div className="grid grid-cols-1 items-center gap-8 min-[768px]:grid-cols-12 min-[768px]:gap-10">
-      {/* 
-        TEXT COLUMN: Takes up 5 out of 12 columns (roughly 40% width) 
-      */}
       <div
         className={`order-1 flex flex-col justify-center gap-4 min-[768px]:col-span-5 min-[768px]:gap-2 ${reverse ? "min-[768px]:order-2" : "min-[768px]:order-1"}`}
       >
@@ -121,13 +119,10 @@ function ProjectInfo({
         </div>
       </div>
 
-      {/* 
-        BROWSER COLUMN: Takes up 7 out of 12 columns (roughly 60% width), making it much larger 
-      */}
       <div
         className={`proj-visuals order-2 flex flex-col justify-center min-[768px]:col-span-7 ${reverse ? "min-[768px]:order-1" : "min-[768px]:order-2"}`}
       >
-        <div className="pscreen overflow-hidden rounded-2xl bg-zinc-100 ring-1 ring-black/5 dark:bg-zinc-800 dark:ring-white/10 shadow-lg">
+        <div className="pscreen overflow-hidden rounded-2xl bg-zinc-100 shadow-lg ring-1 ring-black/5 dark:bg-zinc-800 dark:ring-white/10">
           <div className="pscreen-bar bg-zinc-100 dark:bg-zinc-800">
             <div className="pscreen-dots">
               <span></span>
