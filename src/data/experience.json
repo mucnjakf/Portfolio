@@ -6,7 +6,7 @@
       {
         "name": "Construction Workforce Management Platform",
         "dateRange": "Oct 2025 - May 2026",
-        "description": "Engineered a custom workforce management platform for the construction sector, delivering features for on-site coordination, resource tracking, and field operation digitization to optimise core business processes.",
+        "description": "Engineered a custom workforce management platform for the construction sector, delivering features for on-site coordination, resource tracking, and field operation digitization to optimize core business processes.",
         "techStack": [
           {
             "name": "Vue.js",
@@ -209,7 +209,7 @@
       {
         "name": "Blood Donation Coordination Hub",
         "dateRange": "Apr 2023 - Oct 2023",
-        "description": "Developed an admin dashboard and REST API for a blood donation platform that streamlines user scheduling, history tracking, and donation centre discovery.",
+        "description": "Developed an admin dashboard and REST API for a blood donation platform that streamlines user scheduling, history tracking, and donation center discovery.",
         "techStack": [
           {
             "name": ".NET Blazor",
