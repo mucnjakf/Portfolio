@@ -24,7 +24,7 @@ function ExperienceSection() {
       <div className="mx-auto max-w-[1300px] px-4 py-10 min-[650px]:p-10">
         <div className="flex flex-col gap-2">
           <Subtitle
-            text="Experience"
+            text="Contracts"
             id="experience"
             description="A chronological record of collaborations."
           />
