@@ -155,8 +155,8 @@
         "title": "Methodologies",
         "skills": [
           { "name": "Agile", "highlight": true },
-          { "name": "Kanban", "highlight": false },
-          { "name": "Scrum", "highlight": true }
+          { "name": "Scrum", "highlight": true },
+          { "name": "Kanban", "highlight": false }
         ]
       }
     ]
