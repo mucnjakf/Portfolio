@@ -42,7 +42,7 @@ function ExperienceSection() {
             return (
               <ScrollReveal key={index}>
                 <div className="relative pl-10">
-                  <div className="absolute top-0 -left-6 flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl border border-blue-700/30 bg-zinc-100">
+                  <div className="absolute top-0 -left-6 flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl border border-zinc-400 bg-zinc-100 dark:border-zinc-600">
                     {companyLogo ? (
                       <img
                         src={companyLogo}
