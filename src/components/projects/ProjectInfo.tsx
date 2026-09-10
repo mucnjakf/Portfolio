@@ -20,16 +20,16 @@ import CPosts from "../../assets/projects/codex/posts.png";
 import CPostDetails from "../../assets/projects/codex/post-details.png";
 import CDashboard from "../../assets/projects/codex/dashboard.png";
 
-import PDashboard from "../../assets/projects/poseidon/dashboard.png";
-import PEvents from "../../assets/projects/poseidon/events.png";
-import PMap from "../../assets/projects/poseidon/map.png";
+import HHome from "../../assets/projects/herculean/home.png";
+import HCalendar from "../../assets/projects/herculean/calendar.png";
+import HExercises from "../../assets/projects/herculean/exercises.png";
 
 import { useEffect, useRef, useState } from "react";
 
 const ProjectMap = {
   OrderPoint: [OPAdminWeb, OPBartenderWeb, OPCustomerWeb],
   Codex: [CPosts, CPostDetails, CDashboard],
-  Poseidon: [PDashboard, PEvents, PMap],
+  Herculean: [HHome, HCalendar, HExercises],
 };
 
 function ProjectInfo({

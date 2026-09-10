@@ -1,7 +1,7 @@
 [
   {
     "name": "OrderPoint",
-    "brow": "Restaurant platform",
+    "brow": "Restaurant ordering platform",
     "status": "in-development",
     "description": "End-to-end restaurant ordering platform - customers scan QR codes to browse menus and place live table orders, while staff manage incoming requests and admins control restaurant data in real time.",
     "techStack": [
@@ -49,9 +49,9 @@
   },
   {
     "name": "Codex",
-    "brow": "Developer Publishing Platform",
+    "brow": "Developer publishing platform",
     "status": "in-development",
-    "description": "Codex is a paid publishing platform designed for developers to write, share, and publish articles.",
+    "description": "Codex is a premium publishing platform built with clarity and usability in mind, offering developers a structured, professional space to write, share, and monetize their technical knowledge through high-quality articles.",
     "techStack": [
       {
         "name": "React.js",
@@ -104,41 +104,41 @@
     ]
   },
   {
-    "name": "Poseidon",
-    "brow": "Maritime security platform",
-    "status": "completed",
-    "description": "A machine learning-powered maritime security platform that provides real-time analysis of ocean data to detect suspicious behavior, enabling authorities to combat illegal fishing, smuggling, and other illicit activities.",
+    "name": "Herculean",
+    "brow": "Fitness & nutrition platform",
+    "status": "in-development",
+    "description": "Herculean is an all-in-one fitness and nutrition app that simplifies your health journey by combining intuitive workout tracking, meal and macronutrient logging, personalized goal setting, and insightful analytics into a single, streamlined platform.",
     "techStack": [
       {
-        "name": ".NET Blazor",
+        "name": "React.js",
         "highlight": true
       },
       {
-        "name": ".NET Web API",
+        "name": ".NET Minimal API",
         "highlight": true
       },
       {
-        "name": "MS SQL Server",
+        "name": "PostgreSQL",
         "highlight": true
       },
       {
-        "name": "Radzen",
+        "name": "Aspire",
+        "highlight": true
+      },
+      {
+        "name": "TanStack Start",
         "highlight": false
       },
       {
-        "name": "Leaflet.js",
+        "name": "Axios",
         "highlight": false
       },
       {
-        "name": "Bootstrap",
+        "name": "Shadcn UI",
         "highlight": false
       },
       {
-        "name": "ML.NET",
-        "highlight": false
-      },
-      {
-        "name": "Identity",
+        "name": "MediatR",
         "highlight": false
       },
       {
@@ -147,10 +147,6 @@
       },
       {
         "name": "SignalR",
-        "highlight": false
-      },
-      {
-        "name": "Hangfire",
         "highlight": false
       }
     ]
