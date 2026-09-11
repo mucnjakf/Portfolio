@@ -43,7 +43,7 @@ function NavBar() {
         "profile",
         "projects",
         "skills",
-        "experience",
+        "contracts",
         "education",
       ];
 
@@ -97,10 +97,10 @@ function NavBar() {
                   isActive={activeSection === "skills"}
                 />
                 <NavLink
-                  label="Experience"
-                  href="experience"
+                  label="Contracts"
+                  href="contracts"
                   icon={LuBriefcase}
-                  isActive={activeSection === "experience"}
+                  isActive={activeSection === "contracts"}
                 />
                 <NavLink
                   label="Education"
@@ -164,9 +164,9 @@ function NavBar() {
                 </div>
                 <div onClick={() => setIsMenuOpen(false)}>
                   <NavLink
-                    label="Experience"
-                    href="experience"
-                    isActive={activeSection === "experience"}
+                    label="Contracts"
+                    href="contracts"
+                    isActive={activeSection === "contracts"}
                     isMobile={true}
                     icon={LuBriefcase}
                   />
