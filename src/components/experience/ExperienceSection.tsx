@@ -25,7 +25,7 @@ function ExperienceSection() {
         <div className="flex flex-col gap-2">
           <Subtitle
             text="Contracts"
-            id="experience"
+            id="contracts"
             description="A chronological record of collaborations."
           />
 
