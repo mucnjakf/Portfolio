@@ -1,7 +1,6 @@
 import ProfileImage from "./ProfileImage.tsx";
 import ButtonLinkSecondary from "../button/ButtonLinkSecondary.tsx";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
 import Badge from "../display/Badge.tsx";
 import Title from "../typography/Title.tsx";
 import Paragraph from "../typography/Paragraph.tsx";
@@ -9,7 +8,7 @@ import Divider from "../display/Divider.tsx";
 import ProfileHighlight from "./ProfileHighlight.tsx";
 import ProfileScrollButton from "./ProfileScrollButton.tsx";
 import { DataService } from "../../services/dataService.tsx";
-import { LuPhone } from "react-icons/lu";
+import { LuPhone, LuMail } from "react-icons/lu";
 import ScrollReveal from "../animation/ScrollReveal.tsx";
 
 function ProfileSection() {
@@ -49,7 +48,7 @@ function ProfileSection() {
 
               <ButtonLinkSecondary
                 text={profile.socialLinks.email}
-                icon={SiGmail}
+                icon={LuMail}
                 href={`mailto:${profile.socialLinks.email}`}
               />
 

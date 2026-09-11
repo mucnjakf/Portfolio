@@ -1,7 +1,6 @@
 import IconLinkFlat from "../button/IconLinkFlat";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
-import { LuPhone } from "react-icons/lu";
+import { LuPhone, LuMail } from "react-icons/lu";
 
 function Footer() {
   return (
@@ -14,7 +13,7 @@ function Footer() {
         <div className="flex gap-3">
           <IconLinkFlat icon={LuPhone} href="tel:+385 98 9068 467" />
 
-          <IconLinkFlat icon={SiGmail} href="mailto:crofilix@gmail.com" />
+          <IconLinkFlat icon={LuMail} href="mailto:filip.mucnjak@minimalist.hr" />
 
           <IconLinkFlat
             icon={FaLinkedinIn}
