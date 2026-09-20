@@ -1,5 +1,6 @@
 import NavBar from "./components/navigation/NavBar.tsx";
 import ProfileSection from "./components/profile/ProfileSection.tsx";
+import StudioSection from "./components/studio/StudioSection.tsx";
 import ProjectsSection from "./components/projects/ProjectsSection.tsx";
 import SkillsSection from "./components/skills/SkillsSection.tsx";
 import ExperienceSection from "./components/experience/ExperienceSection.tsx";
@@ -21,6 +22,7 @@ function App() {
       </div>
 
       <section>
+        <StudioSection />
         <ProjectsSection />
         <SkillsSection />
         <ExperienceSection />

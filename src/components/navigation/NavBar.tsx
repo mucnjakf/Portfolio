@@ -7,6 +7,7 @@ import {
   LuSun,
   LuMenu,
   LuX,
+  LuBuilding2,
   LuLayoutTemplate,
   LuCode,
   LuBriefcase,
@@ -41,6 +42,7 @@ function NavBar() {
     const handleScroll = () => {
       const sections = [
         "profile",
+        "studio",
         "projects",
         "skills",
         "contracts",
@@ -84,6 +86,12 @@ function NavBar() {
               <NavBrand className="me-8" />
 
               <div className="hidden md:flex">
+                <NavLink
+                  label="Studio"
+                  href="studio"
+                  icon={LuBuilding2}
+                  isActive={activeSection === "studio"}
+                />
                 <NavLink
                   label="Projects"
                   href="projects"
@@ -144,6 +152,15 @@ function NavBar() {
           >
             <div className="overflow-hidden">
               <div className="flex flex-col border-t border-zinc-200 pt-2 pb-2 dark:border-zinc-800">
+                <div onClick={() => setIsMenuOpen(false)}>
+                  <NavLink
+                    label="Studio"
+                    href="studio"
+                    isActive={activeSection === "studio"}
+                    isMobile={true}
+                    icon={LuBuilding2}
+                  />
+                </div>
                 <div onClick={() => setIsMenuOpen(false)}>
                   <NavLink
                     label="Projects"

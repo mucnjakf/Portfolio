@@ -1,10 +1,11 @@
 import IconLinkFlat from "../button/IconLinkFlat";
+import { LuUserRound } from "react-icons/lu";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { LuPhone, LuMail } from "react-icons/lu";
 
 function Footer() {
   return (
-    <footer className="w-full bg-zinc-100 dark:bg-zinc-900">
+    <footer className="w-full">
       <div className="mx-auto flex w-full max-w-[1300px] items-center justify-between px-4 py-5 min-[650px]:px-10">
         <div className="flex items-center text-sm font-medium text-zinc-400 dark:text-zinc-600">
           &copy; {new Date().getFullYear()}.
@@ -14,6 +15,11 @@ function Footer() {
           <IconLinkFlat icon={LuPhone} href="tel:+385 98 9068 467" />
 
           <IconLinkFlat icon={LuMail} href="mailto:filip.mucnjak@minimalist.hr" />
+
+          <IconLinkFlat
+            icon={LuUserRound}
+            href="https://minimalist.hr"
+            />
 
           <IconLinkFlat
             icon={FaLinkedinIn}

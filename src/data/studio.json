@@ -1,0 +1,57 @@
+{
+  "name": "Minimalist",
+  "tagline": "Complex problems. Simple solutions.",
+  "role": "Founder & Principal engineer",
+  "description": "Minimalist is the software development studio I founded and where my client work lives. We design and build software that does exactly what it should, performs without friction, and stands the test of time. Few projects at a time, on purpose, with no layers between you and the people writing the code.",
+  "note": "Less noise. Better software.",
+  "url": "https://minimalist.hr",
+  "contactUrl": "https://minimalist.hr/contact",
+  "services": [
+    {
+      "icon": "LuRocket",
+      "title": "Product design & development",
+      "description": "From a blank page to a product in the market. Discovery, interface design, architecture and delivery handled by one team, so nothing is lost between the idea and the thing people actually use."
+    },
+    {
+      "icon": "LuBlocks",
+      "title": "Custom software",
+      "description": "Internal systems built around how the work actually happens, not around what an off-the-shelf tool allows. Integrations with the systems already in place, and only the features the business will really use."
+    },
+    {
+      "icon": "LuRefreshCcw",
+      "title": "Modernization",
+      "description": "Fragile systems rebuilt into clean architecture, nothing lost. Legacy behaviour is documented and preserved, the codebase becomes safe to change, and the migration happens in steps instead of one risky rewrite."
+    },
+    {
+      "icon": "LuCompass",
+      "title": "Technical strategy",
+      "description": "A second senior opinion before the expensive decision. Architecture reviews, technology choices, delivery planning and code audits, written down clearly enough for both engineers and stakeholders to act on."
+    }
+  ],
+  "process": [
+    {
+      "title": "Discovery",
+      "description": "We learn the business, the constraints, and what is actually broken."
+    },
+    {
+      "title": "Definition",
+      "description": "Scope, price and timeline fixed in writing before anything is built."
+    },
+    {
+      "title": "Design",
+      "description": "Flows and interface built around the decisions a user actually makes."
+    },
+    {
+      "title": "Build",
+      "description": "Clean architecture, tested code, weekly builds you can click."
+    },
+    {
+      "title": "Launch",
+      "description": "Deployment, monitoring and handover documentation in place."
+    },
+    {
+      "title": "Support",
+      "description": "A named engineer stays on, month to month, no lock-in."
+    }
+  ]
+}
