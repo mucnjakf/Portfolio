@@ -4,16 +4,16 @@ import Divider from "../display/Divider.tsx";
 import TechStackGroup from "../display/TechStackGroup.tsx";
 import ScrollReveal from "../animation/ScrollReveal.tsx";
 
-import FactoryXLogo from "../../assets/companies/factory-x.jpg"
-import KingICTLogo from "../../assets/companies/king-ict.jpg"
-import InfinumLogo from "../../assets/companies/infinum.jpg"
-import EnterwellLogo from "../../assets/companies/enterwell.jpg"
+import FactoryXLogo from "../../assets/companies/factory-x.jpg";
+import KingICTLogo from "../../assets/companies/king-ict.jpg";
+import InfinumLogo from "../../assets/companies/infinum.jpg";
+import EnterwellLogo from "../../assets/companies/enterwell.jpg";
 
 const CompanyMap = {
   "Factory X": FactoryXLogo,
   "King ICT": KingICTLogo,
-  "Infinum": InfinumLogo,
-  "Enterwell": EnterwellLogo
+  Infinum: InfinumLogo,
+  Enterwell: EnterwellLogo,
 };
 
 function ExperienceSection() {

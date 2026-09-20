@@ -24,7 +24,7 @@ import HHome from "../../assets/projects/herculean/home.png";
 import HCalendar from "../../assets/projects/herculean/calendar.png";
 import HExercises from "../../assets/projects/herculean/exercises.png";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 const ProjectMap = {
   OrderPoint: [OPAdminWeb, OPBartenderWeb, OPCustomerWeb],
@@ -47,19 +47,19 @@ function ProjectInfo({
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const nextImage = () => {
+  const nextImage = useCallback(() => {
     setCurrentImageIndex(
       (prevIndex) => (prevIndex + 1) % projectImagesAssets.length,
     );
-  };
+  }, [projectImagesAssets.length]);
 
-  const prevImage = () => {
+  const prevImage = useCallback(() => {
     setCurrentImageIndex(
       (prevIndex) =>
         (prevIndex - 1 + projectImagesAssets.length) %
         projectImagesAssets.length,
     );
-  };
+  }, [projectImagesAssets.length]);
 
   useEffect(() => {
     const intervalId = setInterval(nextImage, 5000);

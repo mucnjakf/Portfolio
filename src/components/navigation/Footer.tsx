@@ -14,12 +14,12 @@ function Footer() {
         <div className="flex gap-3">
           <IconLinkFlat icon={LuPhone} href="tel:+385 98 9068 467" />
 
-          <IconLinkFlat icon={LuMail} href="mailto:filip.mucnjak@minimalist.hr" />
-
           <IconLinkFlat
-            icon={LuUserRound}
-            href="https://minimalist.hr"
-            />
+            icon={LuMail}
+            href="mailto:filip.mucnjak@minimalist.hr"
+          />
+
+          <IconLinkFlat icon={LuUserRound} href="https://minimalist.hr" />
 
           <IconLinkFlat
             icon={FaLinkedinIn}

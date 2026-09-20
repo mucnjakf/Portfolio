@@ -17,6 +17,14 @@ import { useEffect, useState } from "react";
 import NavBrand from "./NavBrand.tsx";
 import ScrollReveal from "../animation/ScrollReveal.tsx";
 
+const NavItems = [
+  { label: "Studio", href: "studio", icon: LuBuilding2 },
+  { label: "Projects", href: "projects", icon: LuLayoutTemplate },
+  { label: "Skills", href: "skills", icon: LuCode },
+  { label: "Contracts", href: "contracts", icon: LuBriefcase },
+  { label: "Education", href: "education", icon: LuLibrary },
+];
+
 function NavBar() {
   const [activeSection, setActiveSection] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,14 +48,7 @@ function NavBar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = [
-        "profile",
-        "studio",
-        "projects",
-        "skills",
-        "contracts",
-        "education",
-      ];
+      const sections = ["profile", ...NavItems.map((item) => item.href)];
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = document.getElementById(sections[i]);
@@ -68,7 +69,7 @@ function NavBar() {
   }, []);
 
   const handleDownload = () => {
-    const pdfUrl = `/Portfolio/Filip_Mucnjak_Resume.pdf`;
+    const pdfUrl = `${import.meta.env.BASE_URL}Filip_Mucnjak_Resume.pdf`;
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "Filip_Mucnjak_Resume.pdf";
@@ -86,36 +87,15 @@ function NavBar() {
               <NavBrand className="me-8" />
 
               <div className="hidden md:flex">
-                <NavLink
-                  label="Studio"
-                  href="studio"
-                  icon={LuBuilding2}
-                  isActive={activeSection === "studio"}
-                />
-                <NavLink
-                  label="Projects"
-                  href="projects"
-                  icon={LuLayoutTemplate}
-                  isActive={activeSection === "projects"}
-                />
-                <NavLink
-                  label="Skills"
-                  href="skills"
-                  icon={LuCode}
-                  isActive={activeSection === "skills"}
-                />
-                <NavLink
-                  label="Contracts"
-                  href="contracts"
-                  icon={LuBriefcase}
-                  isActive={activeSection === "contracts"}
-                />
-                <NavLink
-                  label="Education"
-                  href="education"
-                  icon={LuLibrary}
-                  isActive={activeSection === "education"}
-                />
+                {NavItems.map((item) => (
+                  <NavLink
+                    key={item.href}
+                    label={item.label}
+                    href={item.href}
+                    icon={item.icon}
+                    isActive={activeSection === item.href}
+                  />
+                ))}
               </div>
             </div>
 
@@ -152,51 +132,17 @@ function NavBar() {
           >
             <div className="overflow-hidden">
               <div className="flex flex-col border-t border-zinc-200 pt-2 pb-2 dark:border-zinc-800">
-                <div onClick={() => setIsMenuOpen(false)}>
-                  <NavLink
-                    label="Studio"
-                    href="studio"
-                    isActive={activeSection === "studio"}
-                    isMobile={true}
-                    icon={LuBuilding2}
-                  />
-                </div>
-                <div onClick={() => setIsMenuOpen(false)}>
-                  <NavLink
-                    label="Projects"
-                    href="projects"
-                    isActive={activeSection === "projects"}
-                    isMobile={true}
-                    icon={LuLayoutTemplate}
-                  />
-                </div>
-                <div onClick={() => setIsMenuOpen(false)}>
-                  <NavLink
-                    label="Skills"
-                    href="skills"
-                    isActive={activeSection === "skills"}
-                    isMobile={true}
-                    icon={LuCode}
-                  />
-                </div>
-                <div onClick={() => setIsMenuOpen(false)}>
-                  <NavLink
-                    label="Contracts"
-                    href="contracts"
-                    isActive={activeSection === "contracts"}
-                    isMobile={true}
-                    icon={LuBriefcase}
-                  />
-                </div>
-                <div onClick={() => setIsMenuOpen(false)}>
-                  <NavLink
-                    label="Education"
-                    href="education"
-                    isActive={activeSection === "education"}
-                    isMobile={true}
-                    icon={LuLibrary}
-                  />
-                </div>
+                {NavItems.map((item) => (
+                  <div key={item.href} onClick={() => setIsMenuOpen(false)}>
+                    <NavLink
+                      label={item.label}
+                      href={item.href}
+                      icon={item.icon}
+                      isActive={activeSection === item.href}
+                      isMobile={true}
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </div>

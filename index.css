@@ -23,71 +23,17 @@
 }
 
 :root {
-  /* ── Apple System Colors — Light ── */
-
-  /* Backgrounds (Apple grouped table view) */
-  --bg: #f2f2f7;
-  /* systemGroupedBackground          */
-  --surface: #ffffff;
-  /* secondarySystemGroupedBackground */
-  --surface-2: #f2f2f7;
-  /* tertiarySystemGroupedBackground  */
-  --surface-3: #e5e5ea;
-  /* systemFill                       */
-  --nav-bg: rgba(242, 242, 247, 0.85);
-
-  /* Labels (Apple Human Interface Guidelines) */
-  --t1: #1d1d1f;
-  /* label             */
-  --t2: #3a3a3c;
-  /* secondaryLabel    */
-  --t3: #6e6e73;
-  /* tertiaryLabel     */
-  --t4: #aeaeb2;
-  /* quaternaryLabel   */
-
-  /* Accent */
-  --accent: #007aff;
-  /* systemBlue        */
-  --accent-dk: #0062cc;
-  /* systemBlue active */
-  --accent-bg: rgba(0, 122, 255, 0.1);
-  --accent-t: #0066d6;
-
-  /* Semantic colors */
-  --green: #34c759;
-  /* systemGreen  */
-  --orange: #ff9500;
-  /* systemOrange */
-
-  /* Separators — iOS formula: rgba(60,60,67, opacity) */
+  /* Separator — iOS formula: rgba(60, 60, 67, opacity) */
   --border: rgba(60, 60, 67, 0.12);
-  --border-2: rgba(60, 60, 67, 0.22);
-
-  /* Elevation shadows */
-  --sh1: 0 1px 4px rgba(0, 0, 0, 0.06);
-  --sh2: 0 4px 16px rgba(0, 0, 0, 0.09), 0 1px 4px rgba(0, 0, 0, 0.04);
-  --sh3: 0 16px 48px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);
-
-  /* Radii */
-  --r-s: 8px;
-  --r-m: 12px;
-  --r-l: 16px;
-  --r-xl: 20px;
-  --r-2xl: 24px;
-
-  --ease: cubic-bezier(0.4, 0, 0.2, 1);
-  --tx: all 0.2s var(--ease);
-  --tx-s: all 0.15s var(--ease);
 }
 
+/* Browser-frame mockup */
 .proj-visuals {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-/* Browser-frame mockup */
 .pscreen {
   overflow: hidden;
   transform: translateZ(0);
@@ -139,44 +85,12 @@
 .pscreen-body {
   position: relative;
   overflow: hidden;
-  /* Removed flexbox and alignment rules, they are no longer needed */
 }
 
 .pscreen-body.tall {
   width: 100%;
-  /* Removed ALL heights, max-heights, and aspect-ratios! */
 }
 
 .pscreen-body img {
-  /* Removed width/height/display rules since Tailwind classes in React are handling it */
   transform-origin: top center;
-}
-
-.pscreen-body.short {
-  width: 100%;
-  max-height: 250px;
-}
-
-.pscreen-icon {
-  position: relative;
-  z-index: 1;
-  color: rgba(255, 255, 255, 0.65);
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
-}
-
-.pscreen-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-/* CTA row */
-.projects-cta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding-top: 56px;
-  border-top: 1px solid var(--border);
-  flex-wrap: wrap;
 }

@@ -1,20 +1,16 @@
 import Subtitle from "../typography/Subtitle.tsx";
 import Divider from "../display/Divider.tsx";
 import { DataService } from "../../services/dataService.tsx";
-import {
-  LuBadgeCheck,
-  LuExternalLink,
-} from "react-icons/lu";
+import { LuBadgeCheck, LuExternalLink } from "react-icons/lu";
 import ScrollReveal from "../animation/ScrollReveal.tsx";
 
-import AlgebraLogo from "../../assets/education/algebra.jpg"
-import FbMesLogo from "../../assets/education/fbmes.jpg"
+import AlgebraLogo from "../../assets/education/algebra.jpg";
+import FbMesLogo from "../../assets/education/fbmes.jpg";
 
 const SchoolMap = {
-  "Algebra": AlgebraLogo,
-  "Fran": FbMesLogo,
+  Algebra: AlgebraLogo,
+  Fran: FbMesLogo,
 };
-
 
 function EducationSection() {
   const education = DataService.getEducation();

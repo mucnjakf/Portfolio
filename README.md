@@ -11,6 +11,7 @@ Personal Portfolio Web Application - 2026.
 
 ### **⚙️ Tech Stack**
 - React
+- TypeScript
 - Tailwind CSS
 - Motion
 - Vite
