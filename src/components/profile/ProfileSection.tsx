@@ -8,7 +8,7 @@ import Divider from "../display/Divider.tsx";
 import ProfileHighlight from "./ProfileHighlight.tsx";
 import ProfileScrollButton from "./ProfileScrollButton.tsx";
 import { DataService } from "../../services/dataService.tsx";
-import { LuPhone, LuMail } from "react-icons/lu";
+import { LuPhone, LuMail, LuUserRound } from "react-icons/lu";
 import ScrollReveal from "../animation/ScrollReveal.tsx";
 
 function ProfileSection() {
@@ -50,6 +50,12 @@ function ProfileSection() {
                 text={profile.socialLinks.email}
                 icon={LuMail}
                 href={`mailto:${profile.socialLinks.email}`}
+              />
+
+              <ButtonLinkSecondary
+                text="Minimalist"
+                icon={LuUserRound}
+                href={profile.socialLinks.minimalist}
               />
 
               <ButtonLinkSecondary

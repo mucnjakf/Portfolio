@@ -3,4 +3,5 @@ export type ProfileSocialLinks = {
   linkedin: string;
   email: string;
   phone: string;
+  minimalist: string;
 };
