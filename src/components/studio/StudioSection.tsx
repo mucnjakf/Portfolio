@@ -29,7 +29,7 @@ function StudioSection() {
   const studio = DataService.getStudio();
 
   return (
-    <div className="w-full border-y border-y-zinc-200 bg-zinc-100 dark:border-y-zinc-800 dark:bg-zinc-900">
+    <div className="w-full border-y border-y-zinc-200 bg-zinc-100/60 dark:border-y-zinc-800 dark:bg-zinc-900/60">
       <div className="mx-auto max-w-[1300px] px-4 py-10 min-[650px]:p-10">
         <div className="flex flex-col gap-2">
           <Subtitle

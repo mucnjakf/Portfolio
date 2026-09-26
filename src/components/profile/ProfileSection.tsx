@@ -22,7 +22,10 @@ function ProfileSection() {
             <ProfileImage />
           </div>
 
-          <div className="col-span-1 flex flex-col items-center gap-4 text-center min-[650px]:col-span-8 min-[650px]:items-start min-[650px]:text-left lg:col-span-9">
+          <div
+            data-bg-mute
+            className="col-span-1 flex flex-col items-center gap-4 text-center min-[650px]:col-span-8 min-[650px]:items-start min-[650px]:text-left lg:col-span-9"
+          >
             <Badge
               text="Available for hire"
               bgColor="bg-green-300/50 dark:bg-green-800/30"
@@ -75,7 +78,10 @@ function ProfileSection() {
           <div className="col-span-1 w-full min-[650px]:col-span-12">
             <Divider className="mb-6 min-[650px]:mt-6 min-[650px]:mb-8" />
 
-            <div className="grid grid-cols-1 divide-y divide-zinc-200 pb-8 min-[650px]:grid-cols-3 min-[650px]:divide-x min-[650px]:divide-y-0 min-[650px]:pb-0 dark:divide-zinc-800">
+            <div
+              data-bg-mute
+              className="grid grid-cols-1 divide-y divide-zinc-200 pb-8 min-[650px]:grid-cols-3 min-[650px]:divide-x min-[650px]:divide-y-0 min-[650px]:pb-0 dark:divide-zinc-800"
+            >
               {profile.highlights.map((highlight, index) => (
                 <div
                   key={index}

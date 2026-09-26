@@ -6,11 +6,26 @@ import SkillsSection from "./components/skills/SkillsSection.tsx";
 import ExperienceSection from "./components/experience/ExperienceSection.tsx";
 import EducationSection from "./components/education/EducationSection.tsx";
 import Footer from "./components/navigation/Footer.tsx";
+import DotField from "./components/animation/DotField.tsx";
+import { useRef } from "react";
 
 function App() {
+  const heroRef = useRef<HTMLDivElement>(null);
+
   return (
     <main>
-      <div className="flex min-h-screen flex-col">
+      <DotField
+        variant="page"
+        occluderRef={heroRef}
+        className="fixed inset-0 -z-10 h-full w-full"
+      />
+
+      <div
+        ref={heroRef}
+        className="relative flex min-h-screen flex-col bg-zinc-50 dark:bg-zinc-950"
+      >
+        <DotField variant="hero" className="absolute inset-0 h-full w-full" />
+
         <NavBar />
 
         <section
