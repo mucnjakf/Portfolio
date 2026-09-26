@@ -4,32 +4,20 @@ import Paragraph from "../typography/Paragraph.tsx";
 import TechStackGroup from "../display/TechStackGroup.tsx";
 import ButtonLinkSecondary from "../button/ButtonLinkSecondary.tsx";
 import { FaGithub } from "react-icons/fa";
-import {
-  LuClock,
-  LuCircleCheck,
-  LuChevronLeft,
-  LuChevronRight,
-} from "react-icons/lu";
+import { LuClock, LuCircleCheck } from "react-icons/lu";
 import type { ProjectInfoProps } from "../../propTypes/projectInfoProps.ts";
 
-import OPAdminWeb from "../../assets/projects/orderpoint/admin-web.png";
-import OPBartenderWeb from "../../assets/projects/orderpoint/bartender-web.png";
-import OPCustomerWeb from "../../assets/projects/orderpoint/customer-web.png";
-
-import CPosts from "../../assets/projects/codex/posts.png";
-import CPostDetails from "../../assets/projects/codex/post-details.png";
-import CDashboard from "../../assets/projects/codex/dashboard.png";
-
-import HHome from "../../assets/projects/herculean/home.png";
-import HCalendar from "../../assets/projects/herculean/calendar.png";
-import HExercises from "../../assets/projects/herculean/exercises.png";
-
-import { useCallback, useEffect, useRef, useState } from "react";
+import OrderPointLight from "../../assets/projects/orderpoint/showcase-light.webp";
+import OrderPointDark from "../../assets/projects/orderpoint/showcase-dark.webp";
+import CodexLight from "../../assets/projects/codex/showcase-light.webp";
+import CodexDark from "../../assets/projects/codex/showcase-dark.webp";
+import HerculeanLight from "../../assets/projects/herculean/showcase-light.webp";
+import HerculeanDark from "../../assets/projects/herculean/showcase-dark.webp";
 
 const ProjectMap = {
-  OrderPoint: [OPAdminWeb, OPBartenderWeb, OPCustomerWeb],
-  Codex: [CPosts, CPostDetails, CDashboard],
-  Herculean: [HHome, HCalendar, HExercises],
+  OrderPoint: { light: OrderPointLight, dark: OrderPointDark },
+  Codex: { light: CodexLight, dark: CodexDark },
+  Herculean: { light: HerculeanLight, dark: HerculeanDark },
 };
 
 function ProjectInfo({
@@ -43,48 +31,7 @@ function ProjectInfo({
 }: ProjectInfoProps) {
   const isCompleted = status === "completed";
 
-  const projectImagesAssets = ProjectMap[image as keyof typeof ProjectMap];
-
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  const nextImage = useCallback(() => {
-    setCurrentImageIndex(
-      (prevIndex) => (prevIndex + 1) % projectImagesAssets.length,
-    );
-  }, [projectImagesAssets.length]);
-
-  const prevImage = useCallback(() => {
-    setCurrentImageIndex(
-      (prevIndex) =>
-        (prevIndex - 1 + projectImagesAssets.length) %
-        projectImagesAssets.length,
-    );
-  }, [projectImagesAssets.length]);
-
-  useEffect(() => {
-    const intervalId = setInterval(nextImage, 5000);
-    return () => clearInterval(intervalId);
-  }, [currentImageIndex, nextImage]);
-
-  const touchStartX = useRef(0);
-  const touchEndX = useRef(0);
-
-  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
-    touchStartX.current = e.targetTouches[0].clientX;
-  };
-
-  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
-    touchEndX.current = e.targetTouches[0].clientX;
-  };
-
-  const handleTouchEnd = () => {
-    if (touchStartX.current - touchEndX.current > 50) {
-      nextImage();
-    }
-    if (touchStartX.current - touchEndX.current < -50) {
-      prevImage();
-    }
-  };
+  const showcase = ProjectMap[image as keyof typeof ProjectMap];
 
   return (
     <div className="grid grid-cols-1 items-center gap-8 min-[768px]:grid-cols-12 min-[768px]:gap-10">
@@ -120,58 +67,25 @@ function ProjectInfo({
       </div>
 
       <div
-        className={`proj-visuals order-2 flex flex-col justify-center min-[768px]:col-span-7 ${reverse ? "min-[768px]:order-1" : "min-[768px]:order-2"}`}
+        className={`order-2 flex flex-col justify-center min-[768px]:col-span-7 ${reverse ? "min-[768px]:order-1" : "min-[768px]:order-2"}`}
       >
-        <div className="pscreen overflow-hidden rounded-2xl bg-zinc-100 shadow-lg ring-1 ring-black/5 dark:bg-zinc-800 dark:ring-white/10">
-          <div className="pscreen-bar bg-zinc-100 dark:bg-zinc-800">
-            <div className="pscreen-dots">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div className="pscreen-url rounded-2xl bg-zinc-50 text-zinc-700 dark:bg-zinc-700 dark:text-zinc-200">
-              {`${subtitle.toLowerCase()}.app`}
-            </div>
-          </div>
-          <div
-            className="pscreen-body tall group relative overflow-hidden"
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
-          >
-            <img
-              src={projectImagesAssets[0]}
-              alt="layout anchor"
-              className="pointer-events-none block h-auto w-full opacity-0"
-            />
-
-            <div
-              className="absolute top-0 left-0 flex h-full w-full items-start transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
-            >
-              {projectImagesAssets.map((imgSrc, index) => (
-                <img
-                  key={index}
-                  src={imgSrc}
-                  alt={`${subtitle} visual ${index + 1}`}
-                  className="block h-auto w-full flex-shrink-0"
-                />
-              ))}
-            </div>
-
-            <button
-              onClick={prevImage}
-              className="absolute top-1/2 left-2 z-10 -translate-y-1/2 rounded-full bg-white/80 p-2 text-zinc-900 opacity-0 shadow-sm transition-opacity duration-300 group-hover:opacity-100 hover:bg-white"
-            >
-              <LuChevronLeft size={24} />
-            </button>
-            <button
-              onClick={nextImage}
-              className="absolute top-1/2 right-2 z-10 -translate-y-1/2 rounded-full bg-white/80 p-2 text-zinc-900 opacity-0 shadow-sm transition-opacity duration-300 group-hover:opacity-100 hover:bg-white"
-            >
-              <LuChevronRight size={24} />
-            </button>
-          </div>
+        <div className="overflow-hidden rounded-2xl bg-zinc-100 shadow-lg ring-1 ring-black/5 dark:bg-zinc-900 dark:ring-white/10">
+          <img
+            src={showcase.light}
+            alt={`${subtitle} showcase`}
+            width={2400}
+            height={1600}
+            loading="lazy"
+            className="block h-auto w-full dark:hidden"
+          />
+          <img
+            src={showcase.dark}
+            alt={`${subtitle} showcase`}
+            width={2400}
+            height={1600}
+            loading="lazy"
+            className="hidden h-auto w-full dark:block"
+          />
         </div>
       </div>
     </div>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Herculean showcase</title>
+    <link rel="stylesheet" href="showcase.css" />
+    <script>
+      if (location.search.includes("dark")) document.documentElement.classList.add("dark");
+    </script>
+    <style>
+      .canvas { --glow-x: 72%; --glow-y: 50%; }
+    </style>
+  </head>
+  <body>
+    <div class="canvas">
+      <div class="copy">
+        <div class="brow">Herculean</div>
+        <h1 class="headline">Train, eat and <em>track it all.</em></h1>
+        <p class="lede">Workouts, meals and macros in one streamlined mobile app.</p>
+
+        <div class="features">
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
+            Calorie &amp; macro tracking
+          </div>
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+            Workout sessions
+          </div>
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+            Exercise library
+          </div>
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg></span>
+            Meal logging
+          </div>
+        </div>
+      </div>
+
+      <div class="phone" style="left: 450px; top: 250px; width: 206px; z-index: 1">
+        <div class="screen"><img src="screens/h-home.png" alt="" /></div>
+      </div>
+
+      <div class="phone" style="left: 632px; top: 140px; width: 206px; z-index: 2">
+        <div class="screen"><img src="screens/h-sessions.png" alt="" /></div>
+      </div>
+
+      <div class="phone" style="left: 814px; top: 280px; width: 206px; z-index: 3">
+        <div class="screen"><img src="screens/h-nutrition.png" alt="" /></div>
+      </div>
+
+      <div class="phone" style="left: 996px; top: 170px; width: 206px; z-index: 4">
+        <div class="screen"><img src="screens/h-exercises.png" alt="" /></div>
+      </div>
+
+      <div class="tag" style="left: 476px; top: 224px"><span class="dot"></span>Dashboard</div>
+      <div class="tag" style="left: 658px; top: 114px"><span class="dot"></span>Sessions</div>
+      <div class="tag" style="left: 840px; top: 254px"><span class="dot"></span>Nutrition</div>
+      <div class="tag" style="left: 1022px; top: 144px"><span class="dot"></span>Exercises</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+/* Tokens mirror the portfolio: zinc neutrals + iOS blue accent */
+:root {
+  --bg: #f4f4f5;
+  --dot: rgba(9, 9, 11, 0.07);
+  --glow: rgba(0, 122, 255, 0.13);
+  --fg: #09090b;
+  --muted: #71717a;
+  --brow: #007aff;
+  --card: #ffffff;
+  --card-border: #e4e4e7;
+  --icon-border: rgba(0, 122, 255, 0.28);
+  --icon-bg: rgba(0, 122, 255, 0.07);
+  --bar: #f4f4f5;
+  --url: #fafafa;
+  --url-fg: #52525b;
+  --hairline: rgba(60, 60, 67, 0.12);
+  --shadow: 0 30px 60px -20px rgba(24, 24, 27, 0.28),
+    0 12px 24px -12px rgba(24, 24, 27, 0.18);
+  --bezel: #18181b;
+  --bezel-ring: rgba(0, 0, 0, 0.06);
+}
+
+:root.dark {
+  --bg: #18181b;
+  --dot: rgba(255, 255, 255, 0.06);
+  --glow: rgba(6, 138, 255, 0.2);
+  --fg: #fafafa;
+  --muted: #a1a1aa;
+  --brow: #068aff;
+  --card: #09090b;
+  --card-border: #3f3f46;
+  --icon-border: rgba(0, 122, 255, 0.35);
+  --icon-bg: rgba(8, 93, 197, 0.14);
+  --bar: #27272a;
+  --url: #3f3f46;
+  --url-fg: #e4e4e7;
+  --hairline: rgba(255, 255, 255, 0.08);
+  --shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.75),
+    0 12px 24px -12px rgba(0, 0, 0, 0.6);
+  --bezel: #000000;
+  --bezel-ring: rgba(255, 255, 255, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 1200px;
+  height: 800px;
+  overflow: hidden;
+  background: var(--bg);
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.canvas {
+  position: relative;
+  width: 1200px;
+  height: 800px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      ellipse 60% 55% at var(--glow-x, 75%) var(--glow-y, 45%),
+      var(--glow),
+      transparent 70%
+    ),
+    radial-gradient(var(--dot) 1.2px, transparent 1.2px) 0 0 / 22px 22px,
+    var(--bg);
+}
+
+/* Copy */
+.copy {
+  position: absolute;
+  top: 64px;
+  left: 64px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 5;
+}
+
+.brow {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--brow);
+}
+
+.headline {
+  font-size: 48px;
+  line-height: 1.06;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  color: var(--fg);
+}
+
+.headline em {
+  font-style: normal;
+  color: var(--brow);
+}
+
+.lede {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+/* Feature list */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: fit-content;
+  padding: 10px 18px 10px 10px;
+  border-radius: 16px;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--fg);
+  letter-spacing: -0.01em;
+}
+
+.feature .icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--icon-border);
+  background: var(--icon-bg);
+  color: var(--brow);
+}
+
+.feature .icon svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Browser window (same chrome as the site's old frame) */
+.browser {
+  position: absolute;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--bar);
+  box-shadow: var(--shadow), 0 0 0 1px var(--bezel-ring);
+}
+
+.browser .bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 16px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.browser .dots {
+  display: flex;
+  gap: 7px;
+}
+
+.browser .dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.browser .dots span:nth-child(1) {
+  background: #ff5f57;
+}
+
+.browser .dots span:nth-child(2) {
+  background: #ffbd2e;
+}
+
+.browser .dots span:nth-child(3) {
+  background: #28c840;
+}
+
+.browser .url {
+  flex: 1;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--hairline);
+  background: var(--url);
+  color: var(--url-fg);
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.browser img {
+  display: block;
+  width: 100%;
+}
+
+/* Phone */
+.phone {
+  position: absolute;
+  padding: 8px;
+  border-radius: 40px;
+  background: var(--bezel);
+  box-shadow: var(--shadow), 0 0 0 1px var(--bezel-ring);
+}
+
+.phone .screen {
+  position: relative;
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+.phone .screen img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Floating callout tag */
+.tag {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  box-shadow: 0 10px 24px -10px rgba(0, 0, 0, 0.35);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--fg);
+  white-space: nowrap;
+}
+
+.tag .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--brow);
+  box-shadow: 0 0 0 4px var(--icon-bg);
+}

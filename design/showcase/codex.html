@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Codex showcase</title>
+    <link rel="stylesheet" href="showcase.css" />
+    <script>
+      if (location.search.includes("dark")) document.documentElement.classList.add("dark");
+    </script>
+    <style>
+      .canvas { --glow-x: 70%; --glow-y: 55%; }
+    </style>
+  </head>
+  <body>
+    <div class="canvas">
+      <div class="copy">
+        <div class="brow">Codex</div>
+        <h1 class="headline">Where developers <em>write &amp; publish.</em></h1>
+        <p class="lede">A calm, premium home for in-depth technical articles.</p>
+
+        <div class="features">
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
+            Curated developer stories
+          </div>
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span>
+            Author workspace &amp; drafts
+          </div>
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg></span>
+            Admin insights
+          </div>
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>
+            Search &amp; category filters
+          </div>
+        </div>
+      </div>
+
+      <div class="browser" style="left: 640px; top: 40px; width: 600px">
+        <div class="bar">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <div class="url">codex.app/admin</div>
+        </div>
+        <img src="screens/c-dashboard.png" alt="" />
+      </div>
+
+      <div class="browser" style="left: 900px; top: 400px; width: 440px; z-index: 3">
+        <div class="bar">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <div class="url" style="flex: none; margin: 0 0 0 16px; width: 200px">codex.app/posts/1</div>
+        </div>
+        <img src="screens/c-post.png" alt="" />
+      </div>
+
+      <div class="browser" style="left: 470px; top: 180px; width: 600px; z-index: 2">
+        <div class="bar">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <div class="url">codex.app</div>
+        </div>
+        <img src="screens/c-main.png" alt="" />
+      </div>
+
+      <div class="browser" style="left: 530px; top: 520px; width: 430px; z-index: 4">
+        <div class="bar">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <div class="url">codex.app/my-posts</div>
+        </div>
+        <img src="screens/c-myposts.png" alt="" />
+      </div>
+
+      <div class="tag" style="left: 1090px; top: 16px"><span class="dot"></span>Admin</div>
+      <div class="tag" style="left: 490px; top: 154px"><span class="dot"></span>Reader</div>
+      <div class="tag" style="left: 550px; top: 494px"><span class="dot"></span>Author</div>
+      <div class="tag" style="left: 1080px; top: 374px"><span class="dot"></span>Article</div>
+    </div>
+  </body>
+</html>
