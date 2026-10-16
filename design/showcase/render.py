@@ -1,6 +1,7 @@
-"""Render project showcase images (light + dark) into src/assets/projects.
+"""Render project showcase images (light + dark) into src/assets/projects,
+and the link preview image (og.html, dark only) into public/og-image.png.
 
-Usage: python design/showcase/render.py [project ...]
+Usage: python design/showcase/render.py [project ... | og]
 Requires Microsoft Edge (or Chrome via BROWSER env var) and Pillow.
 """
 
@@ -20,6 +21,8 @@ PROJECTS = ["orderpoint", "codex", "herculean"]
 SLIDES = {"orderpoint": ["overview", "customer", "bar", "service", "admin", "management"]}
 THEMES = ["light", "dark"]
 WIDTH, HEIGHT, SCALE = 1200, 800, 2
+OG = HERE.parent.parent / "public" / "og-image.png"
+OG_WIDTH, OG_HEIGHT = 1200, 630
 
 BROWSER = os.environ.get(
     "BROWSER", r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
@@ -39,7 +42,7 @@ def wait_for(path: Path, timeout: float = 30) -> None:
     raise TimeoutError(f"Screenshot not written: {path}")
 
 
-def render(page: str, target: Path, theme: str, profile: str) -> None:
+def render(page: str, target: Path, theme: str, profile: str, width: int = WIDTH, height: int = HEIGHT, scale: int = SCALE) -> None:
     url = (HERE / f"{page}.html").as_uri() + f"?theme={theme}"
     with tempfile.TemporaryDirectory() as tmp:
         shot = Path(tmp) / "shot.png"
@@ -50,8 +53,8 @@ def render(page: str, target: Path, theme: str, profile: str) -> None:
                 "--disable-gpu",
                 "--hide-scrollbars",
                 f"--user-data-dir={profile}",
-                f"--force-device-scale-factor={SCALE}",
-                f"--window-size={WIDTH},{HEIGHT}",
+                f"--force-device-scale-factor={scale}",
+                f"--window-size={width},{height}",
                 "--virtual-time-budget=6000",
                 f"--screenshot={shot}",
                 url,
@@ -60,9 +63,12 @@ def render(page: str, target: Path, theme: str, profile: str) -> None:
             capture_output=True,
         )
         wait_for(shot)
-        image = Image.open(shot).convert("RGB").crop((0, 0, WIDTH * SCALE, HEIGHT * SCALE))
+        image = Image.open(shot).convert("RGB").crop((0, 0, width * scale, height * scale))
         target.parent.mkdir(parents=True, exist_ok=True)
-        image.save(target, "WEBP", quality=90, method=6)
+        if target.suffix == ".png":
+            image.save(target, "PNG", optimize=True)
+        else:
+            image.save(target, "WEBP", quality=90, method=6)
         print(f"{target.relative_to(OUT.parent.parent.parent)}  {target.stat().st_size // 1024} KB")
 
 
@@ -70,6 +76,10 @@ def main() -> None:
     projects = sys.argv[1:] or PROJECTS
     with tempfile.TemporaryDirectory() as profile:
         for project in projects:
+            if project == "og":
+                # Link previews are fetched once at 1x; social cards don't follow the viewer's theme
+                render("og", OG, "dark", profile, OG_WIDTH, OG_HEIGHT, 1)
+                continue
             slides = SLIDES.get(project)
             for theme in THEMES:
                 if slides:

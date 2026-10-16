@@ -1,5 +1,6 @@
 import ProfileImage from "./ProfileImage.tsx";
-import ButtonLinkSecondary from "../button/ButtonLinkSecondary.tsx";
+import IconLinkSecondary from "../button/IconLinkSecondary.tsx";
+import MinimalistIcon from "../display/MinimalistIcon.tsx";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Badge from "../display/Badge.tsx";
 import Title from "../typography/Title.tsx";
@@ -8,7 +9,7 @@ import Divider from "../display/Divider.tsx";
 import ProfileHighlight from "./ProfileHighlight.tsx";
 import ProfileScrollButton from "./ProfileScrollButton.tsx";
 import { DataService } from "../../services/dataService.tsx";
-import { LuPhone, LuMail, LuUserRound } from "react-icons/lu";
+import { LuPhone, LuMail } from "react-icons/lu";
 import ScrollReveal from "../animation/ScrollReveal.tsx";
 
 function ProfileSection() {
@@ -42,35 +43,40 @@ function ProfileSection() {
 
             <Paragraph text={profile.description} />
 
-            <div className="flex w-full flex-col items-center gap-3 min-[650px]:grid min-[650px]:w-auto min-[650px]:grid-cols-2 min-[650px]:justify-items-start min-[650px]:gap-x-4 min-[650px]:gap-y-3 min-[1026px]:flex min-[1026px]:flex-row min-[1026px]:justify-start min-[1026px]:gap-2">
-              <ButtonLinkSecondary
-                text={profile.socialLinks.phone}
+            <div className="flex flex-wrap items-center justify-center gap-2 min-[650px]:justify-start">
+              <IconLinkSecondary
                 icon={LuPhone}
+                label={`Phone ${profile.socialLinks.phone}`}
                 href={`tel:${profile.socialLinks.phone}`}
+                className="p-3"
               />
 
-              <ButtonLinkSecondary
-                text={profile.socialLinks.email}
+              <IconLinkSecondary
                 icon={LuMail}
+                label={`Email ${profile.socialLinks.email}`}
                 href={`mailto:${profile.socialLinks.email}`}
+                className="p-3"
               />
 
-              <ButtonLinkSecondary
-                text="Minimalist"
-                icon={LuUserRound}
+              <IconLinkSecondary
+                icon={MinimalistIcon}
+                label="Minimalist studio"
                 href={profile.socialLinks.minimalist}
+                className="p-3"
               />
 
-              <ButtonLinkSecondary
-                text="LinkedIn"
+              <IconLinkSecondary
                 icon={FaLinkedinIn}
+                label="LinkedIn"
                 href={profile.socialLinks.linkedin}
+                className="p-3"
               />
 
-              <ButtonLinkSecondary
-                text="GitHub"
+              <IconLinkSecondary
                 icon={FaGithub}
+                label="GitHub"
                 href={profile.socialLinks.github}
+                className="p-3"
               />
             </div>
           </div>

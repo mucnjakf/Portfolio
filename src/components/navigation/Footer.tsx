@@ -1,6 +1,7 @@
 import IconLinkFlat from "../button/IconLinkFlat.tsx";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { LuPhone, LuMail, LuUserRound } from "react-icons/lu";
+import { LuPhone, LuMail } from "react-icons/lu";
+import MinimalistIcon from "../display/MinimalistIcon.tsx";
 import { DataService } from "../../services/dataService.tsx";
 
 function Footer() {
@@ -27,8 +28,8 @@ function Footer() {
           />
 
           <IconLinkFlat
-            icon={LuUserRound}
-            label="Minimalist"
+            icon={MinimalistIcon}
+            label="Minimalist studio"
             href={socialLinks.minimalist}
           />
 

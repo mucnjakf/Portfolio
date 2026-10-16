@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Link preview (og:image)</title>
+    <link rel="stylesheet" href="showcase.css" />
+    <style>
+      html,
+      body,
+      .canvas {
+        width: 1200px;
+        height: 630px;
+      }
+
+      .canvas {
+        --glow-x: 26%;
+        --glow-y: 50%;
+      }
+
+      .card {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        gap: 64px;
+        padding: 0 96px;
+      }
+
+      .portrait {
+        flex: none;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        border: 2px solid #d4d4d8;
+        box-shadow: var(--shadow);
+        object-fit: cover;
+      }
+
+      .copy-og {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .name {
+        font-size: 76px;
+        line-height: 1;
+        font-weight: 800;
+        letter-spacing: -0.035em;
+        color: var(--fg);
+      }
+
+      .summary {
+        max-width: 640px;
+        font-size: 26px;
+        line-height: 1.45;
+        font-weight: 500;
+        color: var(--muted);
+      }
+
+      .brand {
+        position: absolute;
+        left: 96px;
+        bottom: 56px;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        color: var(--fg);
+      }
+
+      .brand span {
+        color: var(--brow);
+      }
+
+      .site {
+        position: absolute;
+        right: 96px;
+        bottom: 60px;
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="canvas">
+      <div class="card">
+        <img class="portrait" src="../../src/assets/portrait.webp" alt="" />
+
+        <div class="copy-og">
+          <div class="brow">Software engineer</div>
+          <div class="name">Filip Mučnjak</div>
+          <p class="summary">.NET and modern frontend. Projects, experience and the Minimalist studio.</p>
+        </div>
+      </div>
+
+      <div class="brand">mucnjakf<span>.</span></div>
+      <div class="site">mucnjakf.dev</div>
+    </div>
+  </body>
+</html>
