@@ -17,7 +17,7 @@ function EducationSection() {
   const certificates = DataService.getCertificates();
 
   return (
-    <div className="w-full border-b border-b-zinc-200 bg-zinc-100/60 dark:border-b-zinc-800 dark:bg-zinc-900/60">
+    <section className="w-full border-b border-b-zinc-200 bg-zinc-100/60 dark:border-b-zinc-800 dark:bg-zinc-900/60">
       <div className="mx-auto max-w-[1300px] px-4 py-10 min-[650px]:p-10">
         <div className="flex flex-col gap-2">
           <Subtitle
@@ -39,7 +39,7 @@ function EducationSection() {
             const schoolLogo = schoolKey ? SchoolMap[schoolKey] : null;
 
             return (
-              <ScrollReveal key={index}>
+              <ScrollReveal key={edu.degree}>
                 <div className="relative pl-10">
                   <div className="absolute top-0 -left-6 flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl border border-zinc-400 bg-zinc-100 dark:border-zinc-600">
                     {schoolLogo ? (
@@ -57,15 +57,15 @@ function EducationSection() {
                     <h3 className="font-bold text-zinc-950 dark:text-zinc-100">
                       {edu.degree}
                     </h3>
-                    <h6 className="mt-1 text-xs tracking-wide text-zinc-600 uppercase">
+                    <p className="mt-1 text-xs tracking-wide text-zinc-600 uppercase">
                       {edu.dateRange}
-                    </h6>
-                    <h5 className="mt-3 text-sm text-zinc-700 dark:text-zinc-400">
+                    </p>
+                    <p className="mt-3 text-sm text-zinc-700 dark:text-zinc-400">
                       {edu.institution}
-                    </h5>
-                    <h6 className="mt-3 text-sm text-zinc-700 dark:text-zinc-400">
+                    </p>
+                    <p className="mt-3 text-sm text-zinc-700 dark:text-zinc-400">
                       {edu.description}
-                    </h6>
+                    </p>
                   </div>
 
                   <div className="col-span-3 mt-6">
@@ -81,21 +81,23 @@ function EducationSection() {
 
         <Divider className="my-7" />
 
-        <h4 className="mb-3 text-lg font-bold text-zinc-950 dark:text-zinc-200">
+        <h3 className="mb-3 text-lg font-bold text-zinc-950 dark:text-zinc-200">
           Certificates
-        </h4>
+        </h3>
 
-        {certificates.map((certificate, index) => (
-          <ScrollReveal key={index}>
+        {certificates.map((certificate) => (
+          <ScrollReveal key={certificate.name}>
             <a
               href={certificate.link}
               target="_blank"
-              className="mb-3 flex cursor-pointer items-center justify-between gap-4 rounded-xl border border-zinc-300 bg-zinc-100 p-3 transition-colors hover:bg-zinc-200 min-[650px]:p-2 dark:border-zinc-600 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
+              rel="noreferrer"
+              className="mb-3 flex cursor-pointer items-center justify-between gap-4 rounded-xl border border-zinc-300 bg-zinc-100 p-3 transition-colors hover:bg-zinc-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 min-[650px]:p-2 dark:border-zinc-600 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:focus-visible:outline-blue-600"
             >
               <div className="flex items-center gap-3 min-[650px]:gap-2">
                 <LuBadgeCheck
                   size={20}
                   className="shrink-0 text-blue-700 dark:text-blue-600"
+                  aria-hidden="true"
                 />
 
                 <div className="flex flex-col min-[650px]:flex-row min-[650px]:items-center">
@@ -103,7 +105,10 @@ function EducationSection() {
                     {certificate.name}
                   </span>
 
-                  <span className="hidden px-1 text-xs font-medium text-zinc-700 min-[650px]:inline dark:text-zinc-400">
+                  <span
+                    className="hidden px-1 text-xs font-medium text-zinc-700 min-[650px]:inline dark:text-zinc-400"
+                    aria-hidden="true"
+                  >
                     ·
                   </span>
 
@@ -113,12 +118,15 @@ function EducationSection() {
                 </div>
               </div>
 
-              <LuExternalLink className="mr-1 shrink-0 text-zinc-700 min-[650px]:mr-3 dark:text-zinc-400" />
+              <LuExternalLink
+                className="mr-1 shrink-0 text-zinc-700 min-[650px]:mr-3 dark:text-zinc-400"
+                aria-hidden="true"
+              />
             </a>
           </ScrollReveal>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

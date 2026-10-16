@@ -10,7 +10,7 @@ function ProjectsSection() {
   const projects = DataService.getProjects();
 
   return (
-    <div className="w-full border-b border-b-zinc-200 dark:border-b-zinc-800">
+    <section className="w-full border-b border-b-zinc-200 dark:border-b-zinc-800">
       <div className="mx-auto max-w-[1300px] px-4 py-10 min-[650px]:p-10">
         <div className="flex flex-col gap-2">
           <Subtitle
@@ -24,7 +24,7 @@ function ProjectsSection() {
 
         <div className="flex flex-col gap-10">
           {projects.map((project, index) => (
-            <div className="flex flex-col gap-10" key={index}>
+            <div className="flex flex-col gap-10" key={project.name}>
               <ScrollReveal>
                 <ProjectInfo
                   subtitle={project.name}
@@ -47,6 +47,7 @@ function ProjectsSection() {
             <Subtitle
               text="More on GitHub"
               description="Explore all repositories, contributions, and open-source work directly on my GitHub profile."
+              as="h3"
             />
 
             <ButtonLinkPrimary
@@ -57,7 +58,7 @@ function ProjectsSection() {
           </div>
         </ScrollReveal>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -31,14 +31,15 @@ function ProjectInfo({
 }: ProjectInfoProps) {
   const isCompleted = status === "completed";
 
-  const showcase = ProjectMap[image as keyof typeof ProjectMap];
+  const showcase: { light: string; dark: string } | undefined =
+    ProjectMap[image as keyof typeof ProjectMap];
 
   return (
     <div className="grid grid-cols-1 items-center gap-8 min-[768px]:grid-cols-12 min-[768px]:gap-10">
       <div
         className={`order-1 flex flex-col justify-center gap-4 min-[768px]:col-span-5 min-[768px]:gap-2 ${reverse ? "min-[768px]:order-2" : "min-[768px]:order-1"}`}
       >
-        <Subtitle text={subtitle} brow={brow} />
+        <Subtitle text={subtitle} brow={brow} as="h3" />
 
         <div className="self-start">
           <Badge
@@ -66,28 +67,30 @@ function ProjectInfo({
         </div>
       </div>
 
-      <div
-        className={`order-2 flex flex-col justify-center min-[768px]:col-span-7 ${reverse ? "min-[768px]:order-1" : "min-[768px]:order-2"}`}
-      >
-        <div className="overflow-hidden rounded-2xl bg-zinc-100 shadow-lg ring-1 ring-black/5 dark:bg-zinc-900 dark:ring-white/10">
-          <img
-            src={showcase.light}
-            alt={`${subtitle} showcase`}
-            width={2400}
-            height={1600}
-            loading="lazy"
-            className="block h-auto w-full dark:hidden"
-          />
-          <img
-            src={showcase.dark}
-            alt={`${subtitle} showcase`}
-            width={2400}
-            height={1600}
-            loading="lazy"
-            className="hidden h-auto w-full dark:block"
-          />
+      {showcase && (
+        <div
+          className={`order-2 flex flex-col justify-center min-[768px]:col-span-7 ${reverse ? "min-[768px]:order-1" : "min-[768px]:order-2"}`}
+        >
+          <div className="overflow-hidden rounded-2xl bg-zinc-100 shadow-lg ring-1 ring-black/5 dark:bg-zinc-900 dark:ring-white/10">
+            <img
+              src={showcase.light}
+              alt={`${subtitle} showcase`}
+              width={2400}
+              height={1600}
+              loading="lazy"
+              className="block h-auto w-full dark:hidden"
+            />
+            <img
+              src={showcase.dark}
+              alt={`${subtitle} showcase`}
+              width={2400}
+              height={1600}
+              loading="lazy"
+              className="hidden h-auto w-full dark:block"
+            />
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

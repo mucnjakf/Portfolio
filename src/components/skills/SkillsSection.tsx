@@ -10,7 +10,6 @@ import {
   LuWrench,
 } from "react-icons/lu";
 import TechStackGroup from "../display/TechStackGroup.tsx";
-import type { TechStackBadgeProps } from "../../propTypes/techStackBadgeProps.ts";
 import { type ElementType, Fragment } from "react";
 import ScrollReveal from "../animation/ScrollReveal.tsx";
 
@@ -27,7 +26,7 @@ function SkillsSection() {
   const skills = DataService.getSkills();
 
   return (
-    <div className="w-full border-b border-b-zinc-200 bg-zinc-100/60 dark:border-b-zinc-800 dark:bg-zinc-900/60">
+    <section className="w-full border-b border-b-zinc-200 bg-zinc-100/60 dark:border-b-zinc-800 dark:bg-zinc-900/60">
       <div className="mx-auto max-w-[1300px] px-4 py-10 min-[650px]:p-10">
         <div className="flex flex-col gap-2">
           <Subtitle
@@ -44,24 +43,28 @@ function SkillsSection() {
             const Icon = IconMap[skill.icon] || LuMonitor;
 
             return (
-              <Fragment key={index}>
+              <Fragment key={skill.category}>
                 <ScrollReveal>
                   <div>
                     <div className="mb-4 flex items-center gap-2">
                       <div className="w-fit rounded-xl border border-blue-700/30 bg-blue-300/10 p-2 dark:border-blue-700/30 dark:bg-blue-800/10">
-                        <Icon size={18} className="text-blue-700" />
+                        <Icon
+                          size={18}
+                          className="text-blue-700"
+                          aria-hidden="true"
+                        />
                       </div>
 
-                      <div className="font-semibold text-zinc-800 dark:text-zinc-300">
+                      <h3 className="font-semibold text-zinc-800 dark:text-zinc-300">
                         {skill.category}
-                      </div>
+                      </h3>
                     </div>
 
                     {skill.sections.map((section, idx) => (
                       <TechStackGroup
-                        key={idx}
+                        key={section.title}
                         title={section.title}
-                        badges={section.skills as TechStackBadgeProps[]}
+                        badges={section.skills}
                         className={
                           idx < skill.sections.length - 1 ? "mb-4" : ""
                         }
@@ -82,7 +85,7 @@ function SkillsSection() {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

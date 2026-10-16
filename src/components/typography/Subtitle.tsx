@@ -3,11 +3,13 @@ function Subtitle({
   id,
   brow,
   description,
+  as: Heading = "h2",
 }: {
   text: string;
   id?: string;
   brow?: string;
   description?: string;
+  as?: "h2" | "h3";
 }) {
   return (
     <div id={id} className="flex scroll-mt-22 flex-col gap-2">
@@ -16,12 +18,12 @@ function Subtitle({
           {brow}
         </div>
       )}
-      <h3 className="text-2xl font-bold text-zinc-950 dark:text-zinc-50">
+      <Heading className="text-2xl font-bold text-zinc-950 dark:text-zinc-50">
         {text}
-      </h3>
+      </Heading>
 
       {description && (
-        <h5 className="text-zinc-500 dark:text-zinc-400">{description}</h5>
+        <p className="text-zinc-500 dark:text-zinc-400">{description}</p>
       )}
     </div>
   );

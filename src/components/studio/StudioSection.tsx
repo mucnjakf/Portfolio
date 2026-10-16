@@ -29,7 +29,7 @@ function StudioSection() {
   const studio = DataService.getStudio();
 
   return (
-    <div className="w-full border-y border-y-zinc-200 bg-zinc-100/60 dark:border-y-zinc-800 dark:bg-zinc-900/60">
+    <section className="w-full border-y border-y-zinc-200 bg-zinc-100/60 dark:border-y-zinc-800 dark:bg-zinc-900/60">
       <div className="mx-auto max-w-[1300px] px-4 py-10 min-[650px]:p-10">
         <div className="flex flex-col gap-2">
           <Subtitle
@@ -84,9 +84,9 @@ function StudioSection() {
         <Divider className="my-10" />
 
         <ScrollReveal>
-          <h4 className="mb-4 text-lg font-bold text-zinc-950 dark:text-zinc-200">
+          <h3 className="mb-4 text-lg font-bold text-zinc-950 dark:text-zinc-200">
             Services
-          </h4>
+          </h3>
         </ScrollReveal>
 
         <div className="grid grid-cols-1 gap-4 min-[650px]:grid-cols-2">
@@ -94,16 +94,20 @@ function StudioSection() {
             const Icon = IconMap[service.icon] || LuBlocks;
 
             return (
-              <ScrollReveal key={index} delay={index * 0.1}>
+              <ScrollReveal key={service.title} delay={index * 0.1}>
                 <div className="h-full rounded-xl border border-zinc-300 p-5 dark:border-zinc-600">
                   <div className="mb-3 flex items-center gap-2">
                     <div className="w-fit rounded-xl border border-blue-700/30 bg-blue-300/10 p-2 dark:border-blue-700/30 dark:bg-blue-800/10">
-                      <Icon size={18} className="text-blue-700" />
+                      <Icon
+                        size={18}
+                        className="text-blue-700"
+                        aria-hidden="true"
+                      />
                     </div>
 
-                    <div className="font-semibold text-zinc-800 dark:text-zinc-300">
+                    <h4 className="font-semibold text-zinc-800 dark:text-zinc-300">
                       {service.title}
-                    </div>
+                    </h4>
                   </div>
 
                   <p className="text-sm leading-6 text-zinc-600 dark:text-zinc-400">
@@ -118,14 +122,14 @@ function StudioSection() {
         <Divider className="my-10" />
 
         <ScrollReveal>
-          <h4 className="mb-4 text-lg font-bold text-zinc-950 dark:text-zinc-200">
+          <h3 className="mb-4 text-lg font-bold text-zinc-950 dark:text-zinc-200">
             How we work
-          </h4>
+          </h3>
         </ScrollReveal>
 
         <div className="mb-6 grid grid-cols-1 gap-x-4 gap-y-7 min-[650px]:grid-cols-3 min-[1026px]:grid-cols-6">
           {studio.process.map((step, index) => (
-            <ScrollReveal key={index} delay={index * 0.05}>
+            <ScrollReveal key={step.title} delay={index * 0.05}>
               <div className="flex h-full flex-col gap-3">
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-zinc-400 text-sm font-bold text-blue-700 tabular-nums dark:border-zinc-600 dark:text-blue-600">
@@ -136,9 +140,9 @@ function StudioSection() {
                 </div>
 
                 <div>
-                  <h3 className="mb-1 font-bold text-zinc-950 dark:text-zinc-100">
+                  <h4 className="mb-1 font-bold text-zinc-950 dark:text-zinc-100">
                     {step.title}
-                  </h3>
+                  </h4>
 
                   <p className="text-sm leading-6 text-zinc-600 dark:text-zinc-400">
                     {step.description}
@@ -149,7 +153,7 @@ function StudioSection() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

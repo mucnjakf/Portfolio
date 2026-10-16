@@ -1,9 +1,11 @@
-import IconLinkFlat from "../button/IconLinkFlat";
-import { LuUserRound } from "react-icons/lu";
+import IconLinkFlat from "../button/IconLinkFlat.tsx";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { LuPhone, LuMail } from "react-icons/lu";
+import { LuPhone, LuMail, LuUserRound } from "react-icons/lu";
+import { DataService } from "../../services/dataService.tsx";
 
 function Footer() {
+  const { socialLinks } = DataService.getProfile();
+
   return (
     <footer className="w-full bg-zinc-50 dark:bg-zinc-950">
       <div className="mx-auto flex w-full max-w-[1300px] items-center justify-between px-4 py-5 min-[650px]:px-10">
@@ -12,21 +14,35 @@ function Footer() {
         </div>
 
         <div className="flex gap-3">
-          <IconLinkFlat icon={LuPhone} href="tel:+385 98 9068 467" />
+          <IconLinkFlat
+            icon={LuPhone}
+            label="Phone"
+            href={`tel:${socialLinks.phone}`}
+          />
 
           <IconLinkFlat
             icon={LuMail}
-            href="mailto:filip.mucnjak@minimalist.hr"
+            label="Email"
+            href={`mailto:${socialLinks.email}`}
           />
 
-          <IconLinkFlat icon={LuUserRound} href="https://minimalist.hr" />
+          <IconLinkFlat
+            icon={LuUserRound}
+            label="Minimalist"
+            href={socialLinks.minimalist}
+          />
 
           <IconLinkFlat
             icon={FaLinkedinIn}
-            href="https://www.linkedin.com/in/mucnjakf"
+            label="LinkedIn"
+            href={socialLinks.linkedin}
           />
 
-          <IconLinkFlat icon={FaGithub} href="https://github.com/mucnjakf" />
+          <IconLinkFlat
+            icon={FaGithub}
+            label="GitHub"
+            href={socialLinks.github}
+          />
         </div>
       </div>
     </footer>

@@ -1,4 +1,4 @@
-import React from "react";
+import type { ReactNode } from "react";
 
 function Badge({
   text,
@@ -9,14 +9,19 @@ function Badge({
   text: string;
   bgColor: string;
   textColor: string;
-  icon?: React.ReactNode;
+  icon?: ReactNode;
 }) {
   return (
     <div
       className={`flex w-fit items-center gap-2 rounded-xl px-3 py-1 text-xs font-medium ${bgColor} ${textColor}`}
     >
       {icon && (
-        <div className="flex shrink-0 items-center justify-center">{icon}</div>
+        <div
+          className="flex shrink-0 items-center justify-center"
+          aria-hidden="true"
+        >
+          {icon}
+        </div>
       )}
       {text}
     </div>

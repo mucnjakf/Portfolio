@@ -2,9 +2,11 @@ function NavBrand({ className = "" }: { className?: string }) {
   return (
     <a
       href="#profile"
-      className={`flex shrink-0 items-center transition-opacity hover:opacity-70 ${className}`}
+      aria-label="mucnjakf, back to top"
+      className={`flex shrink-0 items-center rounded-md transition-opacity hover:opacity-70 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 dark:focus-visible:outline-blue-600 ${className}`}
     >
       <svg
+        aria-hidden="true"
         width="100"
         height="28"
         viewBox="0 0 100 28"

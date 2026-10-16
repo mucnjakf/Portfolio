@@ -19,7 +19,7 @@ function ProfileSection() {
       <ScrollReveal>
         <div className="grid grid-cols-1 items-center gap-8 min-[650px]:grid-cols-12 min-[650px]:gap-5">
           <div className="col-span-1 flex justify-center min-[650px]:col-span-4 lg:col-span-3">
-            <ProfileImage />
+            <ProfileImage alt={`Portrait of ${profile.fullName}`} />
           </div>
 
           <div
@@ -32,7 +32,7 @@ function ProfileSection() {
               textColor="text-green-600"
               icon={
                 <div className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-600 opacity-100"></span>
+                  <span className="absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-100 motion-safe:animate-ping"></span>
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-green-600"></span>
                 </div>
               }
@@ -82,9 +82,9 @@ function ProfileSection() {
               data-bg-mute
               className="grid grid-cols-1 divide-y divide-zinc-200 pb-8 min-[650px]:grid-cols-3 min-[650px]:divide-x min-[650px]:divide-y-0 min-[650px]:pb-0 dark:divide-zinc-800"
             >
-              {profile.highlights.map((highlight, index) => (
+              {profile.highlights.map((highlight) => (
                 <div
-                  key={index}
+                  key={highlight.description}
                   className="flex flex-col py-4 text-center first:pt-0 last:pb-0 min-[650px]:py-0 min-[650px]:first:pt-0 min-[650px]:last:pb-0"
                 >
                   <ProfileHighlight
