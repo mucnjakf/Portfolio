@@ -1,9 +1,9 @@
 [
   {
     "name": "OrderPoint",
-    "brow": "Restaurant ordering platform",
+    "brow": "Bar order management platform",
     "status": "in-development",
-    "description": "End-to-end restaurant ordering platform - customers scan QR codes to browse menus and place live table orders, while staff manage incoming requests and admins control restaurant data in real time.",
+    "description": "Order management system for a bar, built as five real-time web apps - guests scan a table's QR code to order, pay and track it live, bartenders run the queue, tables and register, and the owner manages the menu, floor plan and inventory from a live profit dashboard.",
     "techStack": [
       {
         "name": ".NET Blazor",
@@ -26,6 +26,10 @@
         "highlight": false
       },
       {
+        "name": "SignalR",
+        "highlight": false
+      },
+      {
         "name": "MediatR",
         "highlight": false
       },
@@ -38,11 +42,23 @@
         "highlight": false
       },
       {
-        "name": "Scalar",
+        "name": "Identity",
+        "highlight": false
+      },
+      {
+        "name": "Redis",
+        "highlight": false
+      },
+      {
+        "name": "Azure Storage",
         "highlight": false
       },
       {
         "name": "OpenTelemetry",
+        "highlight": false
+      },
+      {
+        "name": "Scalar",
         "highlight": false
       }
     ]

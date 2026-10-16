@@ -17,34 +17,36 @@ type DotFieldConfig = {
   tint: number;
 };
 
+// `wave` scales against the active size/alpha range, so it is raised to keep
+// the ambient wave unchanged while the pointer effect stays subtle
 const Variants: Record<"hero" | "page", DotFieldConfig> = {
   hero: {
     spacing: 24,
     dotSize: 1.1,
-    dotSizeActive: 3.2,
+    dotSizeActive: 1.7,
     alpha: 0.26,
-    alphaActive: 0.95,
-    radius: 190,
-    push: 16,
-    glow: 0.03,
-    wave: 0.5,
+    alphaActive: 0.45,
+    radius: 150,
+    push: 5,
+    glow: 0.006,
+    wave: 1.8,
     parallax: 0,
     mute: 0.18,
-    tint: 0.2,
+    tint: 0.05,
   },
   page: {
     spacing: 28,
     dotSize: 0.9,
-    dotSizeActive: 1.7,
+    dotSizeActive: 1.15,
     alpha: 0.15,
-    alphaActive: 0.45,
-    radius: 150,
-    push: 5,
-    glow: 0.02,
-    wave: 0.25,
+    alphaActive: 0.24,
+    radius: 120,
+    push: 2,
+    glow: 0.004,
+    wave: 0.8,
     parallax: 0.3,
     mute: 1,
-    tint: 0.2,
+    tint: 0.05,
   },
 };
 
