@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OrderPoint showcase · Bar</title>
+    <link rel="stylesheet" href="showcase.css" />
+    <script>
+      if (location.search.includes("dark")) document.documentElement.classList.add("dark");
+    </script>
+    <style>
+      .canvas { --glow-x: 72%; --glow-y: 50%; }
+    </style>
+  </head>
+  <body>
+    <div class="canvas">
+      <div class="copy">
+        <div class="brow">Bar app</div>
+        <h1 class="headline">Every order, <em>one live queue.</em></h1>
+        <p class="lede">Bartenders accept, prepare and serve orders, and see every table's wait at a glance.</p>
+
+        <div class="features">
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg></span>
+            Accept, start, complete
+          </div>
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
+            Live tables map
+          </div>
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span>
+            Guests' calls
+          </div>
+        </div>
+      </div>
+
+      <div class="tablet" style="left: 600px; top: 56px; width: 640px">
+        <div class="screen"><img data-screen="bar-tables" alt="" /></div>
+      </div>
+
+      <div class="tablet" style="left: 470px; top: 330px; width: 660px">
+        <div class="screen"><img data-screen="bar-queue" alt="" /></div>
+      </div>
+
+      <div class="tag" style="left: 1060px; top: 32px"><span class="dot"></span>Tables</div>
+      <div class="tag" style="left: 500px; top: 304px"><span class="dot"></span>Order queue</div>
+    </div>
+
+    <script>
+      // Each screen exists in light and dark; pick the one matching this render
+      const theme = document.documentElement.classList.contains("dark") ? "dark" : "light";
+      document.querySelectorAll("img[data-screen]").forEach((img) => (img.src = `screens/orderpoint/${img.dataset.screen}-${theme}.webp`));
+    </script>
+  </body>
+</html>

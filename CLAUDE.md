@@ -99,8 +99,13 @@ Every content section follows this shell:
   1. Add an entry to `projects.json`. `name` must equal the GitHub repo name, because the link is built as `github.com/mucnjakf/<name>`.
   2. Create a showcase mockup at `design/showcase/<name>.html` (reuse `showcase.css`) and add it to `PROJECTS` in `render.py`.
   3. Run `python design/showcase/render.py <name>` (needs Pillow + Edge). It writes `src/assets/projects/<name>/showcase-{light,dark}.webp` (2400×1600).
-  4. Import both images into `ProjectMap` in `ProjectInfo.tsx`.
+  4. Import both images into `ProjectMap` in `ProjectInfo.tsx` under the `showcase` key.
   5. Layout alternates automatically (`reverse` on odd indexes).
+- **Project with several slides (carousel)**, as OrderPoint:
+  1. One mockup per slide: `design/showcase/<name>-<slide>.html`. App screenshots go in `design/showcase/screens/<name>/<screen>-{light,dark}.webp`, and the mockup's `img[data-screen]` script picks the one matching the render's theme.
+  2. List the slide ids under `SLIDES` in `render.py`. It writes `src/assets/projects/<name>/<slide>-{light,dark}.webp`.
+  3. Add a `gallery` array (`id`, `title`, `caption`) to the project in `projects.json`, and import each slide's images into `ProjectMap` keyed by slide id.
+  4. `ProjectGallery.tsx` renders the carousel (Motion slide/fade, swipe, arrow keys, dots). With a single slide it renders the plain image.
 
 ## Deploy
 - `.github/workflows/deploy.yml` runs on manual `workflow_dispatch` only (pushing to `main` does not deploy). It uses Node 24 and runs `npm ci` → `npm run lint` → `npm run build`, then uploads `dist` to GitHub Pages.

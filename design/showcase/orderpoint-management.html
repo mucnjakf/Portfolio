@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OrderPoint showcase · Management</title>
+    <link rel="stylesheet" href="showcase.css" />
+    <script>
+      if (location.search.includes("dark")) document.documentElement.classList.add("dark");
+    </script>
+    <style>
+      .canvas { --glow-x: 74%; --glow-y: 50%; }
+    </style>
+  </head>
+  <body>
+    <div class="canvas">
+      <div class="copy">
+        <div class="brow">Admin web</div>
+        <h1 class="headline">Run the menu, <em>floor and stock.</em></h1>
+        <p class="lede">Items with pictures, a drag-and-drop floor plan with QR codes, and inventory with recipes.</p>
+
+        <div class="features">
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg></span>
+            Menu &amp; bulk edits
+          </div>
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
+            Floor plan &amp; QR codes
+          </div>
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></span>
+            Stock, recipes &amp; counts
+          </div>
+        </div>
+      </div>
+
+      <div class="browser" style="left: 580px; top: 48px; width: 760px">
+        <div class="bar">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <div class="url">admin.orderpoint.app/items</div>
+        </div>
+        <img data-screen="admin-items" alt="" />
+      </div>
+
+      <div class="browser" style="left: 480px; top: 300px; width: 760px; z-index: 2">
+        <div class="bar">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <div class="url">admin.orderpoint.app/tables</div>
+        </div>
+        <img data-screen="admin-tables" alt="" />
+      </div>
+
+      <div class="tag" style="left: 1070px; top: 22px"><span class="dot"></span>Menu</div>
+      <div class="tag" style="left: 508px; top: 274px; z-index: 3"><span class="dot"></span>Floor plan</div>
+    </div>
+
+    <script>
+      // Each screen exists in light and dark; pick the one matching this render
+      const theme = document.documentElement.classList.contains("dark") ? "dark" : "light";
+      document.querySelectorAll("img[data-screen]").forEach((img) => (img.src = `screens/orderpoint/${img.dataset.screen}-${theme}.webp`));
+    </script>
+  </body>
+</html>

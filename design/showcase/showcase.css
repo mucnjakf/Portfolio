@@ -238,6 +238,26 @@ body {
   height: auto;
 }
 
+/* Tablet */
+.tablet {
+  position: absolute;
+  padding: 10px;
+  border-radius: 28px;
+  background: var(--bezel);
+  box-shadow: var(--shadow), 0 0 0 1px var(--bezel-ring);
+}
+
+.tablet .screen {
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.tablet .screen img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* Floating callout tag */
 .tag {
   position: absolute;

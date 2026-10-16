@@ -16,6 +16,8 @@ from PIL import Image
 HERE = Path(__file__).resolve().parent
 OUT = HERE.parent.parent / "src" / "assets" / "projects"
 PROJECTS = ["orderpoint", "codex", "herculean"]
+# Projects with several slides: page <project>-<slide>.html -> <project>/<slide>-<theme>.webp
+SLIDES = {"orderpoint": ["overview", "customer", "bar", "service", "admin", "management"]}
 THEMES = ["light", "dark"]
 WIDTH, HEIGHT, SCALE = 1200, 800, 2
 
@@ -37,8 +39,8 @@ def wait_for(path: Path, timeout: float = 30) -> None:
     raise TimeoutError(f"Screenshot not written: {path}")
 
 
-def render(project: str, theme: str, profile: str) -> None:
-    url = (HERE / f"{project}.html").as_uri() + f"?theme={theme}"
+def render(page: str, target: Path, theme: str, profile: str) -> None:
+    url = (HERE / f"{page}.html").as_uri() + f"?theme={theme}"
     with tempfile.TemporaryDirectory() as tmp:
         shot = Path(tmp) / "shot.png"
         subprocess.run(
@@ -59,7 +61,6 @@ def render(project: str, theme: str, profile: str) -> None:
         )
         wait_for(shot)
         image = Image.open(shot).convert("RGB").crop((0, 0, WIDTH * SCALE, HEIGHT * SCALE))
-        target = OUT / project / f"showcase-{theme}.webp"
         target.parent.mkdir(parents=True, exist_ok=True)
         image.save(target, "WEBP", quality=90, method=6)
         print(f"{target.relative_to(OUT.parent.parent.parent)}  {target.stat().st_size // 1024} KB")
@@ -69,8 +70,13 @@ def main() -> None:
     projects = sys.argv[1:] or PROJECTS
     with tempfile.TemporaryDirectory() as profile:
         for project in projects:
+            slides = SLIDES.get(project)
             for theme in THEMES:
-                render(project, theme, profile)
+                if slides:
+                    for slide in slides:
+                        render(f"{project}-{slide}", OUT / project / f"{slide}-{theme}.webp", theme, profile)
+                else:
+                    render(project, OUT / project / f"showcase-{theme}.webp", theme, profile)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OrderPoint showcase · Admin</title>
+    <link rel="stylesheet" href="showcase.css" />
+    <script>
+      if (location.search.includes("dark")) document.documentElement.classList.add("dark");
+    </script>
+    <style>
+      .canvas { --glow-x: 74%; --glow-y: 50%; }
+    </style>
+  </head>
+  <body>
+    <div class="canvas">
+      <div class="copy">
+        <div class="brow">Admin web</div>
+        <h1 class="headline">Every order, <em>every payment.</em></h1>
+        <p class="lede">Follow every order through its lifecycle, filter payments and print any receipt.</p>
+
+        <div class="features">
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M3 12h.01M3 18h.01M3 6h.01M8 12h13M8 18h13M8 6h13"/></svg></span>
+            Live order pipeline
+          </div>
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2"/><path d="M2 10h20"/></svg></span>
+            Payments ledger
+          </div>
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M3 7v6h6"/><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"/></svg></span>
+            Refunds tracked
+          </div>
+        </div>
+      </div>
+
+      <div class="browser" style="left: 580px; top: 48px; width: 760px">
+        <div class="bar">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <div class="url">admin.orderpoint.app/payments</div>
+        </div>
+        <img data-screen="admin-payments" alt="" />
+      </div>
+
+      <div class="browser" style="left: 480px; top: 300px; width: 760px; z-index: 2">
+        <div class="bar">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <div class="url">admin.orderpoint.app/orders</div>
+        </div>
+        <img data-screen="admin-orders" alt="" />
+      </div>
+
+      <div class="tag" style="left: 1070px; top: 22px"><span class="dot"></span>Payments</div>
+      <div class="tag" style="left: 508px; top: 274px; z-index: 3"><span class="dot"></span>Orders</div>
+    </div>
+
+    <script>
+      // Each screen exists in light and dark; pick the one matching this render
+      const theme = document.documentElement.classList.contains("dark") ? "dark" : "light";
+      document.querySelectorAll("img[data-screen]").forEach((img) => (img.src = `screens/orderpoint/${img.dataset.screen}-${theme}.webp`));
+    </script>
+  </body>
+</html>

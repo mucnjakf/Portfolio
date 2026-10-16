@@ -2,7 +2,7 @@
   {
     "name": "OrderPoint",
     "brow": "Bar order management platform",
-    "status": "in-development",
+    "status": "completed",
     "description": "Order management system for a bar, built as five real-time web apps - guests scan a table's QR code to order, pay and track it live, bartenders run the queue, tables and register, and the owner manages the menu, floor plan and inventory from a live profit dashboard.",
     "techStack": [
       {
@@ -60,6 +60,38 @@
       {
         "name": "Scalar",
         "highlight": false
+      }
+    ],
+    "gallery": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "caption": "Five apps sharing one real-time order flow"
+      },
+      {
+        "id": "customer",
+        "title": "Customer app",
+        "caption": "Guests scan, order, pay and follow it live"
+      },
+      {
+        "id": "bar",
+        "title": "Bar app",
+        "caption": "The live order queue and tables map"
+      },
+      {
+        "id": "service",
+        "title": "Bartender & Register",
+        "caption": "Orders at the table, payments at the till"
+      },
+      {
+        "id": "admin",
+        "title": "Admin · Orders",
+        "caption": "Every order and payment in real time"
+      },
+      {
+        "id": "management",
+        "title": "Admin · Management",
+        "caption": "Menu, floor plan and inventory"
       }
     ]
   },

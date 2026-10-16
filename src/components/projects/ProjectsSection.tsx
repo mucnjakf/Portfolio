@@ -33,6 +33,7 @@ function ProjectsSection() {
                   paragraph={project.description}
                   techStackBadges={project.techStack}
                   image={project.name}
+                  gallery={project.gallery}
                   reverse={index % 2 === 1}
                 />
               </ScrollReveal>

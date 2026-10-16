@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OrderPoint showcase · Bartender &amp; Register</title>
+    <link rel="stylesheet" href="showcase.css" />
+    <script>
+      if (location.search.includes("dark")) document.documentElement.classList.add("dark");
+    </script>
+    <style>
+      .canvas { --glow-x: 70%; --glow-y: 45%; }
+    </style>
+  </head>
+  <body>
+    <div class="canvas">
+      <div class="copy">
+        <div class="brow">Bartender &amp; Register</div>
+        <h1 class="headline">Take the order, <em>settle the bill.</em></h1>
+        <p class="lede">Bartenders take orders on their phone; the register handles payments, refunds and receipts.</p>
+
+        <div class="features">
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg></span>
+            Orders at the table
+          </div>
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg></span>
+            Cash &amp; card payments
+          </div>
+          <div class="feature">
+            <span class="icon"><svg viewBox="0 0 24 24"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg></span>
+            Receipts &amp; refunds
+          </div>
+        </div>
+      </div>
+
+      <div class="tablet" style="left: 540px; top: 64px; width: 680px">
+        <div class="screen"><img data-screen="reg-topay" alt="" /></div>
+      </div>
+
+      <div class="phone" style="left: 470px; top: 340px; width: 206px; z-index: 2">
+        <div class="screen"><img data-screen="bt-tables" alt="" /></div>
+      </div>
+
+      <div class="phone" style="left: 990px; top: 360px; width: 206px; z-index: 2">
+        <div class="screen"><img data-screen="bt-review" alt="" /></div>
+      </div>
+
+      <div class="tag" style="left: 1060px; top: 40px"><span class="dot"></span>Register</div>
+      <div class="tag" style="left: 496px; top: 314px"><span class="dot"></span>Bartender</div>
+    </div>
+
+    <script>
+      // Each screen exists in light and dark; pick the one matching this render
+      const theme = document.documentElement.classList.contains("dark") ? "dark" : "light";
+      document.querySelectorAll("img[data-screen]").forEach((img) => (img.src = `screens/orderpoint/${img.dataset.screen}-${theme}.webp`));
+    </script>
+  </body>
+</html>
