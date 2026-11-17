@@ -8,10 +8,8 @@ Project images aren't screenshots dropped on the page: they are HTML **mockups**
 design/showcase/
   showcase.css                shared look: canvas, copy, frames, tags (light and dark tokens)
   render.py                   renders mockups into images
-  codex.html, herculean.html  single-image projects
   orderpoint-<slide>.html     one mockup per gallery slide
   og.html                     the link preview image
-  screens/                    screenshots (c-*, h-* for Codex and Herculean)
   screens/orderpoint/         <screen>-light.webp and <screen>-dark.webp
 ```
 

@@ -7,7 +7,7 @@ The page from top to bottom: what each section shows, where its content comes fr
 | Navigation bar | | | `navigation/NavBar.tsx` |
 | [Profile](#profile) | `#profile` | `profile.json` | `profile/ProfileSection.tsx` |
 | [Studio](#studio) | `#studio` | `studio.json` | `studio/StudioSection.tsx` |
-| [Projects](#projects) | `#projects` | `projects.json` | `projects/ProjectsSection.tsx`, `ProjectInfo.tsx`, `ProjectGallery.tsx` |
+| [Projects](#projects) | `#projects` | `projects.json`, `otherProjects.json` | `projects/ProjectsSection.tsx`, `ProjectInfo.tsx`, `ProjectGallery.tsx`, `OtherProjectCard.tsx` |
 | [Skills](#skills) | `#skills` | `skills.json` | `skills/SkillsSection.tsx` |
 | [Contracts](#contracts) | `#contracts` | `experience.json` | `experience/ExperienceSection.tsx` |
 | [Education](#education) | `#education` | `education.json`, `certificates.json` | `education/EducationSection.tsx` |
@@ -45,6 +45,8 @@ One block per project, separated by dividers, followed by a "More on GitHub" cal
 - A **GitHub** button linking to `github.com/mucnjakf/<name>`.
 - The **showcase**: one image, or a gallery with arrows, dots and captions ([Project gallery](Project-Gallery)).
 - On wider screens the text takes 5 of 12 columns and the image 7; every other project swaps the sides.
+
+Below the featured projects, **Other projects** lists smaller repositories without screenshots as a grid of cards (one column on phones, two from 650px, three from 1026px). Each card shows an icon, the year, the brow and name, a short description, the tech stack and a **GitHub** button.
 
 ## Skills
 

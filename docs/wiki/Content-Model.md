@@ -7,6 +7,7 @@ All content is in `src/data`, one JSON file per section. Each shape has a TypeSc
 | `profile.json` | `getProfile()` | `Profile` | Hero, footer |
 | `studio.json` | `getStudio()` | `Studio` | Studio |
 | `projects.json` | `getProjects()` | `Project[]` | Projects |
+| `otherProjects.json` | `getOtherProjects()` | `OtherProject[]` | Projects (Other projects grid) |
 | `skills.json` | `getSkills()` | `Skill[]` | Skills |
 | `experience.json` | `getExperience()` | `Experience[]` | Contracts |
 | `education.json` | `getEducation()` | `Education[]` | Education |
@@ -46,6 +47,17 @@ The getters cast the JSON to its type (`as Project[]`), so TypeScript doesn't ch
 | `description` | string | |
 | `techStack` | `ProjectTechStack[]` | `name`, `highlight` (blue when `true`) |
 | `gallery` | `ProjectGallerySlide[]`, optional | `id` (key in `ProjectMap`), `title`, `caption`; see [Project gallery](Project-Gallery) |
+
+## otherProjects.json — `OtherProject`
+
+| Field | Type | Notes |
+| --- | --- | --- |
+| `name` | string | Title; must equal the GitHub repository name |
+| `brow` | string | One line saying what it is |
+| `year` | number | Shown in the card corner |
+| `icon` | string | An icon name, resolved by `IconMap` in `ProjectsSection.tsx` |
+| `description` | string | About 40 words keeps the cards level |
+| `techStack` | `ProjectTechStack[]` | `name`, `highlight` (blue when `true`) |
 
 ## skills.json — `Skill`
 
@@ -89,6 +101,7 @@ Fields named `icon` hold a [react-icons](https://react-icons.github.io/react-ico
 | --- | --- | --- |
 | Studio services | `LuRocket`, `LuBlocks`, `LuRefreshCcw`, `LuCompass` | `LuBlocks` |
 | Skills | `LuMonitor`, `LuServer`, `LuLayers`, `LuCloud`, `LuGitFork`, `LuWrench` | `LuMonitor` |
+| Other projects | `LuBedDouble`, `LuListChecks`, `LuDumbbell`, `LuReceipt`, `LuShip`, `LuSquareKanban` | `LuCode` |
 
 A new icon name needs an import and an entry in that section's `IconMap`.
 

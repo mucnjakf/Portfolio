@@ -1,6 +1,7 @@
 import profile from "../data/profile.json";
 import studio from "../data/studio.json";
 import projects from "../data/projects.json";
+import otherProjects from "../data/otherProjects.json";
 import skills from "../data/skills.json";
 import experience from "../data/experience.json";
 import education from "../data/education.json";
@@ -8,6 +9,7 @@ import certificates from "../data/certificates.json";
 import type { Profile } from "../types/profile.ts";
 import type { Studio } from "../types/studio.ts";
 import type { Project } from "../types/project.ts";
+import type { OtherProject } from "../types/otherProject.ts";
 import type { Skill } from "../types/skill.ts";
 import type { Experience } from "../types/experience.ts";
 import type { Education } from "../types/education.ts";
@@ -24,6 +26,10 @@ export const DataService = {
 
   getProjects: () => {
     return projects as Project[];
+  },
+
+  getOtherProjects: () => {
+    return otherProjects as OtherProject[];
   },
 
   getSkills: () => {

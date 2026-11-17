@@ -1,6 +1,6 @@
 # Project gallery
 
-A project can show one showcase image or a carousel of slides. OrderPoint uses six slides, one per part of the system; Codex and Herculean show a single image. The component is `src/components/projects/ProjectGallery.tsx`.
+A project can show one showcase image or a carousel of slides. OrderPoint uses six slides, one per part of the system; a project with a single `showcase` image renders it without the carousel controls. The component is `src/components/projects/ProjectGallery.tsx`.
 
 ## What the visitor sees
 

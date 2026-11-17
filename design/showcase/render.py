@@ -16,7 +16,7 @@ from PIL import Image
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE.parent.parent / "src" / "assets" / "projects"
-PROJECTS = ["orderpoint", "codex", "herculean"]
+PROJECTS = ["orderpoint"]
 # Projects with several slides: page <project>-<slide>.html -> <project>/<slide>-<theme>.webp
 SLIDES = {"orderpoint": ["overview", "customer", "bar", "service", "admin", "management"]}
 THEMES = ["light", "dark"]

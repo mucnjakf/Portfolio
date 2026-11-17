@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Bookify",
+    "brow": "Accommodation booking API",
+    "year": 2025,
+    "icon": "LuBedDouble",
+    "description": "Apartment booking API built with Clean Architecture and DDD - value objects, domain events and an outbox for reliable side effects. CQRS splits EF Core writes from Dapper reads, with Keycloak permission-based auth, Redis caching and architecture rules enforced by tests.",
+    "techStack": [
+      { "name": ".NET Web API", "highlight": true },
+      { "name": "PostgreSQL", "highlight": true },
+      { "name": "MediatR", "highlight": false },
+      { "name": "Keycloak", "highlight": false },
+      { "name": "Redis", "highlight": false },
+      { "name": "Testcontainers", "highlight": false }
+    ]
+  },
+  {
+    "name": "DevHabit",
+    "brow": "Habit tracking API",
+    "year": 2025,
+    "icon": "LuListChecks",
+    "description": "REST API for tracking developer habits, built to cover advanced API design - HATEOAS, data shaping, versioned media types, ETags, idempotent requests and cursor pagination. Habits log themselves from GitHub activity through scheduled jobs, and entries can be bulk-imported from CSV.",
+    "techStack": [
+      { "name": ".NET Web API", "highlight": true },
+      { "name": "PostgreSQL", "highlight": true },
+      { "name": "Quartz.NET", "highlight": false },
+      { "name": "Refit", "highlight": false },
+      { "name": "OpenTelemetry", "highlight": false },
+      { "name": "Testcontainers", "highlight": false }
+    ]
+  },
+  {
+    "name": "GymLog",
+    "brow": "Workout tracker",
+    "year": 2024,
+    "icon": "LuDumbbell",
+    "description": "Workout and exercise log with a Blazor frontend on a Clean Architecture API organized in vertical slices. Tested at every layer - domain, application, integration and Selenium UI tests - with Metalama aspects, health checks and Prometheus metrics.",
+    "techStack": [
+      { "name": ".NET Blazor", "highlight": true },
+      { "name": ".NET Minimal API", "highlight": true },
+      { "name": "PostgreSQL", "highlight": false },
+      { "name": "MediatR", "highlight": false },
+      { "name": "Selenium", "highlight": false },
+      { "name": "Prometheus", "highlight": false }
+    ]
+  },
+  {
+    "name": "BillTracker",
+    "brow": "Billing dashboard",
+    "year": 2025,
+    "icon": "LuReceipt",
+    "description": "Customer and billing management app with a React frontend and a vertical-slice .NET API on FastEndpoints. Manages customers, sellers, products and bills, with a dashboard charting sales trends, sales by category and top-selling products.",
+    "techStack": [
+      { "name": "React.js", "highlight": true },
+      { "name": ".NET Minimal API", "highlight": true },
+      { "name": "PostgreSQL", "highlight": false },
+      { "name": "FastEndpoints", "highlight": false },
+      { "name": "Recharts", "highlight": false },
+      { "name": "React Bootstrap", "highlight": false }
+    ]
+  },
+  {
+    "name": "Poseidon",
+    "brow": "Maritime monitoring system",
+    "year": 2022,
+    "icon": "LuShip",
+    "description": "Sea monitoring system that flags illegal vessel activity with an ML.NET model trained on position, speed and event duration. Hangfire processes incoming events and SignalR streams every prediction live onto a Leaflet map and dashboard.",
+    "techStack": [
+      { "name": ".NET Blazor", "highlight": true },
+      { "name": ".NET Web API", "highlight": true },
+      { "name": "ML.NET", "highlight": false },
+      { "name": "SignalR", "highlight": false },
+      { "name": "Hangfire", "highlight": false },
+      { "name": "SQL Server", "highlight": false }
+    ]
+  },
+  {
+    "name": "TaskMaster",
+    "brow": "Task & project management",
+    "year": 2023,
+    "icon": "LuSquareKanban",
+    "description": "Task and project management with a Blazor frontend on a Java Spring Boot API. Covers role-based JWT auth, task priorities and statuses, nightly scheduled reports and JUnit-tested services, with the UI localized in English, Croatian and Italian.",
+    "techStack": [
+      { "name": ".NET Blazor", "highlight": true },
+      { "name": "Spring Boot", "highlight": true },
+      { "name": "PostgreSQL", "highlight": false },
+      { "name": "Hibernate", "highlight": false },
+      { "name": "Syncfusion", "highlight": false },
+      { "name": "JUnit", "highlight": false }
+    ]
+  }
+]

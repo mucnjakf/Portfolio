@@ -18,7 +18,10 @@ type DotFieldConfig = {
 };
 
 // `wave` scales against the active size/alpha range, so it is raised to keep
-// the ambient wave unchanged while the pointer effect stays subtle
+// the ambient wave unchanged while the pointer effect stays subtle.
+// `page` keeps the static grid as texture but heavily damps everything that
+// moves (pointer swell, push, glow, wave, parallax) so it never competes
+// with content.
 const Variants: Record<"hero" | "page", DotFieldConfig> = {
   hero: {
     spacing: 24,
@@ -36,17 +39,17 @@ const Variants: Record<"hero" | "page", DotFieldConfig> = {
   },
   page: {
     spacing: 28,
-    dotSize: 0.9,
-    dotSizeActive: 1.15,
-    alpha: 0.15,
-    alphaActive: 0.24,
+    dotSize: 0.8,
+    dotSizeActive: 0.86,
+    alpha: 0.08,
+    alphaActive: 0.095,
     radius: 120,
-    push: 2,
-    glow: 0.004,
-    wave: 0.8,
-    parallax: 0.3,
+    push: 0.5,
+    glow: 0.001,
+    wave: 0.5,
+    parallax: 0.1,
     mute: 1,
-    tint: 0.05,
+    tint: 0.015,
   },
 };
 

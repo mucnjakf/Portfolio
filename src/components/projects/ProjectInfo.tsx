@@ -20,10 +20,6 @@ import OrderPointAdminLight from "../../assets/projects/orderpoint/admin-light.w
 import OrderPointAdminDark from "../../assets/projects/orderpoint/admin-dark.webp";
 import OrderPointManagementLight from "../../assets/projects/orderpoint/management-light.webp";
 import OrderPointManagementDark from "../../assets/projects/orderpoint/management-dark.webp";
-import CodexLight from "../../assets/projects/codex/showcase-light.webp";
-import CodexDark from "../../assets/projects/codex/showcase-dark.webp";
-import HerculeanLight from "../../assets/projects/herculean/showcase-light.webp";
-import HerculeanDark from "../../assets/projects/herculean/showcase-dark.webp";
 
 // Showcase images per project, keyed by gallery slide id ("showcase" for single-image projects)
 const ProjectMap: Record<
@@ -41,8 +37,6 @@ const ProjectMap: Record<
       dark: OrderPointManagementDark,
     },
   },
-  Codex: { showcase: { light: CodexLight, dark: CodexDark } },
-  Herculean: { showcase: { light: HerculeanLight, dark: HerculeanDark } },
 };
 
 function ProjectInfo({
@@ -91,6 +85,7 @@ function ProjectInfo({
         <div className="mt-2 self-start">
           <ButtonLinkSecondary
             text="GitHub"
+            label={`${subtitle} on GitHub`}
             href={`https://github.com/mucnjakf/${subtitle}`}
             icon={FaGithub}
           />

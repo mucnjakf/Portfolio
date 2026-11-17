@@ -95,6 +95,7 @@ Every content section follows this shell:
 - **Text and data changes:** edit the JSON in `src/data/`. If the shape changes, update the matching type in `src/types/`.
 - **New dataset:** JSON file + type file(s) + a getter in `DataService`.
 - **New experience or education entry:** add the logo to `src/assets/companies|education/` and register it in `CompanyMap` (matched by exact company name) or `SchoolMap` (matched by an institution-name prefix).
+- **Smaller project (no screenshots):** add an entry to `otherProjects.json` (`name` = GitHub repo name, `brow`, `year`, `icon`, `description`, `techStack`). It renders as a card in the "Other projects" grid via `OtherProjectCard.tsx`; a new `icon` needs an entry in `IconMap` in `ProjectsSection.tsx`.
 - **New project:**
   1. Add an entry to `projects.json`. `name` must equal the GitHub repo name, because the link is built as `github.com/mucnjakf/<name>`.
   2. Create a showcase mockup at `design/showcase/<name>.html` (reuse `showcase.css`) and add it to `PROJECTS` in `render.py`.

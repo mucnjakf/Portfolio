@@ -44,7 +44,7 @@ Constants at the top of `design/showcase/render.py`:
 
 | Constant | Value |
 | --- | --- |
-| `PROJECTS` | `orderpoint`, `codex`, `herculean` |
+| `PROJECTS` | `orderpoint` |
 | `SLIDES` | Slide ids per project with a gallery (OrderPoint: `overview`, `customer`, `bar`, `service`, `admin`, `management`) |
 | `THEMES` | `light`, `dark` |
 | `WIDTH`, `HEIGHT`, `SCALE` | 1200 × 800 at 2×, so images are 2400 × 1600 |
